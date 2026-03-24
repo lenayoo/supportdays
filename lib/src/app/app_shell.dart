@@ -5,7 +5,10 @@ class SupportDaysApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final cuteTextTheme = GoogleFonts.gaeguTextTheme();
+    final language = AppLanguage.fromLocale(
+      WidgetsBinding.instance.platformDispatcher.locale,
+    );
+    final cuteTextTheme = cuteTextThemeForLanguage(language);
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -126,7 +129,7 @@ class _SupportHomePageState extends State<SupportHomePage> {
       labelColor: Color(0xFF4A4945),
       shapeColor: Color(0xFFFF9F58),
       shapeStyle: BlobShapeStyle.wonkyHeart,
-      widthFactor: 0.31,
+      widthFactor: 0.4,
       heightFactor: 0.22,
       initialCenter: Offset(0.24, 0.80),
       initialVelocity: Offset(16, -9),
@@ -206,7 +209,9 @@ class _SupportHomePageState extends State<SupportHomePage> {
     );
     final prefs = await SharedPreferences.getInstance();
     final savedName = prefs.getString(_userNameKey)?.trim() ?? '';
-    final jsonString = await rootBundle.loadString(_assetPathForLanguage(language));
+    final jsonString = await rootBundle.loadString(
+      _assetPathForLanguage(language),
+    );
     final decoded = json.decode(jsonString) as List<dynamic>;
     final messages = decoded
         .map((item) => SupportMessage.fromJson(item as Map<String, dynamic>))
@@ -264,7 +269,8 @@ class _SupportHomePageState extends State<SupportHomePage> {
             ),
             title: Text(
               _strings.nameDialogTitle,
-              style: GoogleFonts.gaegu(
+              style: cuteTextStyle(
+                _language,
                 color: const Color(0xFF3E4C44),
                 fontWeight: FontWeight.w700,
                 fontSize: 28,
@@ -276,10 +282,7 @@ class _SupportHomePageState extends State<SupportHomePage> {
               children: [
                 Text(
                   _strings.nameDialogBody,
-                  style: const TextStyle(
-                    color: Color(0xFF647069),
-                    height: 1.5,
-                  ),
+                  style: const TextStyle(color: Color(0xFF647069), height: 1.5),
                 ),
                 const SizedBox(height: 16),
                 TextField(
@@ -402,34 +405,35 @@ class _SupportHomePageState extends State<SupportHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    final backgroundDecoration = _step == AppStep.mood
-        ? const BoxDecoration(color: Color(0xFFFFF5E6))
-        : const BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-              colors: [
-                Color(0xFFFFF8E8),
-                Color(0xFFFFF1DC),
-                Color(0xFFF8E9D7),
-              ],
-            ),
-          );
+    final backgroundDecoration =
+        _step == AppStep.mood
+            ? const BoxDecoration(color: Color(0xFFFFF5E6))
+            : const BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: [
+                  Color(0xFFFFF8E8),
+                  Color(0xFFFFF1DC),
+                  Color(0xFFF8E9D7),
+                ],
+              ),
+            );
 
     return Scaffold(
-      backgroundColor:
-          _step == AppStep.mood ? const Color(0xFFFFF5E6) : null,
+      backgroundColor: _step == AppStep.mood ? const Color(0xFFFFF5E6) : null,
       body: DecoratedBox(
         decoration: backgroundDecoration,
         child: SafeArea(
-          child: _isInitializing
-              ? const Center(child: CircularProgressIndicator())
-              : AnimatedSwitcher(
-                  duration: const Duration(milliseconds: 650),
-                  switchInCurve: Curves.easeOutCubic,
-                  switchOutCurve: Curves.easeInCubic,
-                  child: _buildStepContent(),
-                ),
+          child:
+              _isInitializing
+                  ? const Center(child: CircularProgressIndicator())
+                  : AnimatedSwitcher(
+                    duration: const Duration(milliseconds: 650),
+                    switchInCurve: Curves.easeOutCubic,
+                    switchOutCurve: Curves.easeInCubic,
+                    child: _buildStepContent(),
+                  ),
         ),
       ),
     );

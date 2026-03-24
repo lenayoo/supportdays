@@ -169,7 +169,8 @@ class _EntryStepState extends State<_EntryStep>
                                       widget.strings.entryButton,
                                       maxLines: 1,
                                       softWrap: false,
-                                      style: GoogleFonts.gaegu(
+                                      style: cuteTextStyle(
+                                        widget.strings.language,
                                         fontSize: 52,
                                         fontWeight: FontWeight.w700,
                                         color: const Color(0xFF2C2421),
@@ -225,7 +226,8 @@ class _MoodStep extends StatelessWidget {
                       name.isEmpty
                           ? strings.moodPrompt
                           : strings.moodPromptWithName(name),
-                      style: GoogleFonts.gaegu(
+                      style: cuteTextStyle(
+                        strings.language,
                         fontSize: 30,
                         fontWeight: FontWeight.w700,
                         color: const Color(0xFF28211F),
@@ -519,7 +521,10 @@ class _FloatingBlobWidget extends StatelessWidget {
                     child: Text(
                       label,
                       textAlign: TextAlign.center,
-                      style: GoogleFonts.gaegu(
+                      style: cuteTextStyle(
+                        AppLanguage.fromLocale(
+                          WidgetsBinding.instance.platformDispatcher.locale,
+                        ),
                         fontSize: min(width, height) * 0.15,
                         fontWeight: FontWeight.w700,
                         color: blob.mood.labelColor,
@@ -641,7 +646,8 @@ class _LoadingStepState extends State<_LoadingStep>
                 ? widget.strings.loadingTitle
                 : widget.strings.loadingTitleWithName(widget.name),
             textAlign: TextAlign.center,
-            style: GoogleFonts.gaegu(
+            style: cuteTextStyle(
+              widget.strings.language,
               fontSize: 32,
               fontWeight: FontWeight.w700,
               color: const Color(0xFF302825),
@@ -705,7 +711,8 @@ class _ResultStep extends StatelessWidget {
                         name.isEmpty
                             ? strings.resultTitle
                             : strings.resultTitleWithName(name),
-                        style: GoogleFonts.gaegu(
+                        style: cuteTextStyle(
+                          strings.language,
                           fontSize: 34,
                           fontWeight: FontWeight.w700,
                           color: const Color(0xFF2F2A27),
@@ -716,16 +723,16 @@ class _ResultStep extends StatelessWidget {
                         width: double.infinity,
                         padding: const EdgeInsets.fromLTRB(24, 28, 24, 24),
                         decoration: BoxDecoration(
-                          color: const Color(0xFFFFFCF6).withValues(alpha: 0.82),
+                          color: const Color(0xFFFFFBF5).withValues(alpha: 0.88),
                           borderRadius: BorderRadius.circular(32),
                           border: Border.all(
-                            color: Colors.white.withValues(alpha: 0.56),
+                            color: Colors.white.withValues(alpha: 0.72),
                           ),
                           boxShadow: const [
                             BoxShadow(
-                              color: Color(0x12000000),
-                              blurRadius: 28,
-                              offset: Offset(0, 14),
+                              color: Color(0x0E6E5447),
+                              blurRadius: 24,
+                              offset: Offset(0, 12),
                             ),
                           ],
                         ),
@@ -738,21 +745,24 @@ class _ResultStep extends StatelessWidget {
                                 children: [
                                   Text(
                                     message.title,
-                                    style: theme.textTheme.displaySmall?.copyWith(
-                                      color: const Color(0xFF2D312F),
-                                      fontWeight: FontWeight.w700,
+                                    style: cuteTextStyle(
+                                      strings.language,
+                                      fontSize: 40,
+                                      fontWeight: FontWeight.w500,
+                                      color: const Color(0xFF64534C),
                                       height: 1.15,
                                     ),
                                   ),
                                   const SizedBox(height: 22),
                                   Text(
                                     message.flowReading,
-                                    style: theme.textTheme.headlineSmall
-                                        ?.copyWith(
-                                          color: const Color(0xFF45413E),
-                                          fontWeight: FontWeight.w600,
-                                          height: 1.45,
-                                        ),
+                                    style: cuteTextStyle(
+                                      strings.language,
+                                      fontSize: 28,
+                                      fontWeight: FontWeight.w400,
+                                      color: const Color(0xFF75645D),
+                                      height: 1.55,
+                                    ),
                                   ),
                                   const SizedBox(height: 24),
                                   _InfoSection(

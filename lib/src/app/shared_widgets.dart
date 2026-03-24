@@ -205,7 +205,10 @@ class _NameBadge extends StatelessWidget {
             children: [
               Text(
                 text,
-                style: GoogleFonts.gaegu(
+                style: cuteTextStyle(
+                  AppLanguage.fromLocale(
+                    WidgetsBinding.instance.platformDispatcher.locale,
+                  ),
                   fontSize: 24,
                   fontWeight: FontWeight.w700,
                   color: const Color(0xFF2D2A29),
@@ -243,19 +246,27 @@ class _InfoSection extends StatelessWidget {
       children: [
         Text(
           title,
-          style: theme.textTheme.labelLarge?.copyWith(
-            color: const Color(0xFF7A897F),
-            fontWeight: FontWeight.w700,
-            letterSpacing: 0.6,
+          style: cuteTextStyle(
+            AppLanguage.fromLocale(
+              WidgetsBinding.instance.platformDispatcher.locale,
+            ),
+            fontSize: 22,
+            fontWeight: FontWeight.w500,
+            color: const Color(0xFF9B847A),
+            letterSpacing: 0.3,
           ),
         ),
         const SizedBox(height: 8),
         Text(
           text,
-          style: theme.textTheme.titleMedium?.copyWith(
-            color: const Color(0xFF5B6962),
+          style: cuteTextStyle(
+            AppLanguage.fromLocale(
+              WidgetsBinding.instance.platformDispatcher.locale,
+            ),
+            fontSize: 25,
+            fontWeight: FontWeight.w400,
+            color: const Color(0xFF7A6A63),
             height: 1.5,
-            fontWeight: FontWeight.w500,
           ),
         ),
       ],

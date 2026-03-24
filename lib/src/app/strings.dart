@@ -1,5 +1,44 @@
 part of supportdays_app;
 
+TextTheme cuteTextThemeForLanguage(AppLanguage language) {
+  switch (language) {
+    case AppLanguage.japanese:
+      return GoogleFonts.zenMaruGothicTextTheme();
+    case AppLanguage.korean:
+    case AppLanguage.english:
+      return GoogleFonts.gaeguTextTheme();
+  }
+}
+
+TextStyle cuteTextStyle(
+  AppLanguage language, {
+  double? fontSize,
+  FontWeight? fontWeight,
+  Color? color,
+  double? height,
+  double? letterSpacing,
+}) {
+  switch (language) {
+    case AppLanguage.japanese:
+      return GoogleFonts.zenMaruGothic(
+        fontSize: fontSize,
+        fontWeight: fontWeight,
+        color: color,
+        height: height,
+        letterSpacing: letterSpacing,
+      );
+    case AppLanguage.korean:
+    case AppLanguage.english:
+      return GoogleFonts.gaegu(
+        fontSize: fontSize,
+        fontWeight: fontWeight,
+        color: color,
+        height: height,
+        letterSpacing: letterSpacing,
+      );
+  }
+}
+
 class AppStrings {
   const AppStrings(this.language);
 
@@ -54,7 +93,7 @@ class AppStrings {
       case AppLanguage.korean:
         return '너의 오늘을 응원해';
       case AppLanguage.japanese:
-        return '今日のあなたを応援するよ';
+        return '今日のあなたを応援します';
       case AppLanguage.english:
         return 'Cheering for your today';
     }
@@ -65,7 +104,7 @@ class AppStrings {
       case AppLanguage.korean:
         return '너의 오늘을 응원해';
       case AppLanguage.japanese:
-        return '今日のあなたを応援して';
+        return '今日のあなたに、エールを';
       case AppLanguage.english:
         return 'Cheer My Day';
     }
@@ -87,7 +126,7 @@ class AppStrings {
       case AppLanguage.korean:
         return '$name의 display';
       case AppLanguage.japanese:
-        return '$name の display';
+        return '$nameのdisplay';
       case AppLanguage.english:
         return '$name display';
     }
@@ -142,7 +181,7 @@ class AppStrings {
       case AppLanguage.korean:
         return '$name의 오늘의 응원을 고르고 있어';
       case AppLanguage.japanese:
-        return '$name の今日の応援を選んでいるよ';
+        return '$nameの今日の応援を選んでいるよ';
       case AppLanguage.english:
         return 'Choosing today\'s message for $name';
     }
@@ -153,7 +192,7 @@ class AppStrings {
       case AppLanguage.korean:
         return '$mood 감정에 맞는 응원을 천천히 건져 올리는 중이야.';
       case AppLanguage.japanese:
-        return '$mood に合う応援をゆっくりすくい上げているところ。';
+        return '$moodに合う応援をゆっくりすくい上げているところ。';
       case AppLanguage.english:
         return 'Slowly lifting up message that matches $mood.';
     }
@@ -175,7 +214,7 @@ class AppStrings {
       case AppLanguage.korean:
         return '$name, 오늘의 응원이 도착했어';
       case AppLanguage.japanese:
-        return '$name への今日の応援が届いたよ';
+        return '$nameへの今日の応援が届いたよ';
       case AppLanguage.english:
         return '$name, your message for today';
     }
