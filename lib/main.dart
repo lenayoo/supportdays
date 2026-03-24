@@ -70,6 +70,7 @@ class _SupportHomePageState extends State<SupportHomePage> {
       key: 'tired',
       labelColor: Color(0xFF4B4A47),
       shapeColor: Color(0xFFFFD38C),
+      shapeStyle: BlobShapeStyle.softPebble,
       widthFactor: 0.29,
       heightFactor: 0.24,
       initialCenter: Offset(0.23, 0.22),
@@ -78,12 +79,13 @@ class _SupportHomePageState extends State<SupportHomePage> {
       cornerB: 0.40,
       cornerC: 0.46,
       cornerD: 0.62,
-      face: BlobFaceStyle.smile,
+      face: BlobFaceStyle.crying,
     ),
     MoodOption(
       key: 'love',
       labelColor: Color(0xFF48403E),
       shapeColor: Color(0xFFF3AEC8),
+      shapeStyle: BlobShapeStyle.wideCloud,
       widthFactor: 0.30,
       heightFactor: 0.25,
       initialCenter: Offset(0.71, 0.18),
@@ -98,6 +100,7 @@ class _SupportHomePageState extends State<SupportHomePage> {
       key: 'healing',
       labelColor: Color(0xFF4D4B48),
       shapeColor: Color(0xFFFFA48E),
+      shapeStyle: BlobShapeStyle.bean,
       widthFactor: 0.20,
       heightFactor: 0.16,
       initialCenter: Offset(0.12, 0.47),
@@ -112,6 +115,7 @@ class _SupportHomePageState extends State<SupportHomePage> {
       key: 'gratitude',
       labelColor: Color(0xFF4B4B49),
       shapeColor: Color(0xFFA9BDE8),
+      shapeStyle: BlobShapeStyle.tallDrop,
       widthFactor: 0.34,
       heightFactor: 0.29,
       initialCenter: Offset(0.50, 0.46),
@@ -126,6 +130,7 @@ class _SupportHomePageState extends State<SupportHomePage> {
       key: 'motivation',
       labelColor: Color(0xFF4A4945),
       shapeColor: Color(0xFFFF9F58),
+      shapeStyle: BlobShapeStyle.wonkyHeart,
       widthFactor: 0.31,
       heightFactor: 0.22,
       initialCenter: Offset(0.24, 0.80),
@@ -140,6 +145,7 @@ class _SupportHomePageState extends State<SupportHomePage> {
       key: 'growth',
       labelColor: Color(0xFF4C4A49),
       shapeColor: Color(0xFF8F6CCD),
+      shapeStyle: BlobShapeStyle.leanPebble,
       widthFactor: 0.28,
       heightFactor: 0.25,
       initialCenter: Offset(0.76, 0.76),
@@ -154,6 +160,7 @@ class _SupportHomePageState extends State<SupportHomePage> {
       key: 'confused',
       labelColor: Color(0xFF474849),
       shapeColor: Color(0xFFC7D4F3),
+      shapeStyle: BlobShapeStyle.wideCloud,
       widthFactor: 0.25,
       heightFactor: 0.20,
       initialCenter: Offset(0.82, 0.44),
@@ -168,6 +175,7 @@ class _SupportHomePageState extends State<SupportHomePage> {
       key: 'lonely',
       labelColor: Color(0xFF484347),
       shapeColor: Color(0xFFD8B9E6),
+      shapeStyle: BlobShapeStyle.bean,
       widthFactor: 0.20,
       heightFactor: 0.17,
       initialCenter: Offset(0.50, 0.72),
@@ -528,7 +536,8 @@ class _EntryStepState extends State<_EntryStep>
                   width: width * 0.54,
                   height: height * 0.34,
                   color: const Color(0xFFFFD38C),
-                  face: BlobFaceStyle.smile,
+                  shapeStyle: BlobShapeStyle.softPebble,
+                  face: BlobFaceStyle.crying,
                 ),
                 _EntryBlob(
                   left: width * 0.46 + cos(t * 0.7) * 10,
@@ -536,6 +545,7 @@ class _EntryStepState extends State<_EntryStep>
                   width: width * 0.54,
                   height: height * 0.32,
                   color: const Color(0xFFF3AEC8),
+                  shapeStyle: BlobShapeStyle.wideCloud,
                   face: BlobFaceStyle.gentle,
                 ),
                 _EntryBlob(
@@ -544,6 +554,7 @@ class _EntryStepState extends State<_EntryStep>
                   width: width * 0.48,
                   height: height * 0.30,
                   color: const Color(0xFFA9BDE8),
+                  shapeStyle: BlobShapeStyle.tallDrop,
                   face: BlobFaceStyle.sleepy,
                 ),
                 _EntryBlob(
@@ -552,6 +563,7 @@ class _EntryStepState extends State<_EntryStep>
                   width: width * 0.34,
                   height: height * 0.20,
                   color: const Color(0xFFFFA48E),
+                  shapeStyle: BlobShapeStyle.bean,
                   face: BlobFaceStyle.smallSmile,
                 ),
                 _EntryBlob(
@@ -560,6 +572,7 @@ class _EntryStepState extends State<_EntryStep>
                   width: width * 0.52,
                   height: height * 0.24,
                   color: const Color(0xFFFF9F58),
+                  shapeStyle: BlobShapeStyle.wonkyHeart,
                   face: BlobFaceStyle.excited,
                 ),
                 _EntryBlob(
@@ -568,6 +581,7 @@ class _EntryStepState extends State<_EntryStep>
                   width: width * 0.48,
                   height: height * 0.30,
                   color: const Color(0xFF8F6CCD),
+                  shapeStyle: BlobShapeStyle.leanPebble,
                   face: BlobFaceStyle.smallSmile,
                 ),
                 Positioned.fill(
@@ -585,44 +599,46 @@ class _EntryStepState extends State<_EntryStep>
                             onTap: widget.onEditName,
                           ),
                         ),
-                        const Spacer(),
-                        Text(
-                          widget.strings.entryHeadline,
-                          textAlign: TextAlign.center,
-                          style: GoogleFonts.gaegu(
-                            fontSize: 34,
-                            fontWeight: FontWeight.w700,
-                            color: const Color(0xFF1E1A18),
-                          ),
-                        ),
-                        const SizedBox(height: 20),
-                        InkWell(
-                          onTap: widget.onStart,
-                          borderRadius: BorderRadius.circular(999),
-                          child: Ink(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 28,
-                              vertical: 14,
-                            ),
-                            decoration: BoxDecoration(
-                              color: Colors.white.withValues(alpha: 0.72),
+                        Expanded(
+                          child: Center(
+                            child: InkWell(
+                              onTap: widget.onStart,
                               borderRadius: BorderRadius.circular(999),
-                              border: Border.all(
-                                color: const Color(0xFF3B3431),
-                                width: 1.3,
-                              ),
-                            ),
-                            child: Text(
-                              widget.strings.entryButton,
-                              style: GoogleFonts.gaegu(
-                                fontSize: 28,
-                                fontWeight: FontWeight.w700,
-                                color: const Color(0xFF2C2421),
+                              child: ConstrainedBox(
+                                constraints: BoxConstraints(
+                                  maxWidth: width * 0.86,
+                                ),
+                                child: Ink(
+                                  padding: const EdgeInsets.symmetric(
+                                    horizontal: 52,
+                                    vertical: 24,
+                                  ),
+                                  decoration: BoxDecoration(
+                                    color: Colors.white.withValues(alpha: 0.72),
+                                    borderRadius: BorderRadius.circular(999),
+                                    border: Border.all(
+                                      color: const Color(0xFF3B3431),
+                                      width: 1.3,
+                                    ),
+                                  ),
+                                  child: FittedBox(
+                                    fit: BoxFit.scaleDown,
+                                    child: Text(
+                                      widget.strings.entryButton,
+                                      maxLines: 1,
+                                      softWrap: false,
+                                      style: GoogleFonts.gaegu(
+                                        fontSize: 52,
+                                        fontWeight: FontWeight.w700,
+                                        color: const Color(0xFF2C2421),
+                                      ),
+                                    ),
+                                  ),
+                                ),
                               ),
                             ),
                           ),
                         ),
-                        const SizedBox(height: 28),
                       ],
                     ),
                   ),
@@ -922,6 +938,7 @@ class _FloatingBlobWidget extends StatelessWidget {
           child: CustomPaint(
             painter: _BlobPainter(
               color: blob.mood.shapeColor,
+              shapeStyle: blob.mood.shapeStyle,
               cornerA: blob.mood.cornerA,
               cornerB: blob.mood.cornerB,
               cornerC: blob.mood.cornerC,
@@ -1402,6 +1419,7 @@ class _EntryBlob extends StatelessWidget {
     required this.width,
     required this.height,
     required this.color,
+    required this.shapeStyle,
     required this.face,
   });
 
@@ -1410,10 +1428,14 @@ class _EntryBlob extends StatelessWidget {
   final double width;
   final double height;
   final Color color;
+  final BlobShapeStyle shapeStyle;
   final BlobFaceStyle face;
 
   @override
   Widget build(BuildContext context) {
+    final faceColor = const Color(0xFF2F2927).withValues(alpha: 0.56);
+    final strokeWidth = min(width, height) * 0.013;
+
     return Positioned(
       left: left,
       top: top,
@@ -1422,6 +1444,7 @@ class _EntryBlob extends StatelessWidget {
       child: CustomPaint(
         painter: _BlobPainter(
           color: color,
+          shapeStyle: shapeStyle,
           cornerA: 0.56,
           cornerB: 0.38,
           cornerC: 0.60,
@@ -1432,7 +1455,8 @@ class _EntryBlob extends StatelessWidget {
           child: CustomPaint(
             painter: _FacePainter(
               style: face,
-              color: const Color(0xFF2F2927),
+              color: faceColor,
+              strokeWidth: strokeWidth,
             ),
           ),
         ),
@@ -1604,6 +1628,7 @@ class MoodOption {
     required this.key,
     required this.labelColor,
     required this.shapeColor,
+    required this.shapeStyle,
     required this.widthFactor,
     required this.heightFactor,
     required this.initialCenter,
@@ -1618,6 +1643,7 @@ class MoodOption {
   final String key;
   final Color labelColor;
   final Color shapeColor;
+  final BlobShapeStyle shapeStyle;
   final double widthFactor;
   final double heightFactor;
   final Offset initialCenter;
@@ -1658,7 +1684,16 @@ class SupportMessage {
   final List<String> moods;
 }
 
-enum BlobFaceStyle { smile, smallSmile, gentle, sleepy, excited }
+enum BlobFaceStyle { smile, smallSmile, gentle, sleepy, excited, crying }
+
+enum BlobShapeStyle {
+  softPebble,
+  wideCloud,
+  tallDrop,
+  bean,
+  wonkyHeart,
+  leanPebble,
+}
 
 class _BlobState {
   _BlobState({
@@ -1687,6 +1722,7 @@ class _BlobState {
 class _BlobPainter extends CustomPainter {
   const _BlobPainter({
     required this.color,
+    required this.shapeStyle,
     required this.cornerA,
     required this.cornerB,
     required this.cornerC,
@@ -1694,6 +1730,7 @@ class _BlobPainter extends CustomPainter {
   });
 
   final Color color;
+  final BlobShapeStyle shapeStyle;
   final double cornerA;
   final double cornerB;
   final double cornerC;
@@ -1701,7 +1738,21 @@ class _BlobPainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    final path = Path()
+    final path = switch (shapeStyle) {
+      BlobShapeStyle.softPebble => _buildSoftPebble(size),
+      BlobShapeStyle.wideCloud => _buildWideCloud(size),
+      BlobShapeStyle.tallDrop => _buildTallDrop(size),
+      BlobShapeStyle.bean => _buildBean(size),
+      BlobShapeStyle.wonkyHeart => _buildWonkyHeart(size),
+      BlobShapeStyle.leanPebble => _buildLeanPebble(size),
+    };
+
+    final paint = Paint()..color = color;
+    canvas.drawPath(path, paint);
+  }
+
+  Path _buildSoftPebble(Size size) {
+    return Path()
       ..moveTo(size.width * 0.18, size.height * 0.10)
       ..quadraticBezierTo(
         size.width * (0.55 + (cornerA - 0.5) * 0.22),
@@ -1728,14 +1779,204 @@ class _BlobPainter extends CustomPainter {
         size.height * 0.10,
       )
       ..close();
+  }
 
-    final paint = Paint()..color = color;
-    canvas.drawPath(path, paint);
+  Path _buildWideCloud(Size size) {
+    return Path()
+      ..moveTo(size.width * 0.12, size.height * 0.22)
+      ..quadraticBezierTo(
+        size.width * (0.40 + (cornerA - 0.5) * 0.18),
+        size.height * -0.02,
+        size.width * 0.74,
+        size.height * 0.08,
+      )
+      ..quadraticBezierTo(
+        size.width * 1.02,
+        size.height * (0.24 + (cornerB - 0.5) * 0.16),
+        size.width * 0.94,
+        size.height * 0.56,
+      )
+      ..quadraticBezierTo(
+        size.width * 0.96,
+        size.height * 0.90,
+        size.width * 0.62,
+        size.height * 0.92,
+      )
+      ..quadraticBezierTo(
+        size.width * 0.34,
+        size.height * 1.04,
+        size.width * 0.10,
+        size.height * 0.76,
+      )
+      ..quadraticBezierTo(
+        size.width * -0.02,
+        size.height * 0.46,
+        size.width * 0.12,
+        size.height * 0.22,
+      )
+      ..close();
+  }
+
+  Path _buildTallDrop(Size size) {
+    return Path()
+      ..moveTo(size.width * 0.28, size.height * 0.06)
+      ..quadraticBezierTo(
+        size.width * (0.52 + (cornerA - 0.5) * 0.18),
+        size.height * -0.02,
+        size.width * 0.80,
+        size.height * 0.12,
+      )
+      ..quadraticBezierTo(
+        size.width * 1.02,
+        size.height * (0.36 + (cornerB - 0.5) * 0.20),
+        size.width * 0.88,
+        size.height * 0.84,
+      )
+      ..quadraticBezierTo(
+        size.width * 0.72,
+        size.height * 1.02,
+        size.width * 0.40,
+        size.height * 0.95,
+      )
+      ..quadraticBezierTo(
+        size.width * 0.02,
+        size.height * 0.80,
+        size.width * 0.10,
+        size.height * 0.34,
+      )
+      ..quadraticBezierTo(
+        size.width * 0.14,
+        size.height * 0.14,
+        size.width * 0.28,
+        size.height * 0.06,
+      )
+      ..close();
+  }
+
+  Path _buildBean(Size size) {
+    return Path()
+      ..moveTo(size.width * 0.22, size.height * 0.16)
+      ..quadraticBezierTo(
+        size.width * 0.54,
+        size.height * 0.00,
+        size.width * 0.82,
+        size.height * 0.18,
+      )
+      ..quadraticBezierTo(
+        size.width * 0.98,
+        size.height * (0.40 + (cornerB - 0.5) * 0.16),
+        size.width * 0.80,
+        size.height * 0.68,
+      )
+      ..quadraticBezierTo(
+        size.width * 0.64,
+        size.height * 0.98,
+        size.width * 0.26,
+        size.height * 0.90,
+      )
+      ..quadraticBezierTo(
+        size.width * -0.02,
+        size.height * 0.72,
+        size.width * 0.08,
+        size.height * 0.42,
+      )
+      ..quadraticBezierTo(
+        size.width * 0.10,
+        size.height * 0.24,
+        size.width * 0.22,
+        size.height * 0.16,
+      )
+      ..close();
+  }
+
+  Path _buildWonkyHeart(Size size) {
+    return Path()
+      ..moveTo(size.width * 0.20, size.height * 0.30)
+      ..quadraticBezierTo(
+        size.width * 0.16,
+        size.height * 0.02,
+        size.width * 0.40,
+        size.height * 0.08,
+      )
+      ..quadraticBezierTo(
+        size.width * (0.54 + (cornerA - 0.5) * 0.10),
+        size.height * 0.12,
+        size.width * 0.58,
+        size.height * 0.26,
+      )
+      ..quadraticBezierTo(
+        size.width * 0.72,
+        size.height * 0.02,
+        size.width * 0.90,
+        size.height * 0.18,
+      )
+      ..quadraticBezierTo(
+        size.width * 1.02,
+        size.height * 0.40,
+        size.width * 0.82,
+        size.height * 0.68,
+      )
+      ..quadraticBezierTo(
+        size.width * 0.68,
+        size.height * 0.90,
+        size.width * 0.54,
+        size.height * 0.98,
+      )
+      ..quadraticBezierTo(
+        size.width * 0.34,
+        size.height * 0.90,
+        size.width * 0.16,
+        size.height * 0.68,
+      )
+      ..quadraticBezierTo(
+        size.width * 0.00,
+        size.height * 0.50,
+        size.width * 0.20,
+        size.height * 0.30,
+      )
+      ..close();
+  }
+
+  Path _buildLeanPebble(Size size) {
+    return Path()
+      ..moveTo(size.width * 0.22, size.height * 0.08)
+      ..quadraticBezierTo(
+        size.width * 0.62,
+        size.height * -0.02,
+        size.width * 0.88,
+        size.height * 0.20,
+      )
+      ..quadraticBezierTo(
+        size.width * 1.00,
+        size.height * 0.46,
+        size.width * 0.90,
+        size.height * 0.84,
+      )
+      ..quadraticBezierTo(
+        size.width * 0.70,
+        size.height * 1.02,
+        size.width * 0.24,
+        size.height * 0.92,
+      )
+      ..quadraticBezierTo(
+        size.width * 0.06,
+        size.height * 0.74,
+        size.width * 0.10,
+        size.height * 0.42,
+      )
+      ..quadraticBezierTo(
+        size.width * 0.12,
+        size.height * 0.18,
+        size.width * 0.22,
+        size.height * 0.08,
+      )
+      ..close();
   }
 
   @override
   bool shouldRepaint(covariant _BlobPainter oldDelegate) {
     return oldDelegate.color != color ||
+        oldDelegate.shapeStyle != shapeStyle ||
         oldDelegate.cornerA != cornerA ||
         oldDelegate.cornerB != cornerB ||
         oldDelegate.cornerC != cornerC ||
@@ -1747,17 +1988,19 @@ class _FacePainter extends CustomPainter {
   const _FacePainter({
     required this.style,
     required this.color,
+    this.strokeWidth,
   });
 
   final BlobFaceStyle style;
   final Color color;
+  final double? strokeWidth;
 
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
       ..color = color
       ..strokeCap = StrokeCap.round
-      ..strokeWidth = max(2.4, size.shortestSide * 0.05)
+      ..strokeWidth = strokeWidth ?? max(2.4, size.shortestSide * 0.05)
       ..style = PaintingStyle.stroke;
 
     final eyePaint = Paint()..color = color;
@@ -1800,6 +2043,19 @@ class _FacePainter extends CustomPainter {
     } else {
       canvas.drawCircle(leftEye, eyeRadius, eyePaint);
       canvas.drawCircle(rightEye, eyeRadius, eyePaint);
+
+      if (style == BlobFaceStyle.crying) {
+        final tearPaint = Paint()
+          ..color = color.withValues(alpha: 0.50)
+          ..strokeCap = StrokeCap.round
+          ..strokeWidth = paint.strokeWidth * 0.72
+          ..style = PaintingStyle.stroke;
+        canvas.drawLine(
+          Offset(leftEye.dx, leftEye.dy + eyeRadius * 1.4),
+          Offset(leftEye.dx - eyeRadius * 0.4, leftEye.dy + eyeRadius * 3.2),
+          tearPaint,
+        );
+      }
     }
 
     final mouth = Path();
@@ -1862,6 +2118,14 @@ class _FacePainter extends CustomPainter {
         }
         canvas.drawPath(mouth, paint);
         return;
+      case BlobFaceStyle.crying:
+        mouth.moveTo(size.width * 0.30, size.height * 0.70);
+        mouth.quadraticBezierTo(
+          size.width * 0.50,
+          size.height * 0.58,
+          size.width * 0.70,
+          size.height * 0.70,
+        );
     }
 
     canvas.drawPath(mouth, paint);
@@ -1869,7 +2133,9 @@ class _FacePainter extends CustomPainter {
 
   @override
   bool shouldRepaint(covariant _FacePainter oldDelegate) {
-    return oldDelegate.style != style || oldDelegate.color != color;
+    return oldDelegate.style != style ||
+        oldDelegate.color != color ||
+        oldDelegate.strokeWidth != strokeWidth;
   }
 }
 
