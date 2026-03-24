@@ -483,6 +483,7 @@ class _FloatingBlobWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final width = blob.widthFor(size);
     final height = blob.heightFor(size);
+    final fontScale = blob.mood.key == 'motivation' ? 0.88 : 1.0;
     final t = DateTime.now().millisecondsSinceEpoch / 1000;
     final wobble = sin(t * 0.8 + blob.wobbleSeed) * 6;
     final tilt = sin(t * 0.55 + blob.tiltSeed) * 0.05;
@@ -525,7 +526,7 @@ class _FloatingBlobWidget extends StatelessWidget {
                         AppLanguage.fromLocale(
                           WidgetsBinding.instance.platformDispatcher.locale,
                         ),
-                        fontSize: min(width, height) * 0.15,
+                        fontSize: min(width, height) * 0.15 * fontScale,
                         fontWeight: FontWeight.w700,
                         color: blob.mood.labelColor,
                       ),
