@@ -24,9 +24,28 @@ class _EntryStepState extends State<_EntryStep>
     vsync: this,
     duration: const Duration(seconds: 14),
   )..repeat();
+  late final _TiltMotionController _tiltController = _TiltMotionController(
+    intensity: 5.6,
+    smoothing: 0.06,
+    onChanged: (offset) {
+      if (mounted) {
+        setState(() {
+          _tiltOffset = offset;
+        });
+      }
+    },
+  );
+  Offset _tiltOffset = Offset.zero;
+
+  @override
+  void initState() {
+    super.initState();
+    _tiltController.start();
+  }
 
   @override
   void dispose() {
+    _tiltController.dispose();
     _controller.dispose();
     super.dispose();
   }
@@ -42,6 +61,7 @@ class _EntryStepState extends State<_EntryStep>
           builder: (context, constraints) {
             final width = constraints.maxWidth;
             final height = constraints.maxHeight;
+            final entryWidthBase = width > height ? height * 1.14 : width;
 
             return Stack(
               children: [
@@ -53,54 +73,54 @@ class _EntryStepState extends State<_EntryStep>
                   ),
                 ),
                 _EntryBlob(
-                  left: -width * 0.08 + sin(t) * 12,
-                  top: height * 0.02 + cos(t * 0.8) * 10,
-                  width: width * 0.54,
+                  left: -width * 0.08 + sin(t) * 12 + _tiltOffset.dx * 0.55,
+                  top: height * 0.02 + cos(t * 0.8) * 10 + _tiltOffset.dy * 0.55,
+                  width: entryWidthBase * 0.54,
                   height: height * 0.34,
                   color: const Color(0xFFFFD38C),
                   shapeStyle: BlobShapeStyle.softPebble,
                   face: BlobFaceStyle.crying,
                 ),
                 _EntryBlob(
-                  left: width * 0.46 + cos(t * 0.7) * 10,
-                  top: -height * 0.01 + sin(t * 0.9) * 12,
-                  width: width * 0.54,
+                  left: width * 0.46 + cos(t * 0.7) * 10 - _tiltOffset.dx * 0.48,
+                  top: -height * 0.01 + sin(t * 0.9) * 12 + _tiltOffset.dy * 0.44,
+                  width: entryWidthBase * 0.54,
                   height: height * 0.32,
                   color: const Color(0xFFF3AEC8),
                   shapeStyle: BlobShapeStyle.wideCloud,
                   face: BlobFaceStyle.gentle,
                 ),
                 _EntryBlob(
-                  left: width * 0.20 + sin(t * 1.1) * 8,
-                  top: height * 0.22 + cos(t * 0.6) * 14,
-                  width: width * 0.48,
+                  left: width * 0.20 + sin(t * 1.1) * 8 + _tiltOffset.dx * 0.36,
+                  top: height * 0.22 + cos(t * 0.6) * 14 - _tiltOffset.dy * 0.30,
+                  width: entryWidthBase * 0.48,
                   height: height * 0.30,
                   color: const Color(0xFFA9BDE8),
                   shapeStyle: BlobShapeStyle.tallDrop,
                   face: BlobFaceStyle.sleepy,
                 ),
                 _EntryBlob(
-                  left: -width * 0.10 + cos(t * 0.85) * 11,
-                  top: height * 0.33 + sin(t * 0.7) * 10,
-                  width: width * 0.34,
+                  left: -width * 0.10 + cos(t * 0.85) * 11 - _tiltOffset.dx * 0.28,
+                  top: height * 0.33 + sin(t * 0.7) * 10 + _tiltOffset.dy * 0.24,
+                  width: entryWidthBase * 0.34,
                   height: height * 0.20,
                   color: const Color(0xFFFFA48E),
                   shapeStyle: BlobShapeStyle.bean,
                   face: BlobFaceStyle.smallSmile,
                 ),
                 _EntryBlob(
-                  left: -width * 0.03 + sin(t * 0.75) * 10,
-                  top: height * 0.72 + cos(t * 0.95) * 12,
-                  width: width * 0.52,
+                  left: -width * 0.03 + sin(t * 0.75) * 10 + _tiltOffset.dx * 0.52,
+                  top: height * 0.72 + cos(t * 0.95) * 12 - _tiltOffset.dy * 0.62,
+                  width: entryWidthBase * 0.52,
                   height: height * 0.24,
                   color: const Color(0xFFFF9F58),
                   shapeStyle: BlobShapeStyle.wonkyHeart,
                   face: BlobFaceStyle.excited,
                 ),
                 _EntryBlob(
-                  left: width * 0.48 + cos(t * 0.8) * 10,
-                  top: height * 0.60 + sin(t * 0.92) * 14,
-                  width: width * 0.48,
+                  left: width * 0.48 + cos(t * 0.8) * 10 - _tiltOffset.dx * 0.60,
+                  top: height * 0.60 + sin(t * 0.92) * 14 - _tiltOffset.dy * 0.36,
+                  width: entryWidthBase * 0.48,
                   height: height * 0.30,
                   color: const Color(0xFF8F6CCD),
                   shapeStyle: BlobShapeStyle.leanPebble,
@@ -265,19 +285,33 @@ class _FloatingMoodFieldState extends State<_FloatingMoodField>
 
   final Random _random = Random();
   final List<_BlobState> _blobs = [];
+  late final _TiltMotionController _tiltController = _TiltMotionController(
+    intensity: 1.4,
+    smoothing: 0.05,
+    onChanged: (offset) {
+      if (mounted) {
+        setState(() {
+          _tiltOffset = offset;
+        });
+      }
+    },
+  );
 
   Size _size = Size.zero;
   Duration? _lastElapsed;
+  Offset _tiltOffset = Offset.zero;
 
   @override
   void initState() {
     super.initState();
     _controller.addListener(_tick);
+    _tiltController.start();
   }
 
   @override
   void dispose() {
     _controller.removeListener(_tick);
+    _tiltController.dispose();
     _controller.dispose();
     super.dispose();
   }
@@ -417,6 +451,7 @@ class _FloatingMoodFieldState extends State<_FloatingMoodField>
               _FloatingBlobWidget(
                 blob: blob,
                 size: _size,
+                tiltOffset: _tiltOffset,
                 label: widget.strings.moodLabel(blob.mood.key),
                 onTap: () => widget.onSelect(blob.mood),
               ),
@@ -431,12 +466,14 @@ class _FloatingBlobWidget extends StatelessWidget {
   const _FloatingBlobWidget({
     required this.blob,
     required this.size,
+    required this.tiltOffset,
     required this.label,
     required this.onTap,
   });
 
   final _BlobState blob;
   final Size size;
+  final Offset tiltOffset;
   final String label;
   final VoidCallback onTap;
 
@@ -447,10 +484,17 @@ class _FloatingBlobWidget extends StatelessWidget {
     final t = DateTime.now().millisecondsSinceEpoch / 1000;
     final wobble = sin(t * 0.8 + blob.wobbleSeed) * 6;
     final tilt = sin(t * 0.55 + blob.tiltSeed) * 0.05;
+    final parallax = Offset(
+      tiltOffset.dx * (0.36 + (blob.wobbleSeed % 1.1) * 0.12),
+      tiltOffset.dy * (0.30 + (blob.tiltSeed % 1.1) * 0.10),
+    );
 
     return Positioned(
-      left: blob.center.dx - width / 2 + wobble,
-      top: blob.center.dy - height / 2 + cos(t * 0.7 + blob.wobbleSeed) * 5,
+      left: blob.center.dx - width / 2 + wobble + parallax.dx,
+      top: blob.center.dy -
+          height / 2 +
+          cos(t * 0.7 + blob.wobbleSeed) * 5 +
+          parallax.dy,
       width: width,
       height: height,
       child: GestureDetector(

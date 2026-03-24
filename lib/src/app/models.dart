@@ -87,7 +87,10 @@ class _BlobState {
   final double wobbleSeed;
   final double tiltSeed;
 
-  double widthFor(Size size) => size.width * mood.widthFactor;
+  double widthFor(Size size) {
+    final widthBase = size.width > size.height ? size.height * 1.12 : size.width;
+    return widthBase * mood.widthFactor;
+  }
 
   double heightFor(Size size) => size.height * mood.heightFactor;
 
@@ -112,4 +115,35 @@ class _Particle {
   final double drift;
   final double speed;
   final double opacity;
+}
+
+class _TiltMotionController {
+  _TiltMotionController({
+    required this.intensity,
+    required this.smoothing,
+    required this.onChanged,
+  });
+
+  final double intensity;
+  final double smoothing;
+  final ValueChanged<Offset> onChanged;
+  StreamSubscription<UserAccelerometerEvent>? _subscription;
+  Offset _current = Offset.zero;
+
+  void start() {
+    _subscription = userAccelerometerEventStream(
+      samplingPeriod: SensorInterval.uiInterval,
+    ).listen((event) {
+      final target = Offset(
+        (-event.x).clamp(-1.4, 1.4) * intensity,
+        (event.y).clamp(-1.4, 1.4) * intensity,
+      );
+      _current = Offset.lerp(_current, target, smoothing) ?? target;
+      onChanged(_current);
+    });
+  }
+
+  Future<void> dispose() async {
+    await _subscription?.cancel();
+  }
 }
