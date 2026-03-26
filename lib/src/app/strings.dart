@@ -231,28 +231,6 @@ class AppStrings {
     }
   }
 
-  String get actionTipLabel {
-    switch (language) {
-      case AppLanguage.korean:
-        return '실천 팁';
-      case AppLanguage.japanese:
-        return '行動のヒント';
-      case AppLanguage.english:
-        return 'Action Tip';
-    }
-  }
-
-  String get summaryLabel {
-    switch (language) {
-      case AppLanguage.korean:
-        return '한 줄 요약';
-      case AppLanguage.japanese:
-        return 'ひとこと要約';
-      case AppLanguage.english:
-        return 'Summary';
-    }
-  }
-
   String moodLabel(String key) {
     switch (key) {
       case 'tired':

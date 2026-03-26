@@ -36,9 +36,7 @@ class SupportMessage {
   const SupportMessage({
     required this.id,
     required this.title,
-    required this.summary,
     required this.flowReading,
-    required this.actionTip,
     required this.moods,
   });
 
@@ -46,18 +44,14 @@ class SupportMessage {
     return SupportMessage(
       id: json['id'] as int,
       title: json['title'] as String,
-      summary: json['summary'] as String,
       flowReading: json['flow_reading'] as String,
-      actionTip: json['action_tip'] as String,
       moods: (json['mood'] as List<dynamic>).cast<String>(),
     );
   }
 
   final int id;
   final String title;
-  final String summary;
   final String flowReading;
-  final String actionTip;
   final List<String> moods;
 }
 

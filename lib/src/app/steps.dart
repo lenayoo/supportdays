@@ -765,16 +765,6 @@ class _ResultStep extends StatelessWidget {
                                       height: 1.55,
                                     ),
                                   ),
-                                  const SizedBox(height: 24),
-                                  _InfoSection(
-                                    title: strings.actionTipLabel,
-                                    text: message.actionTip,
-                                  ),
-                                  const SizedBox(height: 16),
-                                  _InfoSection(
-                                    title: strings.summaryLabel,
-                                    text: message.summary,
-                                  ),
                                 ],
                               ),
                             ),
