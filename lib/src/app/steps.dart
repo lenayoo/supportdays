@@ -74,7 +74,8 @@ class _EntryStepState extends State<_EntryStep>
                 ),
                 _EntryBlob(
                   left: -width * 0.08 + sin(t) * 12 + _tiltOffset.dx * 0.55,
-                  top: height * 0.02 + cos(t * 0.8) * 10 + _tiltOffset.dy * 0.55,
+                  top:
+                      height * 0.02 + cos(t * 0.8) * 10 + _tiltOffset.dy * 0.55,
                   width: entryWidthBase * 0.54,
                   height: height * 0.34,
                   color: const Color(0xFFFFD38C),
@@ -82,8 +83,12 @@ class _EntryStepState extends State<_EntryStep>
                   face: BlobFaceStyle.crying,
                 ),
                 _EntryBlob(
-                  left: width * 0.46 + cos(t * 0.7) * 10 - _tiltOffset.dx * 0.48,
-                  top: -height * 0.01 + sin(t * 0.9) * 12 + _tiltOffset.dy * 0.44,
+                  left:
+                      width * 0.46 + cos(t * 0.7) * 10 - _tiltOffset.dx * 0.48,
+                  top:
+                      -height * 0.01 +
+                      sin(t * 0.9) * 12 +
+                      _tiltOffset.dy * 0.44,
                   width: entryWidthBase * 0.54,
                   height: height * 0.32,
                   color: const Color(0xFFF3AEC8),
@@ -92,7 +97,8 @@ class _EntryStepState extends State<_EntryStep>
                 ),
                 _EntryBlob(
                   left: width * 0.20 + sin(t * 1.1) * 8 + _tiltOffset.dx * 0.36,
-                  top: height * 0.22 + cos(t * 0.6) * 14 - _tiltOffset.dy * 0.30,
+                  top:
+                      height * 0.22 + cos(t * 0.6) * 14 - _tiltOffset.dy * 0.30,
                   width: entryWidthBase * 0.48,
                   height: height * 0.30,
                   color: const Color(0xFFA9BDE8),
@@ -100,8 +106,12 @@ class _EntryStepState extends State<_EntryStep>
                   face: BlobFaceStyle.sleepy,
                 ),
                 _EntryBlob(
-                  left: -width * 0.10 + cos(t * 0.85) * 11 - _tiltOffset.dx * 0.28,
-                  top: height * 0.33 + sin(t * 0.7) * 10 + _tiltOffset.dy * 0.24,
+                  left:
+                      -width * 0.10 +
+                      cos(t * 0.85) * 11 -
+                      _tiltOffset.dx * 0.28,
+                  top:
+                      height * 0.33 + sin(t * 0.7) * 10 + _tiltOffset.dy * 0.24,
                   width: entryWidthBase * 0.34,
                   height: height * 0.20,
                   color: const Color(0xFFFFA48E),
@@ -109,8 +119,14 @@ class _EntryStepState extends State<_EntryStep>
                   face: BlobFaceStyle.smallSmile,
                 ),
                 _EntryBlob(
-                  left: -width * 0.03 + sin(t * 0.75) * 10 + _tiltOffset.dx * 0.52,
-                  top: height * 0.72 + cos(t * 0.95) * 12 - _tiltOffset.dy * 0.62,
+                  left:
+                      -width * 0.03 +
+                      sin(t * 0.75) * 10 +
+                      _tiltOffset.dx * 0.52,
+                  top:
+                      height * 0.72 +
+                      cos(t * 0.95) * 12 -
+                      _tiltOffset.dy * 0.62,
                   width: entryWidthBase * 0.52,
                   height: height * 0.24,
                   color: const Color(0xFFFF9F58),
@@ -118,8 +134,12 @@ class _EntryStepState extends State<_EntryStep>
                   face: BlobFaceStyle.excited,
                 ),
                 _EntryBlob(
-                  left: width * 0.48 + cos(t * 0.8) * 10 - _tiltOffset.dx * 0.60,
-                  top: height * 0.60 + sin(t * 0.92) * 14 - _tiltOffset.dy * 0.36,
+                  left:
+                      width * 0.48 + cos(t * 0.8) * 10 - _tiltOffset.dx * 0.60,
+                  top:
+                      height * 0.60 +
+                      sin(t * 0.92) * 14 -
+                      _tiltOffset.dy * 0.36,
                   width: entryWidthBase * 0.48,
                   height: height * 0.30,
                   color: const Color(0xFF8F6CCD),
@@ -135,9 +155,12 @@ class _EntryStepState extends State<_EntryStep>
                         Align(
                           alignment: Alignment.topRight,
                           child: _NameBadge(
-                            text: widget.name.isEmpty
-                                ? widget.strings.entryHeader
-                                : widget.strings.entryHeaderWithName(widget.name),
+                            text:
+                                widget.name.isEmpty
+                                    ? widget.strings.entryHeader
+                                    : widget.strings.entryHeaderWithName(
+                                      widget.name,
+                                    ),
                             onTap: widget.onEditName,
                           ),
                         ),
@@ -279,11 +302,7 @@ class _FloatingMoodFieldState extends State<_FloatingMoodField>
     with SingleTickerProviderStateMixin {
   late final AnimationController _controller = AnimationController.unbounded(
     vsync: this,
-  )..repeat(
-      min: 0,
-      max: 1,
-      period: const Duration(seconds: 1),
-    );
+  )..repeat(min: 0, max: 1, period: const Duration(seconds: 1));
 
   final Random _random = Random();
   final List<_BlobState> _blobs = [];
@@ -348,7 +367,8 @@ class _FloatingMoodFieldState extends State<_FloatingMoodField>
     }
 
     final lastElapsed = _lastElapsed ?? elapsed;
-    var dt = (elapsed - lastElapsed).inMicroseconds / Duration.microsecondsPerSecond;
+    var dt =
+        (elapsed - lastElapsed).inMicroseconds / Duration.microsecondsPerSecond;
     _lastElapsed = elapsed;
     if (dt <= 0) {
       return;
@@ -387,7 +407,8 @@ class _FloatingMoodFieldState extends State<_FloatingMoodField>
         final b = _blobs[j];
         final delta = b.center - a.center;
         final distance = delta.distance;
-        final minDistance = a.collisionRadiusFor(_size) + b.collisionRadiusFor(_size);
+        final minDistance =
+            a.collisionRadiusFor(_size) + b.collisionRadiusFor(_size);
         if (distance == 0 || distance >= minDistance) {
           continue;
         }
@@ -423,10 +444,11 @@ class _FloatingMoodFieldState extends State<_FloatingMoodField>
     return LayoutBuilder(
       builder: (context, constraints) {
         final newSize = Size(constraints.maxWidth, constraints.maxHeight);
-        final sizeDelta = Offset(
-          _size.width - newSize.width,
-          _size.height - newSize.height,
-        ).distance;
+        final sizeDelta =
+            Offset(
+              _size.width - newSize.width,
+              _size.height - newSize.height,
+            ).distance;
         if (sizeDelta > 1 || _blobs.isEmpty) {
           _size = newSize;
           _lastElapsed = null;
@@ -494,7 +516,8 @@ class _FloatingBlobWidget extends StatelessWidget {
 
     return Positioned(
       left: blob.center.dx - width / 2 + wobble + parallax.dx,
-      top: blob.center.dy -
+      top:
+          blob.center.dy -
           height / 2 +
           cos(t * 0.7 + blob.wobbleSeed) * 5 +
           parallax.dy,
@@ -706,15 +729,18 @@ class _ResultStep extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
-                        name.isEmpty
-                            ? strings.resultTitle
-                            : strings.resultTitleWithName(name),
-                        style: cuteTextStyle(
-                          strings.language,
-                          fontSize: 34,
-                          fontWeight: FontWeight.w700,
-                          color: const Color(0xFF2F2A27),
+                      Transform.translate(
+                        offset: const Offset(0, 50),
+                        child: Text(
+                          name.isEmpty
+                              ? strings.resultTitle
+                              : strings.resultTitleWithName(name),
+                          style: cuteTextStyle(
+                            strings.language,
+                            fontSize: 34,
+                            fontWeight: FontWeight.w400,
+                            color: const Color(0xFF2F2A27),
+                          ),
                         ),
                       ),
                       const SizedBox(height: 14),
@@ -722,7 +748,9 @@ class _ResultStep extends StatelessWidget {
                         width: double.infinity,
                         padding: const EdgeInsets.fromLTRB(24, 28, 24, 24),
                         decoration: BoxDecoration(
-                          color: const Color(0xFFFFFBF5).withValues(alpha: 0.88),
+                          color: const Color(
+                            0xFFFFFBF5,
+                          ).withValues(alpha: 0.88),
                           borderRadius: BorderRadius.circular(32),
                           border: Border.all(
                             color: Colors.white.withValues(alpha: 0.72),
@@ -746,7 +774,7 @@ class _ResultStep extends StatelessWidget {
                                     message.title,
                                     style: cuteTextStyle(
                                       strings.language,
-                                      fontSize: 40,
+                                      fontSize: 38,
                                       fontWeight: FontWeight.w500,
                                       color: const Color(0xFF64534C),
                                       height: 1.15,
@@ -757,7 +785,7 @@ class _ResultStep extends StatelessWidget {
                                     message.flowReading,
                                     style: cuteTextStyle(
                                       strings.language,
-                                      fontSize: 28,
+                                      fontSize: 26,
                                       fontWeight: FontWeight.w400,
                                       color: const Color(0xFF75645D),
                                       height: 1.55,

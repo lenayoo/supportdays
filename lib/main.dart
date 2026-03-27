@@ -16,6 +16,10 @@ part 'src/app/shared_widgets.dart';
 part 'src/app/steps.dart';
 part 'src/app/strings.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+  ]);
   runApp(const SupportDaysApp());
 }
