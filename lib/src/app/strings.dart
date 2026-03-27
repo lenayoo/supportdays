@@ -113,22 +113,24 @@ class AppStrings {
   String get entryHeader {
     switch (language) {
       case AppLanguage.korean:
-        return 'entry display';
+        return 'name';
       case AppLanguage.japanese:
-        return 'entry display';
+        return 'name';
       case AppLanguage.english:
-        return 'entry display';
+        return 'name';
     }
   }
 
   String entryHeaderWithName(String name) {
+    final trimmedName = name.trim();
+
     switch (language) {
       case AppLanguage.korean:
-        return '$name의 display';
+        return trimmedName.isEmpty ? '🤍' : '$trimmedName';
       case AppLanguage.japanese:
-        return '$nameのdisplay';
+        return trimmedName.isEmpty ? '🤍' : '$trimmedName';
       case AppLanguage.english:
-        return '$name display';
+        return trimmedName.isEmpty ? '🤍' : '$trimmedName';
     }
   }
 
@@ -144,13 +146,19 @@ class AppStrings {
   }
 
   String moodPromptWithName(String name) {
+    final trimmedName = name.trim();
+
+    if (trimmedName.isEmpty) {
+      return moodPrompt;
+    }
+
     switch (language) {
       case AppLanguage.korean:
-        return '$name, 지금 마음에 닿는 감정을 골라줘';
+        return '$trimmedName, 지금 마음에 닿는 감정을 골라줘';
       case AppLanguage.japanese:
-        return '$name、今の気持ちに近いものを選んで';
+        return '$trimmedName、今の気持ちに近いものを選んで';
       case AppLanguage.english:
-        return '$name, pick the feeling that fits right now';
+        return '$trimmedName, pick the feeling that fits right now';
     }
   }
 
@@ -177,13 +185,19 @@ class AppStrings {
   }
 
   String loadingTitleWithName(String name) {
+    final trimmedName = name.trim();
+
+    if (trimmedName.isEmpty) {
+      return loadingTitle;
+    }
+
     switch (language) {
       case AppLanguage.korean:
-        return '$name의 오늘의 응원을 고르고 있어';
+        return '$trimmedName의 오늘의 응원을 고르고 있어';
       case AppLanguage.japanese:
-        return '$nameの今日の応援を選んでいるよ';
+        return '$trimmedNameの今日の応援を選んでいるよ';
       case AppLanguage.english:
-        return 'Choosing today\'s message for $name';
+        return 'Choosing today\'s message for $trimmedName';
     }
   }
 
@@ -210,13 +224,19 @@ class AppStrings {
   }
 
   String resultTitleWithName(String name) {
+    final trimmedName = name.trim();
+
+    if (trimmedName.isEmpty) {
+      return resultTitle;
+    }
+
     switch (language) {
       case AppLanguage.korean:
-        return '$name, 오늘의 응원이 도착했어';
+        return '$trimmedName, 오늘의 응원이 도착했어';
       case AppLanguage.japanese:
-        return '$nameへの今日の応援が届いたよ';
+        return '$trimmedNameへの今日の応援が届いたよ';
       case AppLanguage.english:
-        return '$name, your message for today';
+        return '$trimmedName, your message for today';
     }
   }
 

@@ -746,7 +746,7 @@ class _ResultStep extends StatelessWidget {
                       const SizedBox(height: 14),
                       Container(
                         width: double.infinity,
-                        padding: const EdgeInsets.fromLTRB(24, 28, 24, 24),
+                        padding: const EdgeInsets.fromLTRB(24, 28, 24, 39),
                         decoration: BoxDecoration(
                           color: const Color(
                             0xFFFFFBF5,
