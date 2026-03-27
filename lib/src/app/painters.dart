@@ -1,4 +1,4 @@
-part of supportdays_app;
+part of '../../main.dart';
 
 class _BlobPainter extends CustomPainter {
   const _BlobPainter({

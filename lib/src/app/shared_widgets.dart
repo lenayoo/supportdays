@@ -1,4 +1,4 @@
-part of supportdays_app;
+part of '../../main.dart';
 
 class _ResultBackdrop extends StatelessWidget {
   const _ResultBackdrop({
@@ -228,51 +228,6 @@ class _NameBadge extends StatelessWidget {
   }
 }
 
-class _InfoSection extends StatelessWidget {
-  const _InfoSection({
-    required this.title,
-    required this.text,
-  });
-
-  final String title;
-  final String text;
-
-  @override
-  Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          title,
-          style: cuteTextStyle(
-            AppLanguage.fromLocale(
-              WidgetsBinding.instance.platformDispatcher.locale,
-            ),
-            fontSize: 22,
-            fontWeight: FontWeight.w500,
-            color: const Color(0xFF9B847A),
-            letterSpacing: 0.3,
-          ),
-        ),
-        const SizedBox(height: 8),
-        Text(
-          text,
-          style: cuteTextStyle(
-            AppLanguage.fromLocale(
-              WidgetsBinding.instance.platformDispatcher.locale,
-            ),
-            fontSize: 25,
-            fontWeight: FontWeight.w400,
-            color: const Color(0xFF7A6A63),
-            height: 1.5,
-          ),
-        ),
-      ],
-    );
-  }
-}
 
 class _MoodTag extends StatelessWidget {
   const _MoodTag({

@@ -1,7 +1,3 @@
-// ignore_for_file: unnecessary_library_name
-
-library supportdays_app;
-
 import 'dart:convert';
 import 'dart:math';
 import 'dart:ui' as ui;

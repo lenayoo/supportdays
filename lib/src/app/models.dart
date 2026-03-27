@@ -1,4 +1,4 @@
-part of supportdays_app;
+part of '../../main.dart';
 
 class MoodOption {
   const MoodOption({

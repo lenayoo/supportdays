@@ -1,4 +1,4 @@
-part of supportdays_app;
+part of '../../main.dart';
 
 class _EntryStep extends StatefulWidget {
   const _EntryStep({
@@ -689,8 +689,6 @@ class _ResultStep extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-
     return Stack(
       children: [
         Positioned.fill(child: _ResultBackdrop(mood: mood)),

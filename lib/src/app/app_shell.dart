@@ -1,4 +1,4 @@
-part of supportdays_app;
+part of '../../main.dart';
 
 class SupportDaysApp extends StatelessWidget {
   const SupportDaysApp({super.key});
