@@ -998,5 +998,1005 @@
       "motivation",
       "growth"
     ]
+  },
+  {
+    "id": 101,
+    "result_type": "motivation_after_reset",
+    "title": "Even after a reset, the flow can continue",
+    "flow_reading": "A brief stop does not always mean everything has been broken. Right now, it may matter more to get your hands moving again than to restart perfectly from the beginning.",
+    "mood": [
+      "motivation",
+      "healing"
+    ]
+  },
+  {
+    "id": 102,
+    "result_type": "love_needs_honesty",
+    "title": "Relationships become clearer through honesty",
+    "flow_reading": "You may be hiding too much of your heart in the name of being considerate. The more gently but truthfully you express yourself, the clearer the direction of the relationship may become.",
+    "mood": [
+      "love",
+      "confused"
+    ]
+  },
+  {
+    "id": 103,
+    "result_type": "tired_mind_needs_space",
+    "title": "A tired heart needs space first",
+    "flow_reading": "The more you try to fill every gap right now, the heavier everything may feel. This may be a time when making room matters more than forcing an answer.",
+    "mood": [
+      "tired",
+      "healing"
+    ]
+  },
+  {
+    "id": 104,
+    "result_type": "gratitude_for_small_progress",
+    "title": "Small progress still matters",
+    "flow_reading": "You may need to stop treating only big changes as real progress. The more you acknowledge subtle movement, the more steadily your inner strength may grow.",
+    "mood": [
+      "gratitude",
+      "growth"
+    ]
+  },
+  {
+    "id": 105,
+    "result_type": "lonely_but_not_lost",
+    "title": "Time alone does not mean you are lost",
+    "flow_reading": "This quiet season does not necessarily mean you have been abandoned. It may also be a time when you can hear your own standards more clearly because outside noise has softened.",
+    "mood": [
+      "lonely",
+      "healing"
+    ]
+  },
+  {
+    "id": 106,
+    "result_type": "growth_after_discomfort",
+    "title": "Growth may be hiding in slight discomfort",
+    "flow_reading": "If you chase only comfort, the expansion you need right now may be delayed. Not painful struggle, but unfamiliar challenge may suit this flow better.",
+    "mood": [
+      "growth",
+      "motivation"
+    ]
+  },
+  {
+    "id": 107,
+    "result_type": "confused_needs_less_noise",
+    "title": "When you are confused, reduce noise before seeking more answers",
+    "flow_reading": "This confusion may be coming less from too little information and more from too much of it. If you keep only a few truly important standards, the answer may feel closer.",
+    "mood": [
+      "confused",
+      "healing"
+    ]
+  },
+  {
+    "id": 108,
+    "result_type": "love_with_slow_trust",
+    "title": "Trust that builds slowly may last longer",
+    "flow_reading": "This may be a moment when repeated stability matters more than intense emotion. Instead of chasing quick certainty, watch the rhythm that keeps returning naturally.",
+    "mood": [
+      "love",
+      "healing"
+    ]
+  },
+  {
+    "id": 109,
+    "result_type": "motivation_returns_in_motion",
+    "title": "Motivation may return once you start moving",
+    "flow_reading": "If you wait until you feel ready, everything may stall even longer. Right now, moving your body first may bring back energy more naturally than trying to summon it mentally.",
+    "mood": [
+      "motivation",
+      "tired"
+    ]
+  },
+  {
+    "id": 110,
+    "result_type": "healing_needs_gentle_routine",
+    "title": "Recovery comes more from gentle repetition than dramatic change",
+    "flow_reading": "This may be a time when one grand decision matters less than small steady patterns. The more predictable your rhythm feels, the deeper recovery may settle in.",
+    "mood": [
+      "healing",
+      "tired"
+    ]
+  },
+  {
+    "id": 111,
+    "result_type": "gratitude_after_comparison",
+    "title": "What you have becomes clearer when comparison fades",
+    "flow_reading": "You may need to look again at what already supports your life instead of measuring your distance from others. As comparison eases, gratitude may return on its own.",
+    "mood": [
+      "gratitude",
+      "healing"
+    ]
+  },
+  {
+    "id": 112,
+    "result_type": "lonely_can_be_creative",
+    "title": "Lonely time can also open new creativity",
+    "flow_reading": "An empty social space does not have to mean only emptiness. This may also be a good time to sort your feelings and bring out a new form of expression.",
+    "mood": [
+      "lonely",
+      "growth"
+    ]
+  },
+  {
+    "id": 113,
+    "result_type": "growth_wants_patience",
+    "title": "Growth fits patience better than speed",
+    "flow_reading": "Even if visible changes are slow, that does not mean the direction is wrong. If the way you are moving is sustainable, it may already be the right flow.",
+    "mood": [
+      "growth",
+      "tired"
+    ]
+  },
+  {
+    "id": 114,
+    "result_type": "confused_heart_needs_pause",
+    "title": "The more complicated your heart feels, the more a pause may help",
+    "flow_reading": "Thinking harder may not bring the answer any faster right now. Once the emotional heat drops, things may look far simpler than they do in this moment.",
+    "mood": [
+      "confused",
+      "tired"
+    ]
+  },
+  {
+    "id": 115,
+    "result_type": "love_needs_clear_intent",
+    "title": "Clear intention matters more than vague feeling",
+    "flow_reading": "Instead of reading too much into each word, it may be wiser to watch what someone is truly trying to continue with you. Right now, direction and attitude may say more than emotion alone.",
+    "mood": [
+      "love",
+      "growth"
+    ]
+  },
+  {
+    "id": 116,
+    "result_type": "motivation_from_meaning",
+    "title": "Motivation lasts longer when your reason feels clear",
+    "flow_reading": "Pushing yourself without a meaningful reason may not hold for long. If you return to why this matters and what feeling you want to protect, your energy may reorganize itself.",
+    "mood": [
+      "motivation",
+      "gratitude"
+    ]
+  },
+  {
+    "id": 117,
+    "result_type": "healing_after_truth",
+    "title": "Rest begins after you admit the truth",
+    "flow_reading": "Some of your fatigue may be coming less from the situation itself and more from pretending you are fine. Once you admit that this is hard, recovery may open more gently.",
+    "mood": [
+      "healing",
+      "confused"
+    ]
+  },
+  {
+    "id": 118,
+    "result_type": "gratitude_for_support",
+    "title": "Support you took for granted may be worth seeing again",
+    "flow_reading": "You may need to notice not only what is missing but also what has quietly supported you all along. The more you recognize small care, the steadier your heart may feel.",
+    "mood": [
+      "gratitude",
+      "love"
+    ]
+  },
+  {
+    "id": 119,
+    "result_type": "lonely_needs_contact",
+    "title": "A small connection may help more than enduring alone",
+    "flow_reading": "This does not have to be a deep conversation. Even a light exchange of check-ins may ease the weight on your heart more than you expect.",
+    "mood": [
+      "lonely",
+      "love"
+    ]
+  },
+  {
+    "id": 120,
+    "result_type": "growth_with_self_trust",
+    "title": "Growth deepens when you trust your own rhythm",
+    "flow_reading": "Trying to match everyone else may blur your focus more than help it. Even if your pace looks different, trusting that something is accumulating may matter more right now.",
+    "mood": [
+      "growth",
+      "gratitude"
+    ]
+  },
+  {
+    "id": 121,
+    "result_type": "confused_but_close",
+    "title": "Even now, you may not be far from the answer",
+    "flow_reading": "The feeling of not knowing may sometimes mean the outline of the answer is already nearby. Instead of treating confusion as failure, it may help to ask what exactly keeps catching in your mind.",
+    "mood": [
+      "confused",
+      "growth"
+    ]
+  },
+  {
+    "id": 122,
+    "result_type": "love_after_patience",
+    "title": "Feelings sometimes grow clearer through waiting",
+    "flow_reading": "What remains after time passes may be truer than what appears instantly. If you stop rushing for certainty, you may see more clearly what is still there.",
+    "mood": [
+      "love",
+      "gratitude"
+    ]
+  },
+  {
+    "id": 123,
+    "result_type": "motivation_needs_rest_too",
+    "title": "Rest may be what helps your drive return",
+    "flow_reading": "Even if you want to keep pushing, your body may not be ready right now. In this flow, pausing may not be retreat but preparation for your next real push.",
+    "mood": [
+      "motivation",
+      "healing"
+    ]
+  },
+  {
+    "id": 124,
+    "result_type": "healing_through_order",
+    "title": "Order can restore the heart more than you expect",
+    "flow_reading": "Instead of forcing emotional clarity directly, this may be a time to build a little structure around you. As the space in front of you clears, your mind may follow.",
+    "mood": [
+      "healing",
+      "gratitude"
+    ]
+  },
+  {
+    "id": 125,
+    "result_type": "gratitude_in_ordinary_day",
+    "title": "There is strength even in an ordinary day",
+    "flow_reading": "A day without anything dramatic can still mean safety, recovery, and stability. The more you notice the power inside plainness, the steadier your heart may become.",
+    "mood": [
+      "gratitude",
+      "tired"
+    ]
+  },
+  {
+    "id": 126,
+    "result_type": "lonely_to_inner_strength",
+    "title": "Even in loneliness, your inner strength is growing",
+    "flow_reading": "As the places you leaned on grow quieter, the part of you that can stand on its own may be growing too. It may help to remember the strength hidden inside the time you have endured.",
+    "mood": [
+      "lonely",
+      "gratitude"
+    ]
+  },
+  {
+    "id": 127,
+    "result_type": "growth_after_revision",
+    "title": "Adjusting your path is also part of growth",
+    "flow_reading": "A route that changed does not have to mean a failed one. Right now, flexibility itself may be what helps you go farther.",
+    "mood": [
+      "growth",
+      "confused"
+    ]
+  },
+  {
+    "id": 128,
+    "result_type": "confused_needs_body_signal",
+    "title": "Your body may be more honest than your thoughts",
+    "flow_reading": "Thoughts can keep changing, but your body may already know what is right. Notice where tension softens and where your breathing becomes easier.",
+    "mood": [
+      "confused",
+      "healing"
+    ]
+  },
+  {
+    "id": 129,
+    "result_type": "love_grows_in_daily_life",
+    "title": "Relationships reveal themselves in daily life",
+    "flow_reading": "Big gestures do not always tell the whole truth. Right now, repeated care and ordinary consistency may show the real direction of someone's heart better than special events.",
+    "mood": [
+      "love",
+      "gratitude"
+    ]
+  },
+  {
+    "id": 130,
+    "result_type": "motivation_after_completion",
+    "title": "Finishing one thing can bring back your next wave of energy",
+    "flow_reading": "If you keep starting and never closing anything, your strength may keep leaking out. A small completion now may restore your sense of momentum more effectively than another beginning.",
+    "mood": [
+      "motivation",
+      "growth"
+    ]
+  },
+  {
+    "id": 131,
+    "result_type": "healing_does_not_rush",
+    "title": "The more you rush recovery, the farther it may feel",
+    "flow_reading": "Wanting to feel better quickly may be tightening your heart even more. Right now, how you treat yourself may matter more than how fast things improve.",
+    "mood": [
+      "healing",
+      "tired"
+    ]
+  },
+  {
+    "id": 132,
+    "result_type": "gratitude_with_self_respect",
+    "title": "Gratitude and self-respect can exist together",
+    "flow_reading": "You can appreciate kindness while still protecting your own limits. Right now, it may matter not to confuse gratitude with silent endurance.",
+    "mood": [
+      "gratitude",
+      "love"
+    ]
+  },
+  {
+    "id": 133,
+    "result_type": "lonely_after_transition",
+    "title": "Loneliness after change may be a natural stage",
+    "flow_reading": "If a familiar relationship or environment has shifted, this emptiness may not be strange at all. It may simply be the gap before a new rhythm settles in.",
+    "mood": [
+      "lonely",
+      "confused"
+    ]
+  },
+  {
+    "id": 134,
+    "result_type": "growth_through_repetition",
+    "title": "Skill may be building quietly through repetition",
+    "flow_reading": "A lack of dramatic events does not mean nothing is happening. Right now, the strength of doing the same thing well again and again may be creating the real difference.",
+    "mood": [
+      "growth",
+      "motivation"
+    ]
+  },
+  {
+    "id": 135,
+    "result_type": "confused_between_options",
+    "title": "If both paths pull you, your standards may still be blurry",
+    "flow_reading": "When several options look equally appealing, the issue may not be the lack of an answer but the lack of a sharper standard. It may help to ask what you do not want to lose.",
+    "mood": [
+      "confused",
+      "gratitude"
+    ]
+  },
+  {
+    "id": 136,
+    "result_type": "love_needs_breathing_room",
+    "title": "Even closeness needs room to breathe",
+    "flow_reading": "The more you care, the more you may want constant closeness. But right now, healthy space may help the relationship feel easier and last longer.",
+    "mood": [
+      "love",
+      "healing"
+    ]
+  },
+  {
+    "id": 137,
+    "result_type": "motivation_can_be_borrowed",
+    "title": "When your own energy is low, you can borrow momentum from outside",
+    "flow_reading": "This may be a better time to rely on structure than on willpower alone. Schedules, promises, and people beside you may hold your energy more steadily.",
+    "mood": [
+      "motivation",
+      "lonely"
+    ]
+  },
+  {
+    "id": 138,
+    "result_type": "healing_starts_with_sleep",
+    "title": "Recovery may begin with something simpler than you think",
+    "flow_reading": "This may be less about finding the perfect emotional method and more about restoring sleep and basic rhythm. Once your body steadies, your feelings may swing far less.",
+    "mood": [
+      "healing",
+      "tired"
+    ]
+  },
+  {
+    "id": 139,
+    "result_type": "gratitude_after_hard_day",
+    "title": "Even after a hard day, something still remains",
+    "flow_reading": "Even if today did not go well, it may not be true that everything was lost. If you notice even one thing you endured, learned, or kept, your heart may find its center again.",
+    "mood": [
+      "gratitude",
+      "healing"
+    ]
+  },
+  {
+    "id": 140,
+    "result_type": "lonely_needs_warmth",
+    "title": "On lonely days, warmth may matter first",
+    "flow_reading": "This may be a time when productivity matters less than a feeling of warmth and safety. A small source of comfort may hold you more than you expect right now.",
+    "mood": [
+      "lonely",
+      "tired"
+    ]
+  },
+  {
+    "id": 141,
+    "result_type": "growth_is_not_linear",
+    "title": "You are still growing even if progress wavers",
+    "flow_reading": "This shake-up does not have to mean you are going backward. Growth often includes repetition and return, and if you recover your center faster than before, something is already changing.",
+    "mood": [
+      "growth",
+      "healing"
+    ]
+  },
+  {
+    "id": 142,
+    "result_type": "confused_truth_wants_words",
+    "title": "A tangled heart often needs words",
+    "flow_reading": "If you hold everything only in your head, the same thoughts may keep swelling. Right now, turning feeling into clear sentences may help your judgment far more than silent rumination.",
+    "mood": [
+      "confused",
+      "growth"
+    ]
+  },
+  {
+    "id": 143,
+    "result_type": "love_after_reality_check",
+    "title": "Comfort in real life matters as much as excitement",
+    "flow_reading": "What pulls your heart and what can actually last may not be the same thing. Right now, it may help to ask whether being with this person feels peaceful, not only thrilling.",
+    "mood": [
+      "love",
+      "confused"
+    ]
+  },
+  {
+    "id": 144,
+    "result_type": "motivation_in_small_blocks",
+    "title": "When motivation is weak, small units are stronger",
+    "flow_reading": "If you stare at the whole goal at once, starting may feel impossible. Breaking things into tiny steps may lower resistance and bring the flow back more naturally.",
+    "mood": [
+      "motivation",
+      "confused"
+    ]
+  },
+  {
+    "id": 145,
+    "result_type": "healing_needs_no_performance",
+    "title": "You do not have to treat recovery like a performance",
+    "flow_reading": "Constantly checking how much better you are may be making it harder to breathe. This may be a time to let healing be a process instead of a score.",
+    "mood": [
+      "healing",
+      "confused"
+    ]
+  },
+  {
+    "id": 146,
+    "result_type": "gratitude_for_the_present",
+    "title": "Seeing what is here now may also protect the future",
+    "flow_reading": "When you look only at what is missing, haste may grow too quickly. The more clearly you see what is already in your hands, the calmer your next choice may become.",
+    "mood": [
+      "gratitude",
+      "confused"
+    ]
+  },
+  {
+    "id": 147,
+    "result_type": "lonely_can_seek_help",
+    "title": "Even when lonely, you still deserve help",
+    "flow_reading": "Time spent alone does not mean everything must be handled alone. Right now, revealing your heart may be less a weakness and more the direction of recovery.",
+    "mood": [
+      "lonely",
+      "healing"
+    ]
+  },
+  {
+    "id": 148,
+    "result_type": "growth_after_choosing_less",
+    "title": "Choosing less may open more room for growth",
+    "flow_reading": "The belief that more always leads to better may be hiding what truly matters. Right now, selection and simplification may carry more power than expansion.",
+    "mood": [
+      "growth",
+      "healing"
+    ]
+  },
+  {
+    "id": 149,
+    "result_type": "confused_by_pressure",
+    "title": "This confusion may be coming more from pressure than from the choice itself",
+    "flow_reading": "The burden of choosing well may be louder than the choice in front of you. If you lower the pressure a little, the answer may become much easier to see.",
+    "mood": [
+      "confused",
+      "tired"
+    ]
+  },
+  {
+    "id": 150,
+    "result_type": "love_with_boundaries",
+    "title": "Caring for someone and protecting your line can go together",
+    "flow_reading": "Wanting to keep a relationship does not mean you must accept everything. Right now, it may be healthier to build your boundaries alongside your affection.",
+    "mood": [
+      "love",
+      "healing"
+    ]
+  },
+  {
+    "id": 151,
+    "result_type": "motivation_after_clarity",
+    "title": "Energy often returns once the next step is clear",
+    "flow_reading": "It may not be that you lack motivation, but that your direction is blurred. Instead of adding more tasks, narrowing priorities may work better right now.",
+    "mood": [
+      "motivation",
+      "growth"
+    ]
+  },
+  {
+    "id": 152,
+    "result_type": "healing_from_kind_words",
+    "title": "One kind sentence may speed recovery more than you think",
+    "flow_reading": "What you need first may not be a solution but a sense of safety. Gentle words from yourself or someone else may help your heart loosen much faster.",
+    "mood": [
+      "healing",
+      "love"
+    ]
+  },
+  {
+    "id": 153,
+    "result_type": "gratitude_for_past_self",
+    "title": "You came this far because your past self kept going",
+    "flow_reading": "This may be a time to see not only what is lacking now but what your earlier self carried through. Gratitude toward your past self may restore confidence in the present.",
+    "mood": [
+      "gratitude",
+      "growth"
+    ]
+  },
+  {
+    "id": 154,
+    "result_type": "lonely_night_needs_softness",
+    "title": "At lonely night, do not treat yourself harshly",
+    "flow_reading": "At certain hours, emotion can swell and thoughts can turn more extreme. This may be a time to calm yourself first rather than force an answer.",
+    "mood": [
+      "lonely",
+      "tired"
+    ]
+  },
+  {
+    "id": 155,
+    "result_type": "growth_from_questions",
+    "title": "One good question can change growth more than many quick answers",
+    "flow_reading": "This may be a time when shaping the right question matters more than rushing toward a conclusion. The clearer the real issue becomes, the clearer the next step may feel.",
+    "mood": [
+      "growth",
+      "confused"
+    ]
+  },
+  {
+    "id": 156,
+    "result_type": "confused_needs_sleep",
+    "title": "Lack of sleep can shake the heart more than the problem itself",
+    "flow_reading": "Your worry and hesitation may be influenced less by the size of the issue and more by fatigue. After proper rest, the same situation may feel far more manageable.",
+    "mood": [
+      "confused",
+      "tired"
+    ]
+  },
+  {
+    "id": 157,
+    "result_type": "love_sees_consistency",
+    "title": "Steadiness often reveals the heart most clearly",
+    "flow_reading": "One dramatic expression may mean less than a pattern that keeps returning. Right now, it may help more to watch the texture of repeated actions than the brightness of words.",
+    "mood": [
+      "love",
+      "gratitude"
+    ]
+  },
+  {
+    "id": 158,
+    "result_type": "motivation_after_one_step",
+    "title": "One step may open more than you expect",
+    "flow_reading": "Even when there is a lot to do, the flow often changes with the first actual action. Right now, easing the friction of beginning may matter more than perfection.",
+    "mood": [
+      "motivation",
+      "confused"
+    ]
+  },
+  {
+    "id": 159,
+    "result_type": "healing_allows_sadness",
+    "title": "Feeling sadness is also part of healing",
+    "flow_reading": "You may be pushing sorrow away because of the pressure to feel better quickly. But right now, letting emotion move safely may matter more than making it disappear.",
+    "mood": [
+      "healing",
+      "lonely"
+    ]
+  },
+  {
+    "id": 160,
+    "result_type": "gratitude_builds_stability",
+    "title": "Gratitude helps you find balance when you shake",
+    "flow_reading": "When emotion feels unstable, lack may appear larger than it is. Holding onto even one small source of gratitude may help your heart regain its center.",
+    "mood": [
+      "gratitude",
+      "healing"
+    ]
+  },
+  {
+    "id": 161,
+    "result_type": "lonely_after_distance",
+    "title": "Loneliness after distance is not the whole truth of your heart",
+    "flow_reading": "Even if someone feels farther away, that does not mean all meaning is gone. It may help to see not only the loss but also the texture of what still remains.",
+    "mood": [
+      "lonely",
+      "love"
+    ]
+  },
+  {
+    "id": 162,
+    "result_type": "growth_needs_recovery",
+    "title": "If you want to go farther, recovery must come first",
+    "flow_reading": "This may not be a state where effort alone can carry you far. If you want endurance, rebuilding your base may be wiser than forcing more speed.",
+    "mood": [
+      "growth",
+      "tired"
+    ]
+  },
+  {
+    "id": 163,
+    "result_type": "confused_but_learning",
+    "title": "You are still learning even in the middle of confusion",
+    "flow_reading": "A delayed conclusion does not make this time meaningless. Learning what does not fit you may already be sharpening your standards.",
+    "mood": [
+      "confused",
+      "growth"
+    ]
+  },
+  {
+    "id": 164,
+    "result_type": "love_needs_mutuality",
+    "title": "A relationship is hard to carry with effort from only one side",
+    "flow_reading": "What matters now may be less how hard you try and more whether both people are moving together. Unbalanced effort can create exhaustion faster than love.",
+    "mood": [
+      "love",
+      "tired"
+    ]
+  },
+  {
+    "id": 165,
+    "result_type": "motivation_follows_structure",
+    "title": "Sometimes structure matters more than motivation",
+    "flow_reading": "If you wait until you feel ready, you may keep postponing movement. This may be a time when systems and routine can carry you better than mood.",
+    "mood": [
+      "motivation",
+      "growth"
+    ]
+  },
+  {
+    "id": 166,
+    "result_type": "healing_in_safe_people",
+    "title": "The heart often relaxes faster beside safe people",
+    "flow_reading": "Instead of sorting everything alone, it may help more to stay near someone who receives your feelings without exaggeration or judgment. Safety may change the speed of recovery.",
+    "mood": [
+      "healing",
+      "love"
+    ]
+  },
+  {
+    "id": 167,
+    "result_type": "gratitude_after_delay",
+    "title": "Even delayed time may leave something meaningful behind",
+    "flow_reading": "A process that took longer than expected may feel disappointing, but it may also have built standards and endurance you would not otherwise have. Right now, what remains may matter more than what was delayed.",
+    "mood": [
+      "gratitude",
+      "growth"
+    ]
+  },
+  {
+    "id": 168,
+    "result_type": "lonely_not_same_as_empty",
+    "title": "Loneliness does not mean your heart is empty",
+    "flow_reading": "Even when no one is nearby, your inner world may still hold feeling and possibility. It may help to ask again what fills you, not only what is missing.",
+    "mood": [
+      "lonely",
+      "gratitude"
+    ]
+  },
+  {
+    "id": 169,
+    "result_type": "growth_from_imperfection",
+    "title": "Growth can still be real even when things are imperfect",
+    "flow_reading": "A result with flaws does not mean everything went wrong. Right now, the ability to keep adjusting may matter far more than getting everything right at once.",
+    "mood": [
+      "growth",
+      "healing"
+    ]
+  },
+  {
+    "id": 170,
+    "result_type": "confused_when_overloaded",
+    "title": "When you carry too much, the answer can blur",
+    "flow_reading": "The real issue may not be the choice itself but the amount you are trying to hold at once. If you lighten the load, the answer may already be closer than it seems.",
+    "mood": [
+      "confused",
+      "tired"
+    ]
+  },
+  {
+    "id": 171,
+    "result_type": "love_grows_with_respect",
+    "title": "Relationships deepen when respect stays present",
+    "flow_reading": "Strong feeling alone may not carry a relationship through every season. Right now, mutual respect for each other's pace and boundaries may shape the quality of love more than intensity does.",
+    "mood": [
+      "love",
+      "growth"
+    ]
+  },
+  {
+    "id": 172,
+    "result_type": "motivation_returns_after_care",
+    "title": "After you care for yourself, motivation may find its place again",
+    "flow_reading": "This may not be about weak will at all but about a lack of basic care. As recovery fills back in, the desire to move may return more naturally.",
+    "mood": [
+      "motivation",
+      "healing"
+    ]
+  },
+  {
+    "id": 173,
+    "result_type": "healing_needs_lower_expectation",
+    "title": "Lowering the standard today may actually protect you",
+    "flow_reading": "You may feel frustrated that you cannot perform as usual. But adjusting the standard to fit your present condition may be the most realistic way to prevent collapse and protect recovery.",
+    "mood": [
+      "healing",
+      "tired"
+    ]
+  },
+  {
+    "id": 174,
+    "result_type": "gratitude_for_one_person",
+    "title": "One person can be a bigger source of strength than you think",
+    "flow_reading": "You do not need many people right now. Remembering just one person who is truly on your side may restore more safety and steadiness than expected.",
+    "mood": [
+      "gratitude",
+      "love"
+    ]
+  },
+  {
+    "id": 175,
+    "result_type": "lonely_and_tender",
+    "title": "The lonelier you feel, the more gently you may need to treat yourself",
+    "flow_reading": "The absence of others may hurt, but the harshness you turn on yourself may hurt even more. Right now, soothing your heart matters more than judging it.",
+    "mood": [
+      "lonely",
+      "healing"
+    ]
+  },
+  {
+    "id": 176,
+    "result_type": "growth_after_feedback",
+    "title": "Uncomfortable feedback can still sharpen your direction",
+    "flow_reading": "Just because something is hard to hear does not mean it is entirely wrong. Right now, it may help to receive only what is useful without letting pride block growth.",
+    "mood": [
+      "growth",
+      "confused"
+    ]
+  },
+  {
+    "id": 177,
+    "result_type": "confused_needs_priority",
+    "title": "Everything gets harder when you try to solve it all at once",
+    "flow_reading": "Many worries may be tangled together right now. If you separate just the most urgent one first, the entire knot may loosen more than expected.",
+    "mood": [
+      "confused",
+      "motivation"
+    ]
+  },
+  {
+    "id": 178,
+    "result_type": "love_can_be_calm",
+    "title": "A quiet feeling can still be real love",
+    "flow_reading": "Only intense emotion does not deserve the title of love. Right now, the wish to remain peacefully by someone's side may be deeper than dramatic excitement.",
+    "mood": [
+      "love",
+      "healing"
+    ]
+  },
+  {
+    "id": 179,
+    "result_type": "motivation_after_lessening_fear",
+    "title": "When fear eases, motivation can return",
+    "flow_reading": "This pause may be coming less from laziness and more from tension around failing. If you begin in a way that lowers fear, the flow may revive more easily than expected.",
+    "mood": [
+      "motivation",
+      "confused"
+    ]
+  },
+  {
+    "id": 180,
+    "result_type": "healing_through_familiarity",
+    "title": "Familiar rhythms may hold you best right now",
+    "flow_reading": "This may be a season when familiar food, places, and people matter more than new stimulation. The less novelty you force, the faster your heart may settle.",
+    "mood": [
+      "healing",
+      "gratitude"
+    ]
+  },
+  {
+    "id": 181,
+    "result_type": "gratitude_changes_focus",
+    "title": "Gratitude changes your focus, and focus changes the day",
+    "flow_reading": "Even if circumstances do not shift immediately, the weight in your heart can change once your gaze does. This may be a time to pause the habit of counting only what is missing.",
+    "mood": [
+      "gratitude",
+      "motivation"
+    ]
+  },
+  {
+    "id": 182,
+    "result_type": "lonely_needs_simple_rhythm",
+    "title": "On lonely days, simple rhythm can protect the heart",
+    "flow_reading": "When your emotions shake, daily structure can fall apart with them. Right now, a simple pattern of sleeping, eating, and moving may comfort you more than a grand form of encouragement.",
+    "mood": [
+      "lonely",
+      "tired"
+    ]
+  },
+  {
+    "id": 183,
+    "result_type": "growth_needs_blank_space",
+    "title": "Even growth needs empty space",
+    "flow_reading": "If you only keep adding input, nothing has room to settle inside. This may be a time to reduce stimulation and make space for what you have already learned to take shape.",
+    "mood": [
+      "growth",
+      "healing"
+    ]
+  },
+  {
+    "id": 184,
+    "result_type": "confused_and_sensitive",
+    "title": "On sensitive days, judgment can feel larger than reality",
+    "flow_reading": "This does not mean your feelings are false, but their intensity may be stronger than usual. On days like this, observation may be safer than firm conclusions.",
+    "mood": [
+      "confused",
+      "tired"
+    ]
+  },
+  {
+    "id": 185,
+    "result_type": "love_after_understanding_self",
+    "title": "Relationships shake less when you understand your own heart first",
+    "flow_reading": "If you do not know what you want from a relationship, it may be easier to be swayed by the other person. Before interpreting them too much, it may help to understand your own feelings clearly.",
+    "mood": [
+      "love",
+      "confused"
+    ]
+  },
+  {
+    "id": 186,
+    "result_type": "motivation_from_environment",
+    "title": "A change in space may help your energy move again",
+    "flow_reading": "This may be less about weak will and more about a setting that has grown too familiar. A small shift in place or atmosphere may change the flow more than you expect.",
+    "mood": [
+      "motivation",
+      "growth"
+    ]
+  },
+  {
+    "id": 187,
+    "result_type": "healing_accepts_limits",
+    "title": "Accepting your limit may be what protects you now",
+    "flow_reading": "If you force what cannot be done yet, exhaustion may grow even faster. Right now, finding what is possible within your limit may be a healthier flow than denying it.",
+    "mood": [
+      "healing",
+      "growth"
+    ]
+  },
+  {
+    "id": 188,
+    "result_type": "gratitude_for_recovery_signs",
+    "title": "Do not miss the small signs that you are getting better",
+    "flow_reading": "If you call only complete recovery real progress, discouragement may come too easily. Noticing even slight improvement may strengthen your ability to keep going.",
+    "mood": [
+      "gratitude",
+      "healing"
+    ]
+  },
+  {
+    "id": 189,
+    "result_type": "lonely_but_open",
+    "title": "A lonely heart may still be preparing to reconnect",
+    "flow_reading": "Even if things seem closed right now, this may actually be a transition in which space is opening again. It may help to see loneliness not as the end but as a middle passage.",
+    "mood": [
+      "lonely",
+      "love"
+    ]
+  },
+  {
+    "id": 190,
+    "result_type": "growth_after_staying_consistent",
+    "title": "Even without standing out, consistency makes a real difference",
+    "flow_reading": "This may be a season when maintaining the flow matters more than producing a dramatic result. Quiet repetition may create the largest difference over time.",
+    "mood": [
+      "growth",
+      "motivation"
+    ]
+  },
+  {
+    "id": 191,
+    "result_type": "confused_until_values_clear",
+    "title": "Choices become easier when your values grow clearer",
+    "flow_reading": "This confusion may not come from lack of ability but from not yet ranking what matters most. Once your values are ordered, the answer may narrow faster than expected.",
+    "mood": [
+      "confused",
+      "growth"
+    ]
+  },
+  {
+    "id": 192,
+    "result_type": "love_needs_shared_effort",
+    "title": "Relationships gain strength when both people keep moving together",
+    "flow_reading": "A relationship carried by one side alone tends to tire quickly. Right now, who helps continue the bond may matter more than who speaks most beautifully.",
+    "mood": [
+      "love",
+      "motivation"
+    ]
+  },
+  {
+    "id": 193,
+    "result_type": "motivation_can_restart_anyday",
+    "title": "Motivation can restart on any day, not only a special one",
+    "flow_reading": "If you wait for the perfect timing, you may keep delaying yourself. One very small restart today may be enough to change the current flow.",
+    "mood": [
+      "motivation",
+      "gratitude"
+    ]
+  },
+  {
+    "id": 194,
+    "result_type": "healing_from_being_understood",
+    "title": "Being understood can heal the heart deeply",
+    "flow_reading": "What you may need most right now is not advice but the feeling that your heart has truly been received. That experience alone may become a strong source of stability.",
+    "mood": [
+      "healing",
+      "lonely"
+    ]
+  },
+  {
+    "id": 195,
+    "result_type": "gratitude_keeps_you_grounded",
+    "title": "Gratitude can ground you when emotions rise or fall",
+    "flow_reading": "Your emotional highs and lows may be making judgment feel unstable. Holding onto one small source of thanks may help you feel the floor beneath you again.",
+    "mood": [
+      "gratitude",
+      "confused"
+    ]
+  },
+  {
+    "id": 196,
+    "result_type": "lonely_time_can_heal_old_noise",
+    "title": "Time alone may wash out old inner noise",
+    "flow_reading": "If you only know yourself inside relationships, your own voice can become hard to hear. Right now, some healthy solitude may quiet old noise more than you realize.",
+    "mood": [
+      "lonely",
+      "healing"
+    ]
+  },
+  {
+    "id": 197,
+    "result_type": "growth_needs_long_view",
+    "title": "Small change now can become a big difference over time",
+    "flow_reading": "The pace may feel frustrating if you look only at today. But in the longer flow, enough is already shifting that a bigger turn may be underway.",
+    "mood": [
+      "growth",
+      "gratitude"
+    ]
+  },
+  {
+    "id": 198,
+    "result_type": "confused_can_still_choose",
+    "title": "You can still choose the next step without total certainty",
+    "flow_reading": "Not every doubt has to disappear before you move. Right now, picking one next action may be far more realistic and helpful than waiting for the whole answer.",
+    "mood": [
+      "confused",
+      "motivation"
+    ]
+  },
+  {
+    "id": 199,
+    "result_type": "love_after_reassurance",
+    "title": "The relationship that brings calm may be the one that lasts",
+    "flow_reading": "A bond that constantly tests your heart may fit you less than one that lets you rest. Right now, it may help to notice not only excitement but whether your anxiety softens beside them.",
+    "mood": [
+      "love",
+      "healing"
+    ]
+  },
+  {
+    "id": 200,
+    "result_type": "motivation_for_the_long_run",
+    "title": "What you need now is not explosive force but lasting drive",
+    "flow_reading": "Starting hard matters less than not collapsing halfway through. A structure you can keep without overstraining yourself is more likely to create the biggest result in the end.",
+    "mood": [
+      "motivation",
+      "growth"
+    ]
   }
 ]

@@ -998,5 +998,1005 @@
       "motivation",
       "growth"
     ]
+  },
+  {
+    "id": 101,
+    "result_type": "motivation_after_reset",
+    "title": "다시 시작해도 흐름은 이어질 수 있어",
+    "flow_reading": "잠깐 멈췄다고 해서 전체가 끊어진 것은 아닐 수 있어요. 지금은 처음부터 완벽하게 하려 하기보다 다시 손을 대는 감각을 되찾는 것이 더 중요해 보여요.",
+    "mood": [
+      "motivation",
+      "healing"
+    ]
+  },
+  {
+    "id": 102,
+    "result_type": "love_needs_honesty",
+    "title": "관계는 솔직함에서 더 선명해져",
+    "flow_reading": "지금은 상대를 배려한다는 이유로 마음을 너무 감추고 있을 가능성이 있어 보여요. 부드럽게라도 진짜 마음을 전할수록 관계의 방향이 더 또렷해질 수 있어요.",
+    "mood": [
+      "love",
+      "confused"
+    ]
+  },
+  {
+    "id": 103,
+    "result_type": "tired_mind_needs_space",
+    "title": "지친 마음에는 여백이 먼저 필요해",
+    "flow_reading": "계속 무언가를 채우려 할수록 오히려 더 무거워질 수 있어요. 지금은 답을 내기보다 쉬는 틈을 만들었을 때 마음이 스스로 정리될 가능성이 커 보여요.",
+    "mood": [
+      "tired",
+      "healing"
+    ]
+  },
+  {
+    "id": 104,
+    "result_type": "gratitude_for_small_progress",
+    "title": "작은 진전도 충분히 의미 있어",
+    "flow_reading": "지금은 큰 변화만 성과로 보지 않는 시선이 필요해 보여요. 사소해 보이는 움직임을 인정할수록 마음의 힘이 더 안정적으로 쌓일 수 있어요.",
+    "mood": [
+      "gratitude",
+      "growth"
+    ]
+  },
+  {
+    "id": 105,
+    "result_type": "lonely_but_not_lost",
+    "title": "혼자인 시간도 길을 잃은 건 아니야",
+    "flow_reading": "지금의 고요함이 버려졌다는 뜻은 아닐 수 있어요. 오히려 바깥의 소음이 줄어든 만큼 내 안의 기준을 더 분명히 들을 수 있는 시기일 가능성이 커 보여요.",
+    "mood": [
+      "lonely",
+      "healing"
+    ]
+  },
+  {
+    "id": 106,
+    "result_type": "growth_after_discomfort",
+    "title": "조금 불편한 쪽에 성장이 숨어 있을 수 있어",
+    "flow_reading": "편안함만 좇으면 지금 필요한 확장이 늦어질 수도 있어 보여요. 다만 무리할 정도의 고통이 아니라, 낯설지만 배울 수 있는 정도의 불편함이 더 잘 맞는 흐름 같아요.",
+    "mood": [
+      "growth",
+      "motivation"
+    ]
+  },
+  {
+    "id": 107,
+    "result_type": "confused_needs_less_noise",
+    "title": "헷갈릴수록 정보보다 소음을 줄여봐",
+    "flow_reading": "지금의 혼란은 정보 부족보다 정보 과잉에서 오는 것일 가능성이 있어 보여요. 이것저것 다 보려 하기보다 지금 중요한 기준 몇 가지만 남길수록 답이 가까워질 수 있어요.",
+    "mood": [
+      "confused",
+      "healing"
+    ]
+  },
+  {
+    "id": 108,
+    "result_type": "love_with_slow_trust",
+    "title": "천천히 쌓이는 신뢰가 더 오래가",
+    "flow_reading": "강한 감정보다 반복되는 안정감이 더 중요한 순간일 수 있어요. 급하게 확신을 얻으려 하기보다 자연스럽게 이어지는 리듬을 보는 편이 더 정확해 보여요.",
+    "mood": [
+      "love",
+      "healing"
+    ]
+  },
+  {
+    "id": 109,
+    "result_type": "motivation_returns_in_motion",
+    "title": "의욕은 움직이면서 돌아올 가능성이 커",
+    "flow_reading": "마음이 생길 때까지 기다리면 오히려 더 늦어질 수 있어요. 지금은 큰 열정보다도 몸을 조금 먼저 움직였을 때 의욕이 뒤따라오는 흐름에 가까워 보여요.",
+    "mood": [
+      "motivation",
+      "tired"
+    ]
+  },
+  {
+    "id": 110,
+    "result_type": "healing_needs_gentle_routine",
+    "title": "회복은 거창한 변화보다 부드러운 반복에서 와",
+    "flow_reading": "지금은 한 번의 큰 결심보다 작고 안정적인 반복이 더 잘 맞는 시기 같아요. 몸과 마음이 예측 가능한 리듬을 느낄수록 회복도 깊어질 수 있어요.",
+    "mood": [
+      "healing",
+      "tired"
+    ]
+  },
+  {
+    "id": 111,
+    "result_type": "gratitude_after_comparison",
+    "title": "비교를 내려놓으면 가진 것이 더 보여",
+    "flow_reading": "지금은 남과의 거리보다 내 삶 안에 이미 있는 기반을 다시 보는 것이 중요해 보여요. 비교가 줄어들수록 감사는 억지 없이 자연스럽게 따라올 수 있어요.",
+    "mood": [
+      "gratitude",
+      "healing"
+    ]
+  },
+  {
+    "id": 112,
+    "result_type": "lonely_can_be_creative",
+    "title": "외로운 시간은 새로운 감각을 열어주기도 해",
+    "flow_reading": "사람의 빈자리가 곧 공허함만 남긴다고 볼 필요는 없어요. 지금은 혼자 있는 시간이 오히려 감정과 생각을 정리하고 새로운 표현을 꺼내기 좋은 흐름일 수 있어요.",
+    "mood": [
+      "lonely",
+      "growth"
+    ]
+  },
+  {
+    "id": 113,
+    "result_type": "growth_wants_patience",
+    "title": "성장은 빨리보다 꾸준히 쌓이는 쪽이 맞아",
+    "flow_reading": "지금은 눈에 띄는 변화가 더딜 수 있어도 방향이 틀린 것은 아닐 수 있어요. 당장 결과가 작아 보여도 계속 이어갈 수 있는 방식이라면 충분히 좋은 흐름이에요.",
+    "mood": [
+      "growth",
+      "tired"
+    ]
+  },
+  {
+    "id": 114,
+    "result_type": "confused_heart_needs_pause",
+    "title": "마음이 복잡할수록 잠깐 멈춤이 답이 될 수 있어",
+    "flow_reading": "지금은 더 생각한다고 답이 빨라지지 않을 가능성이 커 보여요. 한 템포 쉬면서 감정의 열기를 낮춘 뒤 다시 보면 지금보다 훨씬 단순하게 보일 수 있어요.",
+    "mood": [
+      "confused",
+      "tired"
+    ]
+  },
+  {
+    "id": 115,
+    "result_type": "love_needs_clear_intent",
+    "title": "애매한 마음보단 분명한 의도가 더 중요해",
+    "flow_reading": "상대의 말 하나하나를 해석하기보다 실제로 무엇을 이어가려 하는지 보는 편이 더 정확할 수 있어요. 지금은 감정보다 태도와 방향성이 관계를 설명해줄 가능성이 커 보여요.",
+    "mood": [
+      "love",
+      "growth"
+    ]
+  },
+  {
+    "id": 116,
+    "result_type": "motivation_from_meaning",
+    "title": "의욕은 이유가 선명할수록 오래 가",
+    "flow_reading": "무조건 열심히 하는 방식은 지금 오래 버티기 어려울 수 있어요. 왜 이걸 하고 싶은지, 어떤 감정을 지키고 싶은지를 다시 보면 힘의 방향이 정리될 가능성이 커 보여요.",
+    "mood": [
+      "motivation",
+      "gratitude"
+    ]
+  },
+  {
+    "id": 117,
+    "result_type": "healing_after_truth",
+    "title": "진실을 인정한 뒤에야 마음이 쉬기 시작해",
+    "flow_reading": "지금의 피로는 상황 자체보다 아닌 척 버티는 데서 더 커졌을 수도 있어요. 내가 힘들다는 사실을 인정하는 순간부터 회복의 흐름도 훨씬 부드럽게 열릴 수 있어요.",
+    "mood": [
+      "healing",
+      "confused"
+    ]
+  },
+  {
+    "id": 118,
+    "result_type": "gratitude_for_support",
+    "title": "당연한 줄 알았던 도움을 다시 보게 돼",
+    "flow_reading": "지금은 부족한 것보다 이미 내 주변을 받쳐준 것들을 보는 시선이 필요해 보여요. 작게 느껴졌던 배려를 알아차릴수록 마음의 균형도 더 안정될 수 있어요.",
+    "mood": [
+      "gratitude",
+      "love"
+    ]
+  },
+  {
+    "id": 119,
+    "result_type": "lonely_needs_contact",
+    "title": "혼자 견디기보다 작은 연결이 더 필요해",
+    "flow_reading": "지금은 깊은 대화가 아니어도 괜찮아요. 가볍게 안부를 주고받는 정도의 연결만으로도 마음의 무게가 예상보다 많이 가벼워질 수 있어 보여요.",
+    "mood": [
+      "lonely",
+      "love"
+    ]
+  },
+  {
+    "id": 120,
+    "result_type": "growth_with_self_trust",
+    "title": "성장은 남의 속도보다 내 리듬을 믿을 때 커져",
+    "flow_reading": "주변과 맞추려는 마음이 오히려 지금의 집중을 흐릴 수 있어 보여요. 내 속도로 가더라도 분명히 쌓이고 있다는 감각을 놓치지 않는 편이 더 중요해 보여요.",
+    "mood": [
+      "growth",
+      "gratitude"
+    ]
+  },
+  {
+    "id": 121,
+    "result_type": "confused_but_close",
+    "title": "헷갈리는 지금도 답에서 멀진 않을 수 있어",
+    "flow_reading": "완전히 모른다는 느낌이 들수록 오히려 답의 윤곽이 가까워진 경우도 있어요. 지금은 혼란 자체를 실패로 해석하지 말고, 무엇이 걸리는지만 또렷하게 보는 게 더 중요해 보여요.",
+    "mood": [
+      "confused",
+      "growth"
+    ]
+  },
+  {
+    "id": 122,
+    "result_type": "love_after_patience",
+    "title": "마음은 기다림 속에서 더 정확해질 때가 있어",
+    "flow_reading": "지금은 즉각적인 반응보다 시간이 지나도 남는 감정이 더 진짜일 수 있어요. 서두르지 않고 관계의 흐름을 보면 무엇이 오래 남는지 알게 될 가능성이 커 보여요.",
+    "mood": [
+      "love",
+      "gratitude"
+    ]
+  },
+  {
+    "id": 123,
+    "result_type": "motivation_needs_rest_too",
+    "title": "쉬어야 다시 힘 있게 나갈 수 있어",
+    "flow_reading": "지금은 달리고 싶은 마음이 있어도 몸이 먼저 따라주지 않을 수 있어요. 이럴 땐 멈춤이 후퇴가 아니라 다음 추진력을 위한 준비가 될 가능성이 더 커 보여요.",
+    "mood": [
+      "motivation",
+      "healing"
+    ]
+  },
+  {
+    "id": 124,
+    "result_type": "healing_through_order",
+    "title": "정돈은 마음을 생각보다 많이 살려줘",
+    "flow_reading": "지금은 복잡한 감정을 직접 해결하려 애쓰기보다 주변의 작은 질서를 만드는 편이 더 효과적일 수 있어요. 눈앞의 공간이 정리될수록 마음도 따라 정돈될 가능성이 커 보여요.",
+    "mood": [
+      "healing",
+      "gratitude"
+    ]
+  },
+  {
+    "id": 125,
+    "result_type": "gratitude_in_ordinary_day",
+    "title": "평범한 하루 안에도 충분한 힘이 들어 있어",
+    "flow_reading": "특별한 사건이 없어도 괜찮아요. 지금은 무난하게 지나간 하루 자체가 이미 회복과 기반을 뜻할 수 있고, 그 평범함을 알아차릴수록 마음도 단단해질 수 있어요.",
+    "mood": [
+      "gratitude",
+      "tired"
+    ]
+  },
+  {
+    "id": 126,
+    "result_type": "lonely_to_inner_strength",
+    "title": "외로움 속에서도 내 힘은 자라고 있어",
+    "flow_reading": "기대던 곳이 조용해질수록 스스로를 세우는 근육도 함께 자랄 수 있어요. 지금은 관계의 부재만 보기보다 내가 견뎌낸 시간의 힘을 돌아보는 편이 더 필요해 보여요.",
+    "mood": [
+      "lonely",
+      "gratitude"
+    ]
+  },
+  {
+    "id": 127,
+    "result_type": "growth_after_revision",
+    "title": "방향을 고쳐 잡는 것도 성장의 일부야",
+    "flow_reading": "처음 계획과 달라졌다고 실패라고 볼 필요는 없어요. 지금은 수정하는 유연함이 오히려 더 멀리 가게 해주는 흐름일 수 있어 보여요.",
+    "mood": [
+      "growth",
+      "confused"
+    ]
+  },
+  {
+    "id": 128,
+    "result_type": "confused_needs_body_signal",
+    "title": "머리보다 몸의 신호가 더 정직할 수 있어",
+    "flow_reading": "생각은 자꾸 바뀌더라도 몸은 이미 답을 알고 있을 수 있어요. 어떤 선택 앞에서 긴장이 줄어드는지, 어떤 순간 숨이 편해지는지 보는 편이 더 정확해 보여요.",
+    "mood": [
+      "confused",
+      "healing"
+    ]
+  },
+  {
+    "id": 129,
+    "result_type": "love_grows_in_daily_life",
+    "title": "관계는 특별한 날보다 일상에서 드러나",
+    "flow_reading": "큰 표현보다 평소의 태도가 더 많은 것을 말해줄 수 있어요. 지금은 이벤트보다 반복되는 관심과 배려가 마음의 진짜 방향을 보여줄 가능성이 커 보여요.",
+    "mood": [
+      "love",
+      "gratitude"
+    ]
+  },
+  {
+    "id": 130,
+    "result_type": "motivation_after_completion",
+    "title": "하나를 끝내면 다음 힘도 따라올 수 있어",
+    "flow_reading": "시작만 계속 늘어놓으면 오히려 기운이 더 빠질 수 있어요. 지금은 작은 일이라도 마무리하면서 성취의 감각을 되찾는 편이 의욕 회복에 더 잘 맞아 보여요.",
+    "mood": [
+      "motivation",
+      "growth"
+    ]
+  },
+  {
+    "id": 131,
+    "result_type": "healing_does_not_rush",
+    "title": "회복은 서두를수록 더 멀어질 수 있어",
+    "flow_reading": "빨리 괜찮아지고 싶은 마음이 오히려 지금의 마음을 더 조이게 만들 수 있어요. 현재는 나아지는 속도보다 나를 다루는 태도가 더 중요해 보여요.",
+    "mood": [
+      "healing",
+      "tired"
+    ]
+  },
+  {
+    "id": 132,
+    "result_type": "gratitude_with_self_respect",
+    "title": "고마움과 자기존중은 같이 갈 수 있어",
+    "flow_reading": "배려받은 것에 감사하면서도 나를 지킬 선은 분명히 둘 수 있어요. 지금은 참는 것과 고마워하는 것을 같은 것으로 묶지 않는 균형이 중요해 보여요.",
+    "mood": [
+      "gratitude",
+      "love"
+    ]
+  },
+  {
+    "id": 133,
+    "result_type": "lonely_after_transition",
+    "title": "변화 뒤의 외로움은 자연스러운 과정일 수 있어",
+    "flow_reading": "익숙한 관계나 환경이 바뀐 뒤라면 지금의 공허함은 이상한 반응이 아닐 수 있어요. 새 리듬이 자리 잡기 전의 빈틈으로 보면 마음이 조금 덜 불안해질 수 있어요.",
+    "mood": [
+      "lonely",
+      "confused"
+    ]
+  },
+  {
+    "id": 134,
+    "result_type": "growth_through_repetition",
+    "title": "반복 속에서 실력이 quietly 쌓이고 있어",
+    "flow_reading": "눈에 띄는 이벤트가 없다고 해서 멈춘 것은 아닐 수 있어요. 지금은 화려한 변화보다 같은 것을 꾸준히 해내는 힘이 더 큰 차이를 만들고 있을 가능성이 커 보여요.",
+    "mood": [
+      "growth",
+      "motivation"
+    ]
+  },
+  {
+    "id": 135,
+    "result_type": "confused_between_options",
+    "title": "둘 다 끌린다면 아직 기준이 덜 선명한 걸 수 있어",
+    "flow_reading": "선택지가 비슷하게 좋아 보이는 건 답이 없어서가 아니라 기준이 아직 구체적이지 않아서일 수 있어요. 지금은 무엇을 얻고 싶은지보다 무엇을 잃고 싶지 않은지 보는 편이 더 도움이 될 수 있어요.",
+    "mood": [
+      "confused",
+      "gratitude"
+    ]
+  },
+  {
+    "id": 136,
+    "result_type": "love_needs_breathing_room",
+    "title": "가까움에도 숨 쉴 틈은 필요해",
+    "flow_reading": "좋아하는 마음이 클수록 더 붙어 있고 싶을 수 있지만, 지금은 적당한 거리도 관계를 건강하게 만드는 요소가 될 수 있어요. 각자의 리듬을 존중할수록 더 오래 편안해질 가능성이 커 보여요.",
+    "mood": [
+      "love",
+      "healing"
+    ]
+  },
+  {
+    "id": 137,
+    "result_type": "motivation_can_be_borrowed",
+    "title": "내 힘이 약할 땐 바깥 동력을 빌려도 괜찮아",
+    "flow_reading": "지금은 스스로만 밀어붙이기보다 환경의 도움을 받는 편이 더 현실적일 수 있어요. 일정, 약속, 함께 하는 사람 같은 외부 구조가 의욕을 지켜줄 가능성이 커 보여요.",
+    "mood": [
+      "motivation",
+      "lonely"
+    ]
+  },
+  {
+    "id": 138,
+    "result_type": "healing_starts_with_sleep",
+    "title": "회복의 시작은 생각보다 단순할 수 있어",
+    "flow_reading": "지금은 마음을 고치는 특별한 방법보다 수면과 기본 리듬을 바로잡는 일이 더 먼저일 수 있어요. 몸이 조금 안정되면 감정도 지금보다 훨씬 덜 요동칠 가능성이 커 보여요.",
+    "mood": [
+      "healing",
+      "tired"
+    ]
+  },
+  {
+    "id": 139,
+    "result_type": "gratitude_after_hard_day",
+    "title": "힘든 날에도 남는 건 분명히 있어",
+    "flow_reading": "오늘이 뜻대로 되지 않았더라도 전부 잃은 것은 아닐 수 있어요. 버틴 것, 배운 것, 지나온 것 중 하나만 봐도 마음은 다시 중심을 찾을 가능성이 커 보여요.",
+    "mood": [
+      "gratitude",
+      "healing"
+    ]
+  },
+  {
+    "id": 140,
+    "result_type": "lonely_needs_warmth",
+    "title": "외로운 날일수록 따뜻한 자극이 먼저야",
+    "flow_reading": "지금은 생산성보다 체온 같은 안정감이 더 중요할 수 있어요. 마음이 차가워져 있을 때는 작은 따뜻함 하나가 생각보다 크게 버팀목이 될 수 있어 보여요.",
+    "mood": [
+      "lonely",
+      "tired"
+    ]
+  },
+  {
+    "id": 141,
+    "result_type": "growth_is_not_linear",
+    "title": "좋아졌다 흔들려도 여전히 자라는 중이야",
+    "flow_reading": "지금의 흔들림을 퇴보로만 볼 필요는 없어요. 성장에는 반복과 되돌림이 함께 들어 있고, 이전보다 빨리 중심을 되찾고 있다면 이미 달라지고 있는 거예요.",
+    "mood": [
+      "growth",
+      "healing"
+    ]
+  },
+  {
+    "id": 142,
+    "result_type": "confused_truth_wants_words",
+    "title": "마음이 복잡할수록 말로 정리하는 힘이 필요해",
+    "flow_reading": "머릿속으로만 붙잡고 있으면 같은 생각이 더 부풀어 오를 수 있어요. 지금은 감정을 정확한 문장으로 바꾸는 과정이 판단을 훨씬 맑게 해줄 가능성이 커 보여요.",
+    "mood": [
+      "confused",
+      "growth"
+    ]
+  },
+  {
+    "id": 143,
+    "result_type": "love_after_reality_check",
+    "title": "설렘만큼 현실의 편안함도 중요해",
+    "flow_reading": "마음이 끌리는 것과 실제로 오래 함께할 수 있는 것은 다를 수 있어요. 지금은 감정의 크기와 별개로 함께 있을 때 편안한지 보는 것이 더 중요해 보여요.",
+    "mood": [
+      "love",
+      "confused"
+    ]
+  },
+  {
+    "id": 144,
+    "result_type": "motivation_in_small_blocks",
+    "title": "의욕이 약할 땐 작은 단위가 훨씬 강해",
+    "flow_reading": "큰 목표를 한 번에 보려 하면 시작도 어려워질 수 있어요. 지금은 아주 잘게 나눈 단위로 움직일수록 부담이 줄고 흐름도 자연스럽게 살아날 가능성이 커 보여요.",
+    "mood": [
+      "motivation",
+      "confused"
+    ]
+  },
+  {
+    "id": 145,
+    "result_type": "healing_needs_no_performance",
+    "title": "회복을 성과처럼 관리하지 않아도 괜찮아",
+    "flow_reading": "지금은 내가 얼마나 나아졌는지 계속 확인하는 습관이 오히려 숨을 막히게 만들 수 있어요. 회복을 체크리스트가 아니라 과정으로 봐줄수록 마음도 덜 긴장할 수 있어요.",
+    "mood": [
+      "healing",
+      "confused"
+    ]
+  },
+  {
+    "id": 146,
+    "result_type": "gratitude_for_the_present",
+    "title": "지금 있는 것을 보는 힘이 미래도 지켜줘",
+    "flow_reading": "부족한 것만 계속 보면 마음이 쉽게 조급해질 수 있어요. 현재 손안에 있는 자원과 사람을 알아차릴수록 다음 선택도 더 차분하게 할 수 있을 가능성이 커 보여요.",
+    "mood": [
+      "gratitude",
+      "confused"
+    ]
+  },
+  {
+    "id": 147,
+    "result_type": "lonely_can_seek_help",
+    "title": "외로운데도 도움을 청할 자격은 충분해",
+    "flow_reading": "혼자 있는 시간이 길었다고 해서 혼자 해결해야 하는 것은 아니에요. 지금은 마음을 드러내는 것이 약함이 아니라 회복의 방향이 될 가능성이 더 커 보여요.",
+    "mood": [
+      "lonely",
+      "healing"
+    ]
+  },
+  {
+    "id": 148,
+    "result_type": "growth_after_choosing_less",
+    "title": "덜어내는 선택이 오히려 성장을 열 수 있어",
+    "flow_reading": "더 많이 해야 나아간다고 믿을수록 정작 중요한 것이 흐려질 수 있어요. 지금은 확장보다 정리와 선택이 더 큰 힘을 발휘할 가능성이 커 보여요.",
+    "mood": [
+      "growth",
+      "healing"
+    ]
+  },
+  {
+    "id": 149,
+    "result_type": "confused_by_pressure",
+    "title": "지금의 혼란은 선택보다 압박에서 올 수 있어",
+    "flow_reading": "무엇을 고르느냐보다 잘 골라야 한다는 부담이 더 크게 작용하고 있을 수 있어요. 압박을 조금만 낮춰도 답은 지금보다 훨씬 잘 보일 가능성이 커 보여요.",
+    "mood": [
+      "confused",
+      "tired"
+    ]
+  },
+  {
+    "id": 150,
+    "result_type": "love_with_boundaries",
+    "title": "좋아하는 마음과 지켜야 할 선은 함께 갈 수 있어",
+    "flow_reading": "관계를 지키고 싶다고 해서 모든 것을 참고 맞출 필요는 없어요. 지금은 상대를 향한 마음만큼 나를 보호하는 기준도 함께 세우는 편이 더 건강해 보여요.",
+    "mood": [
+      "love",
+      "healing"
+    ]
+  },
+  {
+    "id": 151,
+    "result_type": "motivation_after_clarity",
+    "title": "해야 할 일이 선명해지면 힘도 따라와",
+    "flow_reading": "의욕이 없는 것 같아도 사실은 방향이 흐려서 멈춘 것일 수 있어요. 지금은 할 일을 더 늘리기보다 우선순위를 또렷하게 줄이는 편이 더 효과적일 수 있어요.",
+    "mood": [
+      "motivation",
+      "growth"
+    ]
+  },
+  {
+    "id": 152,
+    "result_type": "healing_from_kind_words",
+    "title": "다정한 말 한마디가 회복을 훨씬 앞당길 수 있어",
+    "flow_reading": "현재는 해결책보다 안전하다는 느낌이 더 먼저 필요할 수 있어요. 스스로에게든 타인에게든 부드러운 언어가 들어올수록 마음도 조금씩 풀릴 가능성이 커 보여요.",
+    "mood": [
+      "healing",
+      "love"
+    ]
+  },
+  {
+    "id": 153,
+    "result_type": "gratitude_for_past_self",
+    "title": "예전의 내가 버텨준 덕분에 여기까지 왔어",
+    "flow_reading": "지금은 부족한 현재만 보기보다 지난 시간의 나를 인정하는 시선이 필요해 보여요. 과거의 나에게 감사할수록 현재의 자신감도 더 안정적으로 돌아올 수 있어요.",
+    "mood": [
+      "gratitude",
+      "growth"
+    ]
+  },
+  {
+    "id": 154,
+    "result_type": "lonely_night_needs_softness",
+    "title": "외로운 밤일수록 나를 거칠게 다루지 마",
+    "flow_reading": "감정이 커지는 시간대에는 생각도 더 극단적으로 기울 수 있어요. 지금은 해답을 찾기보다 내 마음을 진정시키는 방식이 훨씬 우선일 수 있어 보여요.",
+    "mood": [
+      "lonely",
+      "tired"
+    ]
+  },
+  {
+    "id": 155,
+    "result_type": "growth_from_questions",
+    "title": "좋은 질문 하나가 성장을 크게 바꿀 수 있어",
+    "flow_reading": "지금은 답을 빨리 내는 것보다 질문을 정확히 만드는 편이 더 중요할 수 있어요. 내가 정말 알고 싶은 핵심을 잡을수록 다음 단계도 훨씬 분명해질 가능성이 커 보여요.",
+    "mood": [
+      "growth",
+      "confused"
+    ]
+  },
+  {
+    "id": 156,
+    "result_type": "confused_needs_sleep",
+    "title": "잠이 부족하면 마음도 필요 이상으로 흔들려",
+    "flow_reading": "지금의 불안과 망설임은 문제의 크기보다 피로의 영향일 수 있어요. 충분히 쉬고 나면 같은 상황도 지금보다 훨씬 다룰 만하게 느껴질 가능성이 커 보여요.",
+    "mood": [
+      "confused",
+      "tired"
+    ]
+  },
+  {
+    "id": 157,
+    "result_type": "love_sees_consistency",
+    "title": "마음은 꾸준함에서 더 잘 드러나",
+    "flow_reading": "한 번의 큰 표현보다 계속 이어지는 태도가 더 많은 것을 말해줄 수 있어요. 지금은 말의 화려함보다 반복되는 행동의 질감을 보는 편이 더 정확해 보여요.",
+    "mood": [
+      "love",
+      "gratitude"
+    ]
+  },
+  {
+    "id": 158,
+    "result_type": "motivation_after_one_step",
+    "title": "단 한 걸음이 생각보다 큰 물꼬를 틀 수 있어",
+    "flow_reading": "해야 할 일이 많아 보여도 결국 흐름을 바꾸는 건 첫 한 번의 실행일 수 있어요. 지금은 완성보다 시작의 마찰을 줄이는 데 집중하는 편이 더 잘 맞아 보여요.",
+    "mood": [
+      "motivation",
+      "confused"
+    ]
+  },
+  {
+    "id": 159,
+    "result_type": "healing_allows_sadness",
+    "title": "슬픈 감정을 느끼는 것도 회복의 일부야",
+    "flow_reading": "괜찮아져야 한다는 압박 때문에 슬픔 자체를 밀어내고 있을 수 있어요. 지금은 감정을 없애기보다 안전하게 흘려보내는 것이 더 필요한 흐름 같아요.",
+    "mood": [
+      "healing",
+      "lonely"
+    ]
+  },
+  {
+    "id": 160,
+    "result_type": "gratitude_builds_stability",
+    "title": "감사는 흔들릴 때 중심을 다시 잡아줘",
+    "flow_reading": "마음이 불안정할수록 결핍만 크게 보이기 쉬워요. 지금은 아주 작은 것이라도 고마운 대상을 붙잡는 일이 감정의 균형을 회복시키는 데 도움이 될 수 있어요.",
+    "mood": [
+      "gratitude",
+      "healing"
+    ]
+  },
+  {
+    "id": 161,
+    "result_type": "lonely_after_distance",
+    "title": "멀어짐 뒤의 외로움이 마음의 전부는 아니야",
+    "flow_reading": "누군가와의 거리감이 커졌다고 해서 관계의 의미까지 모두 사라진 것은 아닐 수 있어요. 지금은 상실감만 보기보다 남아 있는 진심의 결을 천천히 보는 편이 더 필요해 보여요.",
+    "mood": [
+      "lonely",
+      "love"
+    ]
+  },
+  {
+    "id": 162,
+    "result_type": "growth_needs_recovery",
+    "title": "더 가고 싶다면 먼저 회복할 힘부터 채워야 해",
+    "flow_reading": "지금은 열심히만 한다고 멀리 갈 수 있는 상태는 아닐 수 있어요. 오래 가고 싶다면 속도를 줄이더라도 기반을 다시 세우는 편이 더 현명해 보여요.",
+    "mood": [
+      "growth",
+      "tired"
+    ]
+  },
+  {
+    "id": 163,
+    "result_type": "confused_but_learning",
+    "title": "헷갈리는 과정에서도 분명히 배우고 있어",
+    "flow_reading": "지금 당장 결론이 나지 않아도 이 시간을 헛된 것으로 볼 필요는 없어요. 무엇이 나와 맞지 않는지 알아가는 것만으로도 기준은 분명히 쌓이고 있을 가능성이 커 보여요.",
+    "mood": [
+      "confused",
+      "growth"
+    ]
+  },
+  {
+    "id": 164,
+    "result_type": "love_needs_mutuality",
+    "title": "관계는 한쪽의 노력만으로 오래가기 어려워",
+    "flow_reading": "지금은 내가 얼마나 애쓰는지보다 서로 얼마나 함께 움직이고 있는지가 더 중요해 보여요. 균형 없는 애씀은 사랑보다 소진을 더 크게 만들 수 있어요.",
+    "mood": [
+      "love",
+      "tired"
+    ]
+  },
+  {
+    "id": 165,
+    "result_type": "motivation_follows_structure",
+    "title": "의욕보다 구조가 먼저일 때가 있어",
+    "flow_reading": "마음이 준비될 때까지 기다리면 계속 미뤄질 수 있어요. 지금은 기분보다도 자동으로 움직이게 해주는 구조를 만드는 편이 더 강한 흐름 같아요.",
+    "mood": [
+      "motivation",
+      "growth"
+    ]
+  },
+  {
+    "id": 166,
+    "result_type": "healing_in_safe_people",
+    "title": "안전한 사람 옆에서 마음은 더 빨리 풀려",
+    "flow_reading": "지금은 혼자 정리하려 하기보다 내 감정을 과장 없이 받아주는 사람과 가까이 있는 것이 더 도움이 될 수 있어요. 안전감이 회복의 속도를 바꿔줄 가능성이 커 보여요.",
+    "mood": [
+      "healing",
+      "love"
+    ]
+  },
+  {
+    "id": 167,
+    "result_type": "gratitude_after_delay",
+    "title": "늦어 보였던 시간도 나름의 의미를 남겨",
+    "flow_reading": "생각보다 오래 걸린 과정이 아쉽게 느껴질 수 있지만, 그 시간 덕분에 생긴 기준과 체력도 분명 있을 수 있어요. 지금은 잃은 시간보다 남은 힘을 보는 편이 더 필요해 보여요.",
+    "mood": [
+      "gratitude",
+      "growth"
+    ]
+  },
+  {
+    "id": 168,
+    "result_type": "lonely_not_same_as_empty",
+    "title": "외롭다고 해서 마음이 빈 것은 아니야",
+    "flow_reading": "사람이 곁에 없을 때도 내 안에는 여전히 감각과 가능성이 남아 있을 수 있어요. 지금은 공허함만 확인하기보다 나를 채우는 요소가 무엇인지 다시 보는 편이 더 좋아 보여요.",
+    "mood": [
+      "lonely",
+      "gratitude"
+    ]
+  },
+  {
+    "id": 169,
+    "result_type": "growth_from_imperfection",
+    "title": "완벽하지 않아도 성장의 방향은 충분해",
+    "flow_reading": "실수가 남아 있다고 해서 전체가 잘못된 것은 아닐 수 있어요. 지금은 흠 없는 결과보다 계속 조정해나갈 수 있는 태도가 훨씬 큰 힘이 될 가능성이 커 보여요.",
+    "mood": [
+      "growth",
+      "healing"
+    ]
+  },
+  {
+    "id": 170,
+    "result_type": "confused_when_overloaded",
+    "title": "너무 많이 안고 있으면 답도 흐려질 수 있어",
+    "flow_reading": "지금은 선택의 어려움보다 처리해야 할 양이 지나치게 많아서 판단이 흐려졌을 수 있어요. 부담을 덜어내면 의외로 답은 이미 가까이 있을 가능성이 커 보여요.",
+    "mood": [
+      "confused",
+      "tired"
+    ]
+  },
+  {
+    "id": 171,
+    "result_type": "love_grows_with_respect",
+    "title": "존중이 있는 관계가 결국 더 깊어져",
+    "flow_reading": "좋아하는 감정만으로는 오래 버티기 어려운 순간이 있어요. 지금은 서로의 경계와 속도를 존중하는 태도가 관계의 질을 결정할 가능성이 커 보여요.",
+    "mood": [
+      "love",
+      "growth"
+    ]
+  },
+  {
+    "id": 172,
+    "result_type": "motivation_returns_after_care",
+    "title": "나를 돌본 뒤에야 의욕도 제자리를 찾아와",
+    "flow_reading": "현재는 의지가 약해서가 아니라 돌봄이 부족해서 힘이 안 나는 걸 수도 있어요. 기본적인 회복이 채워질수록 하고 싶은 마음도 더 자연스럽게 살아날 가능성이 커 보여요.",
+    "mood": [
+      "motivation",
+      "healing"
+    ]
+  },
+  {
+    "id": 173,
+    "result_type": "healing_needs_lower_expectation",
+    "title": "오늘은 기준을 낮추는 게 오히려 나를 살릴 수 있어",
+    "flow_reading": "지금은 평소처럼 해내지 못하는 내가 답답할 수 있어요. 하지만 현재 상태에 맞게 기준을 조정하는 것이 무너짐을 막고 회복을 지키는 현실적인 선택일 수 있어요.",
+    "mood": [
+      "healing",
+      "tired"
+    ]
+  },
+  {
+    "id": 174,
+    "result_type": "gratitude_for_one_person",
+    "title": "한 사람의 존재가 생각보다 큰 힘이 될 수 있어",
+    "flow_reading": "많은 관계가 아니어도 괜찮아요. 지금은 내 편이 되어주는 단 한 사람만 떠올려도 마음의 안전감이 꽤 크게 회복될 가능성이 커 보여요.",
+    "mood": [
+      "gratitude",
+      "love"
+    ]
+  },
+  {
+    "id": 175,
+    "result_type": "lonely_and_tender",
+    "title": "외로울수록 스스로에게 더 부드러워져야 해",
+    "flow_reading": "지금은 타인의 부재보다 그 빈자리를 채우려는 자기비난이 더 아플 수도 있어요. 외로운 날일수록 내 마음을 혼내기보다 달래는 편이 훨씬 중요해 보여요.",
+    "mood": [
+      "lonely",
+      "healing"
+    ]
+  },
+  {
+    "id": 176,
+    "result_type": "growth_after_feedback",
+    "title": "불편한 피드백도 방향을 더 정확하게 만들어줘",
+    "flow_reading": "듣기 싫은 말이 곧 틀렸다는 뜻은 아닐 수 있어요. 지금은 자존심을 지키는 것보다 도움이 되는 부분만 잘 골라 받아들이는 힘이 성장에 더 가까워 보여요.",
+    "mood": [
+      "growth",
+      "confused"
+    ]
+  },
+  {
+    "id": 177,
+    "result_type": "confused_needs_priority",
+    "title": "모든 걸 동시에 풀려 하면 더 헷갈릴 수 있어",
+    "flow_reading": "지금은 많은 고민이 한꺼번에 섞여 있을 가능성이 커 보여요. 무엇이 가장 급한지 한 가지만 먼저 분리해도 전체 혼란이 크게 줄어들 수 있어요.",
+    "mood": [
+      "confused",
+      "motivation"
+    ]
+  },
+  {
+    "id": 178,
+    "result_type": "love_can_be_calm",
+    "title": "조용한 마음도 충분히 진짜일 수 있어",
+    "flow_reading": "크게 흔들리는 감정만 사랑이라고 볼 필요는 없어요. 지금은 과열된 설렘보다 차분히 곁에 머물고 싶은 감정이 더 깊은 마음일 가능성이 커 보여요.",
+    "mood": [
+      "love",
+      "healing"
+    ]
+  },
+  {
+    "id": 179,
+    "result_type": "motivation_after_lessening_fear",
+    "title": "두려움이 줄면 의욕도 다시 살아날 수 있어",
+    "flow_reading": "지금의 멈춤은 게으름보다 실패에 대한 긴장에서 오는 것일 수 있어요. 두려움을 조금 낮춘 방식으로 시작하면 생각보다 쉽게 흐름이 살아날 가능성이 커 보여요.",
+    "mood": [
+      "motivation",
+      "confused"
+    ]
+  },
+  {
+    "id": 180,
+    "result_type": "healing_through_familiarity",
+    "title": "익숙한 리듬이 지금의 마음을 가장 잘 붙잡아줘",
+    "flow_reading": "새로운 자극보다 익숙한 장소, 익숙한 음식, 익숙한 사람처럼 몸이 이미 아는 안정이 더 필요한 시기일 수 있어요. 낯선 것을 줄일수록 회복이 빨라질 가능성이 커 보여요.",
+    "mood": [
+      "healing",
+      "gratitude"
+    ]
+  },
+  {
+    "id": 181,
+    "result_type": "gratitude_changes_focus",
+    "title": "감사는 시선을 바꾸고 시선은 하루를 바꿔",
+    "flow_reading": "상황이 즉시 달라지지 않아도 바라보는 방향이 바뀌면 마음의 무게는 확실히 달라질 수 있어요. 지금은 부족함을 세는 습관을 잠시 멈추는 편이 더 중요해 보여요.",
+    "mood": [
+      "gratitude",
+      "motivation"
+    ]
+  },
+  {
+    "id": 182,
+    "result_type": "lonely_needs_simple_rhythm",
+    "title": "외로운 날에는 단순한 리듬이 마음을 살려줘",
+    "flow_reading": "감정이 흔들릴수록 생활 리듬도 함께 무너질 수 있어요. 지금은 거창한 위로보다 정해진 시간에 자고 먹고 움직이는 단순한 구조가 더 큰 안정감을 줄 수 있어요.",
+    "mood": [
+      "lonely",
+      "tired"
+    ]
+  },
+  {
+    "id": 183,
+    "result_type": "growth_needs_blank_space",
+    "title": "성장을 위해서도 비어 있는 시간이 필요해",
+    "flow_reading": "계속 채우기만 하면 배운 것이 안에서 정리되지 못할 수 있어요. 지금은 입력을 줄이고 소화할 시간을 갖는 편이 다음 확장을 더 잘 준비하게 해줄 수 있어요.",
+    "mood": [
+      "growth",
+      "healing"
+    ]
+  },
+  {
+    "id": 184,
+    "result_type": "confused_and_sensitive",
+    "title": "예민한 날엔 판단도 평소보다 과해질 수 있어",
+    "flow_reading": "지금의 느낌이 완전히 틀렸다는 뜻은 아니지만 강도가 실제보다 커졌을 수는 있어요. 이런 날에는 단정적인 결론보다 관찰을 남기는 편이 더 안전해 보여요.",
+    "mood": [
+      "confused",
+      "tired"
+    ]
+  },
+  {
+    "id": 185,
+    "result_type": "love_after_understanding_self",
+    "title": "내 마음을 알아야 관계도 덜 흔들려",
+    "flow_reading": "상대가 어떠한지보다 내가 관계에서 무엇을 원하는지 모르면 더 쉽게 흔들릴 수 있어요. 지금은 타인을 해석하기 전에 내 감정의 모양을 먼저 보는 편이 더 중요해 보여요.",
+    "mood": [
+      "love",
+      "confused"
+    ]
+  },
+  {
+    "id": 186,
+    "result_type": "motivation_from_environment",
+    "title": "공간이 달라지면 마음도 다시 움직일 수 있어",
+    "flow_reading": "지금은 의지력의 문제가 아니라 너무 익숙한 환경에 힘이 빠진 상태일 수 있어요. 작은 자리 이동이나 분위기 전환만으로도 흐름이 의외로 크게 달라질 가능성이 커 보여요.",
+    "mood": [
+      "motivation",
+      "growth"
+    ]
+  },
+  {
+    "id": 187,
+    "result_type": "healing_accepts_limits",
+    "title": "한계를 인정하는 태도가 오히려 나를 지켜줘",
+    "flow_reading": "지금은 할 수 없는 것을 억지로 밀어붙일수록 더 지칠 수 있어요. 내 상태의 한계를 인정하고 그 안에서 가능한 것을 찾는 편이 훨씬 건강한 흐름 같아요.",
+    "mood": [
+      "healing",
+      "growth"
+    ]
+  },
+  {
+    "id": 188,
+    "result_type": "gratitude_for_recovery_signs",
+    "title": "조금 나아진 신호를 놓치지 않는 게 중요해",
+    "flow_reading": "완전히 괜찮아진 것만 회복으로 보려 하면 마음이 쉽게 낙담할 수 있어요. 지금은 아주 작은 개선이라도 알아차리는 눈이 앞으로 가는 힘을 더 키워줄 가능성이 커 보여요.",
+    "mood": [
+      "gratitude",
+      "healing"
+    ]
+  },
+  {
+    "id": 189,
+    "result_type": "lonely_but_open",
+    "title": "외로운 마음도 다시 연결될 준비를 하고 있어",
+    "flow_reading": "지금은 닫힌 것처럼 보여도 사실은 다시 누군가를 받아들일 여백이 생기고 있는 과정일 수 있어요. 외로움을 끝으로 보기보다 전환의 사이로 보는 편이 더 맞아 보여요.",
+    "mood": [
+      "lonely",
+      "love"
+    ]
+  },
+  {
+    "id": 190,
+    "result_type": "growth_after_staying_consistent",
+    "title": "크게 튀지 않아도 꾸준하면 결국 차이가 나",
+    "flow_reading": "지금은 두드러진 성과보다 흐름을 유지하는 힘이 더 중요해 보여요. 눈에 띄지 않는 반복이 시간이 지나며 가장 큰 차이를 만드는 시기일 가능성이 커 보여요.",
+    "mood": [
+      "growth",
+      "motivation"
+    ]
+  },
+  {
+    "id": 191,
+    "result_type": "confused_until_values_clear",
+    "title": "가치가 선명해질 때 선택도 함께 쉬워져",
+    "flow_reading": "지금의 혼란은 능력 부족이 아니라 무엇을 더 중요하게 여기는지 아직 정리되지 않았기 때문일 수 있어요. 가치의 순서를 세우면 답도 예상보다 빨리 좁혀질 가능성이 커 보여요.",
+    "mood": [
+      "confused",
+      "growth"
+    ]
+  },
+  {
+    "id": 192,
+    "result_type": "love_needs_shared_effort",
+    "title": "서로 함께 움직일 때 관계도 힘을 얻어",
+    "flow_reading": "한쪽만 애쓰는 관계는 금방 지치기 쉬워요. 지금은 누가 더 크게 말하는지보다 누가 함께 책임지고 이어가려 하는지를 보는 편이 더 중요해 보여요.",
+    "mood": [
+      "love",
+      "motivation"
+    ]
+  },
+  {
+    "id": 193,
+    "result_type": "motivation_can_restart_anyday",
+    "title": "의욕은 꼭 월요일이 아니어도 다시 시작할 수 있어",
+    "flow_reading": "특별한 타이밍을 기다리면 오히려 다시 미뤄질 수 있어요. 지금은 오늘 안에서 가능한 아주 작은 재시작 하나가 흐름을 바꾸는 데 더 충분할 수 있어요.",
+    "mood": [
+      "motivation",
+      "gratitude"
+    ]
+  },
+  {
+    "id": 194,
+    "result_type": "healing_from_being_understood",
+    "title": "이해받는 경험이 마음을 깊게 회복시켜줘",
+    "flow_reading": "조언보다도 내 마음이 제대로 전달됐다는 느낌이 더 필요할 수 있어요. 지금은 문제 해결보다 이해받는 경험 자체가 큰 안정이 될 가능성이 커 보여요.",
+    "mood": [
+      "healing",
+      "lonely"
+    ]
+  },
+  {
+    "id": 195,
+    "result_type": "gratitude_keeps_you_grounded",
+    "title": "감사는 마음이 들뜨거나 가라앉을 때 모두 중심이 돼",
+    "flow_reading": "지금은 감정의 높낮이가 커서 판단도 흔들릴 수 있어요. 아주 사소한 고마움 하나를 붙잡는 것만으로도 감정의 바닥을 다시 느낄 수 있을 가능성이 커 보여요.",
+    "mood": [
+      "gratitude",
+      "confused"
+    ]
+  },
+  {
+    "id": 196,
+    "result_type": "lonely_time_can_heal_old_noise",
+    "title": "혼자 있는 시간이 오래된 소음을 씻어줄 수도 있어",
+    "flow_reading": "계속 관계 속에서만 나를 확인하다 보면 정작 내 목소리가 들리지 않을 수 있어요. 지금은 적당한 고독이 오히려 마음의 잡음을 줄여줄 가능성이 커 보여요.",
+    "mood": [
+      "lonely",
+      "healing"
+    ]
+  },
+  {
+    "id": 197,
+    "result_type": "growth_needs_long_view",
+    "title": "지금의 작은 변화도 길게 보면 꽤 큰 차이가 돼",
+    "flow_reading": "당장의 속도만 보면 답답할 수 있지만, 장기적인 흐름 안에서는 이미 충분한 방향 전환이 일어나고 있을 수 있어요. 지금은 하루보다 몇 달 단위로 보는 시선이 더 중요해 보여요.",
+    "mood": [
+      "growth",
+      "gratitude"
+    ]
+  },
+  {
+    "id": 198,
+    "result_type": "confused_can_still_choose",
+    "title": "완벽히 확신하지 않아도 다음 한 걸음은 고를 수 있어",
+    "flow_reading": "모든 의문이 사라진 뒤에만 움직일 수 있는 것은 아니에요. 지금은 전체 답보다 다음 행동 하나를 정하는 편이 훨씬 현실적이고 도움이 될 가능성이 커 보여요.",
+    "mood": [
+      "confused",
+      "motivation"
+    ]
+  },
+  {
+    "id": 199,
+    "result_type": "love_after_reassurance",
+    "title": "안심이 되는 관계가 결국 오래 남아",
+    "flow_reading": "마음이 자꾸 시험받는 관계보다 편안함을 주는 관계가 지금은 더 맞을 수 있어요. 설렘의 강도보다 함께 있을 때 불안이 줄어드는지를 보는 편이 더 중요해 보여요.",
+    "mood": [
+      "love",
+      "healing"
+    ]
+  },
+  {
+    "id": 200,
+    "result_type": "motivation_for_the_long_run",
+    "title": "지금 필요한 건 순간 화력이 아니라 오래 가는 동력이야",
+    "flow_reading": "처음 세게 달리는 것보다 중간에 꺾이지 않는 방식이 지금은 훨씬 중요해 보여요. 무리하지 않으면서도 계속 이어갈 수 있는 구조가 결국 가장 큰 결과를 만들 가능성이 커 보여요.",
+    "mood": [
+      "motivation",
+      "growth"
+    ]
   }
 ]

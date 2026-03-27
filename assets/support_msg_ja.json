@@ -998,5 +998,1005 @@
       "motivation",
       "growth"
     ]
+  },
+  {
+    "id": 101,
+    "result_type": "motivation_after_reset",
+    "title": "やり直しても流れはちゃんと続いていく",
+    "flow_reading": "少し止まったからといって、すべてが切れたわけではないかも。今は最初から完璧にやり直すことより、もう一度手を動かす感覚を取り戻すほうが大切そう。",
+    "mood": [
+      "motivation",
+      "healing"
+    ]
+  },
+  {
+    "id": 102,
+    "result_type": "love_needs_honesty",
+    "title": "関係は素直さの中でよりはっきりしていく",
+    "flow_reading": "相手を思うあまり、本音をしまい込みすぎているのかも。やさしくても本当の気持ちを伝えるほど、関係の方向は見えやすくなりそう。",
+    "mood": [
+      "love",
+      "confused"
+    ]
+  },
+  {
+    "id": 103,
+    "result_type": "tired_mind_needs_space",
+    "title": "疲れた心にはまず余白が必要だよ",
+    "flow_reading": "今は何かで埋めようとするほど、かえって重くなってしまうかも。答えを急ぐより、少し空けることのほうが助けになりそう。",
+    "mood": [
+      "tired",
+      "healing"
+    ]
+  },
+  {
+    "id": 104,
+    "result_type": "gratitude_for_small_progress",
+    "title": "小さな前進にもちゃんと意味がある",
+    "flow_reading": "大きな変化だけを成果として見る必要はなさそう。ほんの少しの動きでも認めるほど、心の力はもっと安定して育っていきそう。",
+    "mood": [
+      "gratitude",
+      "growth"
+    ]
+  },
+  {
+    "id": 105,
+    "result_type": "lonely_but_not_lost",
+    "title": "ひとりの時間があっても道を失ったわけじゃない",
+    "flow_reading": "今の静けさは、置いていかれたサインとは限らないよ。外のノイズが減ったぶん、自分の基準をもっとはっきり聞ける時期なのかも。",
+    "mood": [
+      "lonely",
+      "healing"
+    ]
+  },
+  {
+    "id": 106,
+    "result_type": "growth_after_discomfort",
+    "title": "少しの居心地の悪さの中に成長が隠れているかも",
+    "flow_reading": "心地よさだけを選んでいると、今必要な広がりが遅れてしまうかも。無理をする苦しさではなく、少し新しい不慣れさのほうが今の流れに合っていそう。",
+    "mood": [
+      "growth",
+      "motivation"
+    ]
+  },
+  {
+    "id": 107,
+    "result_type": "confused_needs_less_noise",
+    "title": "迷うほど情報よりノイズを減らしてみて",
+    "flow_reading": "今の混乱は情報不足より、情報の多さから来ているのかも。大事な基準をいくつかだけ残すほど、答えは近く感じられそう。",
+    "mood": [
+      "confused",
+      "healing"
+    ]
+  },
+  {
+    "id": 108,
+    "result_type": "love_with_slow_trust",
+    "title": "ゆっくり積み上がる信頼のほうが長く続くかも",
+    "flow_reading": "強い感情より、繰り返し感じる安定感のほうが大切な時かも。急いで確信を得ようとするより、自然に続くリズムを見ていくほうが正確そう。",
+    "mood": [
+      "love",
+      "healing"
+    ]
+  },
+  {
+    "id": 109,
+    "result_type": "motivation_returns_in_motion",
+    "title": "やる気は動き始めてから戻ってくることもある",
+    "flow_reading": "気持ちが整うのを待っていると、かえって長く止まってしまうかも。今は心より先に少し体を動かすことで、意欲が自然についてきそう。",
+    "mood": [
+      "motivation",
+      "tired"
+    ]
+  },
+  {
+    "id": 110,
+    "result_type": "healing_needs_gentle_routine",
+    "title": "回復は大きな変化よりやさしい反復から来る",
+    "flow_reading": "今は一度の大きな決意より、小さく安定した繰り返しのほうが合っていそう。予測できるリズムが増えるほど、回復も深まりやすそう。",
+    "mood": [
+      "healing",
+      "tired"
+    ]
+  },
+  {
+    "id": 111,
+    "result_type": "gratitude_after_comparison",
+    "title": "比べるのをやめると持っているものが見えやすくなる",
+    "flow_reading": "今は人との距離を測るより、すでに自分を支えているものを見直すことが大切そう。比較が減るほど、感謝も自然に戻ってきそう。",
+    "mood": [
+      "gratitude",
+      "healing"
+    ]
+  },
+  {
+    "id": 112,
+    "result_type": "lonely_can_be_creative",
+    "title": "ひとりの時間が新しい感性を開くこともある",
+    "flow_reading": "人の気配が少ないからといって、空っぽとは限らないよ。今は感情や考えを整えて、新しい表現を取り出すのに向いた流れかも。",
+    "mood": [
+      "lonely",
+      "growth"
+    ]
+  },
+  {
+    "id": 113,
+    "result_type": "growth_wants_patience",
+    "title": "成長は速さより積み重ねに向いているよ",
+    "flow_reading": "目に見える変化がゆっくりでも、方向が間違っているとは限らないよ。続けられる形なら、それだけでも十分に良い流れかも。",
+    "mood": [
+      "growth",
+      "tired"
+    ]
+  },
+  {
+    "id": 114,
+    "result_type": "confused_heart_needs_pause",
+    "title": "心が複雑なほど、少し止まることが答えになる",
+    "flow_reading": "今は考え続けても答えが早く来るわけではなさそう。感情の熱が少し下がったあとに見直すほうが、ずっと単純に見えるかも。",
+    "mood": [
+      "confused",
+      "tired"
+    ]
+  },
+  {
+    "id": 115,
+    "result_type": "love_needs_clear_intent",
+    "title": "あいまいな気持ちより、はっきりした意志のほうが大切",
+    "flow_reading": "言葉ひとつひとつを読みすぎるより、実際に何を続けようとしているかを見るほうが正確かも。今は感情の強さより、態度と方向性のほうが関係を語ってくれそう。",
+    "mood": [
+      "love",
+      "growth"
+    ]
+  },
+  {
+    "id": 116,
+    "result_type": "motivation_from_meaning",
+    "title": "やる気は理由がはっきりするほど長持ちする",
+    "flow_reading": "ただ頑張るだけのやり方は、今は長く続きにくいかも。なぜやりたいのか、どんな気持ちを守りたいのかに戻るほど、力の向きも整っていきそう。",
+    "mood": [
+      "motivation",
+      "gratitude"
+    ]
+  },
+  {
+    "id": 117,
+    "result_type": "healing_after_truth",
+    "title": "本当のことを認めたあとで、やっと心は休み始める",
+    "flow_reading": "今の疲れは状況そのものより、平気なふりを続けることから大きくなっているのかも。つらいと認めた瞬間から、回復もやわらかく始まりそう。",
+    "mood": [
+      "healing",
+      "confused"
+    ]
+  },
+  {
+    "id": 118,
+    "result_type": "gratitude_for_support",
+    "title": "当たり前だと思っていた支えに、もう一度気づけそう",
+    "flow_reading": "足りないものだけでなく、ずっとそばで支えてくれていたものにも目を向ける時かも。小さな気遣いに気づくほど、心のバランスも安定しやすそう。",
+    "mood": [
+      "gratitude",
+      "love"
+    ]
+  },
+  {
+    "id": 119,
+    "result_type": "lonely_needs_contact",
+    "title": "ひとりで耐えるより、小さなつながりが必要かも",
+    "flow_reading": "深い会話じゃなくても大丈夫だよ。軽い近況のやり取りだけでも、思った以上に心の重さがやわらぐ可能性がありそう。",
+    "mood": [
+      "lonely",
+      "love"
+    ]
+  },
+  {
+    "id": 120,
+    "result_type": "growth_with_self_trust",
+    "title": "成長は自分のリズムを信じるほど深まっていく",
+    "flow_reading": "周りに合わせようとする気持ちが、今の集中をぼかしているのかも。ペースが違っても積み上がっている感覚を信じることのほうが大切そう。",
+    "mood": [
+      "growth",
+      "gratitude"
+    ]
+  },
+  {
+    "id": 121,
+    "result_type": "confused_but_close",
+    "title": "迷っていても、答えから遠いとは限らない",
+    "flow_reading": "わからない感じが強い時ほど、実は答えの輪郭が近づいていることもあるよ。混乱そのものを失敗にせず、何が引っかかっているのかを見るほうが大切そう。",
+    "mood": [
+      "confused",
+      "growth"
+    ]
+  },
+  {
+    "id": 122,
+    "result_type": "love_after_patience",
+    "title": "気持ちは待つ時間の中で、もっと正確になることがある",
+    "flow_reading": "すぐに見える感情より、時間がたっても残る気持ちのほうが本物かもしれないよ。確信を急がないほど、何が残るのかが見えやすくなりそう。",
+    "mood": [
+      "love",
+      "gratitude"
+    ]
+  },
+  {
+    "id": 123,
+    "result_type": "motivation_needs_rest_too",
+    "title": "休むことが、次のやる気を連れてくることもある",
+    "flow_reading": "進みたい気持ちがあっても、今は体が追いついていないのかも。この流れでは止まることが後退ではなく、次の推進力の準備になりそう。",
+    "mood": [
+      "motivation",
+      "healing"
+    ]
+  },
+  {
+    "id": 124,
+    "result_type": "healing_through_order",
+    "title": "整えることが、思った以上に心を助けてくれる",
+    "flow_reading": "感情を直接どうにかしようとするより、周りに少し秩序をつくるほうが効果的な時かも。目の前が整うほど、心も一緒に落ち着きやすくなりそう。",
+    "mood": [
+      "healing",
+      "gratitude"
+    ]
+  },
+  {
+    "id": 125,
+    "result_type": "gratitude_in_ordinary_day",
+    "title": "何でもない一日の中にもちゃんと力がある",
+    "flow_reading": "特別な出来事がなくても大丈夫だよ。無事に過ぎた一日そのものが、回復や土台を意味していることもあって、その平凡さに気づくほど心も強くなりそう。",
+    "mood": [
+      "gratitude",
+      "tired"
+    ]
+  },
+  {
+    "id": 126,
+    "result_type": "lonely_to_inner_strength",
+    "title": "さみしさの中でも、自分の力はちゃんと育っている",
+    "flow_reading": "頼っていた場所が静かになるほど、自分で立つ力も育っているのかも。耐えてきた時間の強さを思い出すほうが、今は必要そう。",
+    "mood": [
+      "lonely",
+      "gratitude"
+    ]
+  },
+  {
+    "id": 127,
+    "result_type": "growth_after_revision",
+    "title": "方向を修正することも成長の一部だよ",
+    "flow_reading": "最初の計画と違ってきたからといって失敗とは限らないよ。今は修正できる柔らかさが、むしろ遠くまで進ませてくれそう。",
+    "mood": [
+      "growth",
+      "confused"
+    ]
+  },
+  {
+    "id": 128,
+    "result_type": "confused_needs_body_signal",
+    "title": "頭より体のサインのほうが正直なこともある",
+    "flow_reading": "考えは何度も変わっても、体はすでに答えを知っていることがあるよ。どの選択で肩の力が抜けるか、どこで呼吸が楽になるかを見てみて。",
+    "mood": [
+      "confused",
+      "healing"
+    ]
+  },
+  {
+    "id": 129,
+    "result_type": "love_grows_in_daily_life",
+    "title": "関係は特別な日より日常の中で見えてくる",
+    "flow_reading": "大きな表現より、いつもの態度のほうが本音を語ることもあるよ。今はイベントより、繰り返される関心や思いやりを見るほうが正確そう。",
+    "mood": [
+      "love",
+      "gratitude"
+    ]
+  },
+  {
+    "id": 130,
+    "result_type": "motivation_after_completion",
+    "title": "ひとつ終えると、次の力も戻ってきやすい",
+    "flow_reading": "始めることばかり増えると、気力はむしろ漏れてしまうかも。今は小さなことでもひとつ終わらせることで、流れが戻りやすくなりそう。",
+    "mood": [
+      "motivation",
+      "growth"
+    ]
+  },
+  {
+    "id": 131,
+    "result_type": "healing_does_not_rush",
+    "title": "回復は急ぐほど遠く感じることもある",
+    "flow_reading": "早く元気になりたい気持ちが、かえって心を締めつけているのかも。今はよくなる速さより、自分をどう扱うかのほうが大事そう。",
+    "mood": [
+      "healing",
+      "tired"
+    ]
+  },
+  {
+    "id": 132,
+    "result_type": "gratitude_with_self_respect",
+    "title": "感謝と自分を大切にすることは両立できる",
+    "flow_reading": "やさしさに感謝しながら、自分を守る線を引くこともできるよ。今は感謝と我慢を同じものにしないバランスが大切そう。",
+    "mood": [
+      "gratitude",
+      "love"
+    ]
+  },
+  {
+    "id": 133,
+    "result_type": "lonely_after_transition",
+    "title": "変化のあとのさみしさは自然な通過点かも",
+    "flow_reading": "慣れた関係や環境が変わったなら、今の空っぽさはおかしな反応じゃないよ。新しいリズムが落ち着く前の余白と見るほうがやさしいかも。",
+    "mood": [
+      "lonely",
+      "confused"
+    ]
+  },
+  {
+    "id": 134,
+    "result_type": "growth_through_repetition",
+    "title": "繰り返しの中で力は静かに育っている",
+    "flow_reading": "目立つ出来事がないからといって、止まっているとは限らないよ。今は同じことを丁寧に続ける力が、いちばん大きな差をつくっていそう。",
+    "mood": [
+      "growth",
+      "motivation"
+    ]
+  },
+  {
+    "id": 135,
+    "result_type": "confused_between_options",
+    "title": "どちらも惹かれるなら、まだ基準がぼんやりしているのかも",
+    "flow_reading": "選択肢がどちらもよく見えるのは、答えがないからではなく、基準がまだ具体的でないからかも。今は何を得たいかより、何を失いたくないかを見るほうが助けになりそう。",
+    "mood": [
+      "confused",
+      "gratitude"
+    ]
+  },
+  {
+    "id": 136,
+    "result_type": "love_needs_breathing_room",
+    "title": "近さの中にも息つく余白は必要だよ",
+    "flow_reading": "好きな気持ちが大きいほど、ずっと近くにいたくなるかも。でも今は適度な距離も関係を健康にする要素になりそう。お互いのリズムを尊重するほど楽になりやすいよ。",
+    "mood": [
+      "love",
+      "healing"
+    ]
+  },
+  {
+    "id": 137,
+    "result_type": "motivation_can_be_borrowed",
+    "title": "自分の力が弱い時は外の勢いを借りてもいい",
+    "flow_reading": "今は根性だけより、環境の助けを使うほうが現実的かも。予定や約束、一緒に進む人みたいな外の仕組みが、やる気を支えてくれそう。",
+    "mood": [
+      "motivation",
+      "lonely"
+    ]
+  },
+  {
+    "id": 138,
+    "result_type": "healing_starts_with_sleep",
+    "title": "回復の始まりは思うよりずっとシンプルかも",
+    "flow_reading": "今は特別な方法より、睡眠や基本のリズムを整えることが先かもしれないよ。体が少し落ち着くだけで、感情の揺れも今よりかなり和らぎそう。",
+    "mood": [
+      "healing",
+      "tired"
+    ]
+  },
+  {
+    "id": 139,
+    "result_type": "gratitude_after_hard_day",
+    "title": "大変な日にも、ちゃんと残るものがある",
+    "flow_reading": "今日は思うようにいかなかったとしても、全部を失ったわけじゃないよ。耐えたこと、学んだこと、残ったもののひとつに目を向けるだけでも、心はまた中心に戻りやすそう。",
+    "mood": [
+      "gratitude",
+      "healing"
+    ]
+  },
+  {
+    "id": 140,
+    "result_type": "lonely_needs_warmth",
+    "title": "さみしい日は、まず温かさが必要かも",
+    "flow_reading": "今は生産性より、体温みたいな安心感のほうが大事かもしれないよ。小さなぬくもりひとつが、思った以上に支えになりそう。",
+    "mood": [
+      "lonely",
+      "tired"
+    ]
+  },
+  {
+    "id": 141,
+    "result_type": "growth_is_not_linear",
+    "title": "よくなったり揺れたりしても、ちゃんと育っている途中だよ",
+    "flow_reading": "今の揺れを後退だけだと思わなくて大丈夫。成長には戻りや反復もあって、前より早く立て直せているなら、それだけでも変化は進んでいるよ。",
+    "mood": [
+      "growth",
+      "healing"
+    ]
+  },
+  {
+    "id": 142,
+    "result_type": "confused_truth_wants_words",
+    "title": "複雑な心ほど、言葉にする力が必要になる",
+    "flow_reading": "頭の中だけで抱えていると、同じ考えがふくらみ続けるかも。今は感情を正確な言葉に変えることが、判断をずっと澄ませてくれそう。",
+    "mood": [
+      "confused",
+      "growth"
+    ]
+  },
+  {
+    "id": 143,
+    "result_type": "love_after_reality_check",
+    "title": "ときめきと同じくらい、現実の心地よさも大切",
+    "flow_reading": "惹かれる気持ちと、実際に長く一緒にいられるかは別かもしれないよ。今は感情の強さだけでなく、一緒にいて落ち着けるかを見るほうが大切そう。",
+    "mood": [
+      "love",
+      "confused"
+    ]
+  },
+  {
+    "id": 144,
+    "result_type": "motivation_in_small_blocks",
+    "title": "やる気が弱い時ほど、小さな単位のほうが強い",
+    "flow_reading": "大きな目標を一気に見ようとすると、始めること自体が重くなるかも。今は細かく分けるほど負担が減って、流れも戻りやすくなりそう。",
+    "mood": [
+      "motivation",
+      "confused"
+    ]
+  },
+  {
+    "id": 145,
+    "result_type": "healing_needs_no_performance",
+    "title": "回復を成果みたいに管理しなくて大丈夫",
+    "flow_reading": "どれだけよくなったかを何度も確認する習慣が、かえって息苦しさを生んでいるのかも。今は回復を点数ではなく過程として見てあげるほうがよさそう。",
+    "mood": [
+      "healing",
+      "confused"
+    ]
+  },
+  {
+    "id": 146,
+    "result_type": "gratitude_for_the_present",
+    "title": "今あるものを見る力が、未来も守ってくれる",
+    "flow_reading": "足りないものばかり見ていると、心はすぐに焦ってしまうかも。今手の中にある資源や人を見直すほど、次の選択も落ち着いてできそう。",
+    "mood": [
+      "gratitude",
+      "confused"
+    ]
+  },
+  {
+    "id": 147,
+    "result_type": "lonely_can_seek_help",
+    "title": "さみしくても助けを求めていい",
+    "flow_reading": "ひとりの時間が長かったからといって、ひとりで解決しなければいけないわけじゃないよ。今は気持ちを見せることが弱さではなく、回復の方向になりそう。",
+    "mood": [
+      "lonely",
+      "healing"
+    ]
+  },
+  {
+    "id": 148,
+    "result_type": "growth_after_choosing_less",
+    "title": "減らす選択が、むしろ成長を開くこともある",
+    "flow_reading": "たくさんやるほど前に進むとは限らないよ。今は広げることより、整理して選び直すことのほうが大きな力を持っていそう。",
+    "mood": [
+      "growth",
+      "healing"
+    ]
+  },
+  {
+    "id": 149,
+    "result_type": "confused_by_pressure",
+    "title": "今の混乱は選択そのものより、プレッシャーから来ているのかも",
+    "flow_reading": "何を選ぶかより、ちゃんと選ばなきゃという圧のほうが大きく働いているのかも。少し肩の力を抜くだけで、答えは今より見えやすくなりそう。",
+    "mood": [
+      "confused",
+      "tired"
+    ]
+  },
+  {
+    "id": 150,
+    "result_type": "love_with_boundaries",
+    "title": "好きな気持ちと守るべき線は一緒に持っていていい",
+    "flow_reading": "関係を大切にしたいからといって、何でも受け入れる必要はないよ。今は相手への気持ちと同じくらい、自分を守る基準も大切にしたほうがよさそう。",
+    "mood": [
+      "love",
+      "healing"
+    ]
+  },
+  {
+    "id": 151,
+    "result_type": "motivation_after_clarity",
+    "title": "次にやることが見えると、力も戻ってきやすい",
+    "flow_reading": "やる気がないのではなく、方向がぼやけて止まっているだけかも。今はやることを増やすより、優先順位を絞るほうが効果的そう。",
+    "mood": [
+      "motivation",
+      "growth"
+    ]
+  },
+  {
+    "id": 152,
+    "result_type": "healing_from_kind_words",
+    "title": "やさしいひと言が、回復を思った以上に早めてくれる",
+    "flow_reading": "今必要なのは解決策より、安心してもいい感覚かもしれないよ。自分からでも誰かからでも、やわらかな言葉が入るほど心はほどけやすくなりそう。",
+    "mood": [
+      "healing",
+      "love"
+    ]
+  },
+  {
+    "id": 153,
+    "result_type": "gratitude_for_past_self",
+    "title": "ここまで来られたのは、前の自分が頑張ってくれたから",
+    "flow_reading": "今足りない部分だけではなく、ここまで運んでくれた過去の自分にも目を向けたい時かも。昔の自分への感謝が、今の自信も支えてくれそう。",
+    "mood": [
+      "gratitude",
+      "growth"
+    ]
+  },
+  {
+    "id": 154,
+    "result_type": "lonely_night_needs_softness",
+    "title": "さみしい夜ほど、自分を強く責めないで",
+    "flow_reading": "感情が大きくなりやすい時間には、考えも極端に傾きやすいよ。今は答えを出すことより、心を落ち着かせることのほうが先かも。",
+    "mood": [
+      "lonely",
+      "tired"
+    ]
+  },
+  {
+    "id": 155,
+    "result_type": "growth_from_questions",
+    "title": "いい問いひとつが成長を大きく変えることがある",
+    "flow_reading": "今は答えを急ぐことより、問いを正確につくるほうが大切かも。本当に知りたい核心が見えるほど、次の一歩もはっきりしそう。",
+    "mood": [
+      "growth",
+      "confused"
+    ]
+  },
+  {
+    "id": 156,
+    "result_type": "confused_needs_sleep",
+    "title": "眠りが足りないと、心も必要以上に揺れやすい",
+    "flow_reading": "今の不安や迷いは、問題の大きさより疲れの影響かもしれないよ。しっかり休んだあとなら、同じ状況でも今より扱いやすく感じられそう。",
+    "mood": [
+      "confused",
+      "tired"
+    ]
+  },
+  {
+    "id": 157,
+    "result_type": "love_sees_consistency",
+    "title": "気持ちは、続いていく態度の中でいちばん見えやすい",
+    "flow_reading": "一度の大きな表現より、繰り返し続く態度のほうが多くを語ることもあるよ。今は言葉の華やかさより、行動の継続を見るほうが正確そう。",
+    "mood": [
+      "love",
+      "gratitude"
+    ]
+  },
+  {
+    "id": 158,
+    "result_type": "motivation_after_one_step",
+    "title": "たった一歩が、思うより大きく流れを変える",
+    "flow_reading": "やることが多く見えても、流れを変えるのは最初の一回の実行かもしれないよ。今は完成より、始めるときの抵抗を小さくするほうが合っていそう。",
+    "mood": [
+      "motivation",
+      "confused"
+    ]
+  },
+  {
+    "id": 159,
+    "result_type": "healing_allows_sadness",
+    "title": "悲しみを感じることも回復の一部だよ",
+    "flow_reading": "早く元気にならなきゃという圧で、悲しさそのものを押し込めているのかも。今は感情を消すより、安全に流していくことのほうが必要そう。",
+    "mood": [
+      "healing",
+      "lonely"
+    ]
+  },
+  {
+    "id": 160,
+    "result_type": "gratitude_builds_stability",
+    "title": "感謝は揺れる時ほど中心を取り戻させてくれる",
+    "flow_reading": "心が不安定なほど、足りなさだけが大きく見えやすいよ。小さな感謝をひとつでもつかまえることが、バランスを戻す助けになりそう。",
+    "mood": [
+      "gratitude",
+      "healing"
+    ]
+  },
+  {
+    "id": 161,
+    "result_type": "lonely_after_distance",
+    "title": "距離のあとのさみしさが、心の全部とは限らない",
+    "flow_reading": "誰かとの距離が広がったからといって、関係の意味まですべて消えたわけではないかも。今は喪失感だけでなく、残っている気持ちの質感も見てみて。",
+    "mood": [
+      "lonely",
+      "love"
+    ]
+  },
+  {
+    "id": 162,
+    "result_type": "growth_needs_recovery",
+    "title": "もっと進みたいなら、まず回復する力が必要だよ",
+    "flow_reading": "今は頑張るだけで遠くまで行ける状態ではないのかも。長く進みたいなら、速度より土台を立て直すほうが賢そう。",
+    "mood": [
+      "growth",
+      "tired"
+    ]
+  },
+  {
+    "id": 163,
+    "result_type": "confused_but_learning",
+    "title": "迷っている途中でも、ちゃんと学んでいる",
+    "flow_reading": "今すぐ結論が出なくても、この時間が無駄とは限らないよ。何が自分に合わないかを知るだけでも、基準はしっかり育っているはず。",
+    "mood": [
+      "confused",
+      "growth"
+    ]
+  },
+  {
+    "id": 164,
+    "result_type": "love_needs_mutuality",
+    "title": "片方だけの頑張りでは、関係は長く続きにくい",
+    "flow_reading": "今大事なのは、自分がどれだけ頑張っているかより、ふたりが一緒に動いているかどうかかも。偏った努力は愛より先に消耗を生みやすいよ。",
+    "mood": [
+      "love",
+      "tired"
+    ]
+  },
+  {
+    "id": 165,
+    "result_type": "motivation_follows_structure",
+    "title": "やる気より仕組みが先に必要な時もある",
+    "flow_reading": "気分が整うのを待っていると、ずっと先延ばしになるかも。今は感情より、自動で動ける構造をつくるほうが強い流れに合っていそう。",
+    "mood": [
+      "motivation",
+      "growth"
+    ]
+  },
+  {
+    "id": 166,
+    "result_type": "healing_in_safe_people",
+    "title": "安心できる人のそばで、心は早くほどける",
+    "flow_reading": "ひとりで整理しようとするより、気持ちを大げさにせず受け止めてくれる人のそばにいるほうが助けになるかも。安全感が回復の速さを変えてくれそう。",
+    "mood": [
+      "healing",
+      "love"
+    ]
+  },
+  {
+    "id": 167,
+    "result_type": "gratitude_after_delay",
+    "title": "遅れて見えた時間にも、ちゃんと意味は残っている",
+    "flow_reading": "思ったより長くかかった過程が残念に感じても、その時間があったからできた基準や体力もあるはず。今は失った時間より、残った力を見てみて。",
+    "mood": [
+      "gratitude",
+      "growth"
+    ]
+  },
+  {
+    "id": 168,
+    "result_type": "lonely_not_same_as_empty",
+    "title": "さみしいことと、心が空っぽなことは同じじゃない",
+    "flow_reading": "人がそばにいなくても、自分の中にはまだ感覚や可能性が残っているよ。足りなさだけでなく、自分を満たすものが何かを見直してみて。",
+    "mood": [
+      "lonely",
+      "gratitude"
+    ]
+  },
+  {
+    "id": 169,
+    "result_type": "growth_from_imperfection",
+    "title": "完璧じゃなくても、成長の方向はちゃんとある",
+    "flow_reading": "ミスや不足が残っていても、全部が間違いだったとは限らないよ。今は完璧さより、調整しながら続ける姿勢のほうが大きな力になりそう。",
+    "mood": [
+      "growth",
+      "healing"
+    ]
+  },
+  {
+    "id": 170,
+    "result_type": "confused_when_overloaded",
+    "title": "抱えすぎるほど、答えもぼやけやすくなる",
+    "flow_reading": "今の問題は選択そのものより、同時に抱えている量の多さかも。負担を少し減らすだけで、答えは意外と近くに見えてきそう。",
+    "mood": [
+      "confused",
+      "tired"
+    ]
+  },
+  {
+    "id": 171,
+    "result_type": "love_grows_with_respect",
+    "title": "尊重のある関係ほど、あとで深くなっていく",
+    "flow_reading": "強い感情だけでは、どの季節も越えられるとは限らないよ。今はお互いの境界やペースを尊重する態度が、関係の質を決めてくれそう。",
+    "mood": [
+      "love",
+      "growth"
+    ]
+  },
+  {
+    "id": 172,
+    "result_type": "motivation_returns_after_care",
+    "title": "自分を整えたあとで、やる気も戻ってきやすい",
+    "flow_reading": "意志が弱いというより、基本のケアが足りていないだけかも。回復が少し満ちるほど、動きたい気持ちも自然に戻ってきそう。",
+    "mood": [
+      "motivation",
+      "healing"
+    ]
+  },
+  {
+    "id": 173,
+    "result_type": "healing_needs_lower_expectation",
+    "title": "今日は基準を下げることが、むしろ自分を守るかも",
+    "flow_reading": "いつも通りできない自分がもどかしいかもしれないね。でも今の状態に合わせて基準を調整することが、崩れないための現実的な選択になりそう。",
+    "mood": [
+      "healing",
+      "tired"
+    ]
+  },
+  {
+    "id": 174,
+    "result_type": "gratitude_for_one_person",
+    "title": "たったひとりの存在が、大きな力になることもある",
+    "flow_reading": "たくさんの人がいなくても大丈夫だよ。自分の味方でいてくれるひとりを思い出すだけでも、心の安全感はかなり戻ってきそう。",
+    "mood": [
+      "gratitude",
+      "love"
+    ]
+  },
+  {
+    "id": 175,
+    "result_type": "lonely_and_tender",
+    "title": "さみしい時ほど、自分にはやさしくしてあげて",
+    "flow_reading": "人がいないことより、その空白を埋めようとして自分を責めることのほうが痛いのかも。今は心を叱るより、いたわるほうがずっと大事そう。",
+    "mood": [
+      "lonely",
+      "healing"
+    ]
+  },
+  {
+    "id": 176,
+    "result_type": "growth_after_feedback",
+    "title": "耳の痛い言葉も、方向を正確にしてくれることがある",
+    "flow_reading": "聞きたくない内容だからといって、全部が間違いとは限らないよ。今は自尊心を守ることより、使える部分だけ上手に受け取る力が成長につながりそう。",
+    "mood": [
+      "growth",
+      "confused"
+    ]
+  },
+  {
+    "id": 177,
+    "result_type": "confused_needs_priority",
+    "title": "全部を一度に解こうとすると、もっと迷いやすい",
+    "flow_reading": "今はいくつもの悩みが一度に重なっているのかも。何がいちばん急ぎなのかをひとつ切り分けるだけでも、全体の混乱はかなりほどけそう。",
+    "mood": [
+      "confused",
+      "motivation"
+    ]
+  },
+  {
+    "id": 178,
+    "result_type": "love_can_be_calm",
+    "title": "静かな気持ちも、十分に本物の愛になれる",
+    "flow_reading": "大きく揺れる感情だけが愛ではないよ。今は派手なときめきより、落ち着いてそばにいたい気持ちのほうが深いのかもしれないね。",
+    "mood": [
+      "love",
+      "healing"
+    ]
+  },
+  {
+    "id": 179,
+    "result_type": "motivation_after_lessening_fear",
+    "title": "怖さが少し減るだけで、やる気も戻りやすくなる",
+    "flow_reading": "今止まっているのは怠けではなく、失敗への緊張から来ているのかも。怖さを下げる形で始めるほど、流れも戻りやすくなりそう。",
+    "mood": [
+      "motivation",
+      "confused"
+    ]
+  },
+  {
+    "id": 180,
+    "result_type": "healing_through_familiarity",
+    "title": "今の心をいちばん支えるのは、慣れたリズムかもしれない",
+    "flow_reading": "新しい刺激より、慣れた場所や食べ物、人みたいに体がもう知っている安心のほうが必要な時かも。見慣れたものが増えるほど、回復も早まりそう。",
+    "mood": [
+      "healing",
+      "gratitude"
+    ]
+  },
+  {
+    "id": 181,
+    "result_type": "gratitude_changes_focus",
+    "title": "感謝は視線を変え、その視線が一日を変えていく",
+    "flow_reading": "状況がすぐ変わらなくても、見ている方向が変わるだけで心の重さは確かに変わるよ。今は足りないものだけ数える習慣を少し止めてみて。",
+    "mood": [
+      "gratitude",
+      "motivation"
+    ]
+  },
+  {
+    "id": 182,
+    "result_type": "lonely_needs_simple_rhythm",
+    "title": "さみしい日は、単純なリズムが心を守ってくれる",
+    "flow_reading": "感情が揺れるほど、生活のリズムも一緒に崩れやすいよ。今は大きな励ましより、決まった時間に寝て食べて動く単純な構造のほうが助けになりそう。",
+    "mood": [
+      "lonely",
+      "tired"
+    ]
+  },
+  {
+    "id": 183,
+    "result_type": "growth_needs_blank_space",
+    "title": "成長のためにも、空いている時間は必要だよ",
+    "flow_reading": "入れ続けるだけでは、学んだことが内側で整理されないかも。今は刺激を減らして、すでに得たものを消化する時間を持つほうが次の伸びにつながりそう。",
+    "mood": [
+      "growth",
+      "healing"
+    ]
+  },
+  {
+    "id": 184,
+    "result_type": "confused_and_sensitive",
+    "title": "敏感な日は、判断も実際より大きくなりやすい",
+    "flow_reading": "感じていることが間違いというわけじゃないけれど、強さだけはいつもより増しているかも。そんな日は結論より観察を残すほうが安全そう。",
+    "mood": [
+      "confused",
+      "tired"
+    ]
+  },
+  {
+    "id": 185,
+    "result_type": "love_after_understanding_self",
+    "title": "自分の気持ちがわかるほど、関係も揺れにくくなる",
+    "flow_reading": "相手がどうかより、自分が関係に何を求めているかが見えないと、もっと揺れやすくなるかも。相手を読む前に、自分の感情の形を見てみて。",
+    "mood": [
+      "love",
+      "confused"
+    ]
+  },
+  {
+    "id": 186,
+    "result_type": "motivation_from_environment",
+    "title": "場所が変わるだけで、心もまた動き出すことがある",
+    "flow_reading": "意志の弱さではなく、慣れすぎた環境に力が抜けているだけかも。少し場所を変えたり空気を変えたりするだけで、流れがかなり変わる可能性がありそう。",
+    "mood": [
+      "motivation",
+      "growth"
+    ]
+  },
+  {
+    "id": 187,
+    "result_type": "healing_accepts_limits",
+    "title": "限界を認めることが、むしろ今の自分を守ってくれる",
+    "flow_reading": "まだできないことを無理に押し通すほど、疲れは大きくなるかも。今は限界を否定するより、その中でできることを探すほうが健康的な流れに見えるよ。",
+    "mood": [
+      "healing",
+      "growth"
+    ]
+  },
+  {
+    "id": 188,
+    "result_type": "gratitude_for_recovery_signs",
+    "title": "少しよくなったサインを見逃さないことが大事",
+    "flow_reading": "完全によくなった時だけを回復とすると、心はすぐにがっかりしてしまうかも。小さな改善に気づく目が、前へ進む力を大きくしてくれそう。",
+    "mood": [
+      "gratitude",
+      "healing"
+    ]
+  },
+  {
+    "id": 189,
+    "result_type": "lonely_but_open",
+    "title": "さみしい心も、またつながる準備をしている途中かも",
+    "flow_reading": "今は閉じているように見えても、実は誰かを受け入れる余白が戻ってきている過程なのかもしれないよ。さみしさを終わりではなく途中と見るほうが合っていそう。",
+    "mood": [
+      "lonely",
+      "love"
+    ]
+  },
+  {
+    "id": 190,
+    "result_type": "growth_after_staying_consistent",
+    "title": "大きく目立たなくても、続ければちゃんと差になる",
+    "flow_reading": "今は目に見える成果より、流れを保つ力のほうが大事そう。静かな反復が、時間の中でいちばん大きな違いをつくってくれそう。",
+    "mood": [
+      "growth",
+      "motivation"
+    ]
+  },
+  {
+    "id": 191,
+    "result_type": "confused_until_values_clear",
+    "title": "大切にしたい価値がはっきりすると、選びやすくなる",
+    "flow_reading": "今の混乱は能力不足ではなく、何をより大切にしたいかがまだ整理されていないだけかも。価値の順番が決まるほど、答えも早く絞れそう。",
+    "mood": [
+      "confused",
+      "growth"
+    ]
+  },
+  {
+    "id": 192,
+    "result_type": "love_needs_shared_effort",
+    "title": "お互いが一緒に動くほど、関係も力を持つ",
+    "flow_reading": "片方だけで支える関係はすぐ疲れてしまいやすいよ。今は誰がきれいに話すかより、誰が一緒に関係を続けようとしているかを見るほうが大事そう。",
+    "mood": [
+      "love",
+      "motivation"
+    ]
+  },
+  {
+    "id": 193,
+    "result_type": "motivation_can_restart_anyday",
+    "title": "やる気は特別な日じゃなくても、今日からまた始められる",
+    "flow_reading": "完璧なタイミングを待っていると、また先延ばしになるかも。今日の中でできるごく小さな再開ひとつで、流れは十分変わりそう。",
+    "mood": [
+      "motivation",
+      "gratitude"
+    ]
+  },
+  {
+    "id": 194,
+    "result_type": "healing_from_being_understood",
+    "title": "理解される体験は、心を深く回復させてくれる",
+    "flow_reading": "今いちばん必要なのは助言より、ちゃんと伝わったという感覚かもしれないね。その経験そのものが、大きな安心になってくれそう。",
+    "mood": [
+      "healing",
+      "lonely"
+    ]
+  },
+  {
+    "id": 195,
+    "result_type": "gratitude_keeps_you_grounded",
+    "title": "感謝は気持ちが上がる時も沈む時も、足元を戻してくれる",
+    "flow_reading": "今は感情の上下が大きくて、判断まで揺れやすいのかも。小さな感謝をひとつつかむだけでも、足元の感覚は戻りやすくなりそう。",
+    "mood": [
+      "gratitude",
+      "confused"
+    ]
+  },
+  {
+    "id": 196,
+    "result_type": "lonely_time_can_heal_old_noise",
+    "title": "ひとりの時間が、古い心のノイズを洗ってくれることもある",
+    "flow_reading": "関係の中でばかり自分を確かめていると、本当の声が聞こえにくくなるかも。今は適度な孤独が、内側のざわめきを静かにしてくれそう。",
+    "mood": [
+      "lonely",
+      "healing"
+    ]
+  },
+  {
+    "id": 197,
+    "result_type": "growth_needs_long_view",
+    "title": "今の小さな変化も、長く見れば大きな差になる",
+    "flow_reading": "今日だけを見ればもどかしくても、長い流れの中では十分な方向転換が起きているのかも。今は一日単位より、もう少し長い視点が大切そう。",
+    "mood": [
+      "growth",
+      "gratitude"
+    ]
+  },
+  {
+    "id": 198,
+    "result_type": "confused_can_still_choose",
+    "title": "完全に確信できなくても、次の一歩は選べる",
+    "flow_reading": "すべての迷いが消えてから動かなきゃいけないわけじゃないよ。今は全体の答えより、次の行動ひとつを選ぶほうがずっと現実的で助けになりそう。",
+    "mood": [
+      "confused",
+      "motivation"
+    ]
+  },
+  {
+    "id": 199,
+    "result_type": "love_after_reassurance",
+    "title": "安心できる関係が、結局いちばん長く残るかもしれない",
+    "flow_reading": "何度も心が試される関係より、一緒にいると落ち着ける関係のほうが今は合っていそう。ときめきの強さより、不安がやわらぐかどうかを見てみて。",
+    "mood": [
+      "love",
+      "healing"
+    ]
+  },
+  {
+    "id": 200,
+    "result_type": "motivation_for_the_long_run",
+    "title": "今必要なのは瞬発力より、長く続く力だよ",
+    "flow_reading": "最初に強く走ることより、途中で折れないやり方のほうが今はずっと大切そう。無理をしすぎず続けられる構造が、最後にはいちばん大きな結果をつくってくれそう。",
+    "mood": [
+      "motivation",
+      "growth"
+    ]
   }
 ]
