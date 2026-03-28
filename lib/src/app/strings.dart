@@ -72,6 +72,11 @@ class AppStrings {
 
   final AppLanguage language;
 
+  String _displayNameWithHeart(String name) {
+    final trimmedName = name.trim();
+    return trimmedName.isEmpty ? '🤍' : '$trimmedName♥️';
+  }
+
   String get nameDialogTitle {
     switch (language) {
       case AppLanguage.korean:
@@ -150,16 +155,7 @@ class AppStrings {
   }
 
   String entryHeaderWithName(String name) {
-    final trimmedName = name.trim();
-
-    switch (language) {
-      case AppLanguage.korean:
-        return trimmedName.isEmpty ? '🤍' : '$trimmedName♥️';
-      case AppLanguage.japanese:
-        return trimmedName.isEmpty ? '🤍' : '$trimmedName♥️';
-      case AppLanguage.english:
-        return trimmedName.isEmpty ? '🤍' : '$trimmedName♥️';
-    }
+    return _displayNameWithHeart(name);
   }
 
   String get moodPrompt {
@@ -182,11 +178,11 @@ class AppStrings {
 
     switch (language) {
       case AppLanguage.korean:
-        return '$trimmedName, 지금 마음에 닿는 감정을 골라줘';
+        return '${_displayNameWithHeart(trimmedName)}, 지금 마음에 닿는 감정을 골라줘';
       case AppLanguage.japanese:
-        return '$trimmedName、今の気持ちに近いものを選んで';
+        return '${_displayNameWithHeart(trimmedName)}、今の気持ちに近いものを選んで';
       case AppLanguage.english:
-        return '$trimmedName, pick the feeling that fits right now';
+        return '${_displayNameWithHeart(trimmedName)}, pick the feeling that fits right now';
     }
   }
 
@@ -221,11 +217,11 @@ class AppStrings {
 
     switch (language) {
       case AppLanguage.korean:
-        return '$trimmedName의 오늘의 응원을 고르고 있어';
+        return '${_displayNameWithHeart(trimmedName)}의 오늘의 응원을 고르고 있어';
       case AppLanguage.japanese:
-        return '$trimmedNameの今日の応援を選んでいるよ';
+        return '${_displayNameWithHeart(trimmedName)}の今日の応援を選んでいるよ';
       case AppLanguage.english:
-        return 'Choosing today\'s message for $trimmedName';
+        return 'Choosing today\'s message for ${_displayNameWithHeart(trimmedName)}';
     }
   }
 
@@ -260,11 +256,11 @@ class AppStrings {
 
     switch (language) {
       case AppLanguage.korean:
-        return '$trimmedName, 오늘의 응원이 도착했어';
+        return '${_displayNameWithHeart(trimmedName)}, 오늘의 응원이 도착했어';
       case AppLanguage.japanese:
-        return '$trimmedNameへの今日の応援が届いたよ';
+        return '${_displayNameWithHeart(trimmedName)}への今日の応援が届いたよ';
       case AppLanguage.english:
-        return '$trimmedName, your message for today';
+        return '${_displayNameWithHeart(trimmedName)}, your message for today';
     }
   }
 
