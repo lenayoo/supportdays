@@ -1,4 +1,0 @@
-storePassword=815000
-keyPassword=815000
-keyAlias=upload
-storeFile=../upload-keystore.jks
