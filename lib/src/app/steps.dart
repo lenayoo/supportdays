@@ -712,6 +712,8 @@ class _ResultStep extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final bottomInset = MediaQuery.paddingOf(context).bottom;
+
     return Stack(
       children: [
         Positioned.fill(child: _ResultBackdrop(mood: mood)),
@@ -719,112 +721,127 @@ class _ResultStep extends StatelessWidget {
         SafeArea(
           child: LayoutBuilder(
             builder: (context, constraints) {
-              return SingleChildScrollView(
+              final cardHeight = max(305.0, constraints.maxHeight - 235);
+
+              return Padding(
                 padding: const EdgeInsets.fromLTRB(24, 12, 24, 18),
-                child: ConstrainedBox(
-                  constraints: BoxConstraints(
-                    minHeight: constraints.maxHeight - 30,
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Transform.translate(
-                        offset: const Offset(0, 50),
-                        child: Text(
-                          name.isEmpty
-                              ? strings.resultTitle
-                              : strings.resultTitleWithName(name),
-                          style: cuteTextStyle(
-                            strings.language,
-                            fontSize: 34,
-                            fontWeight: FontWeight.w400,
-                            color: const Color(0xFF2F2A27),
-                          ),
-                        ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const SizedBox(height: 20),
+                    Text(
+                      name.isEmpty
+                          ? strings.resultTitle
+                          : strings.resultTitleWithName(name),
+                      style: cuteTextStyle(
+                        strings.language,
+                        fontSize: 34,
+                        fontWeight: FontWeight.w400,
+                        color: const Color(0xFF2F2A27),
                       ),
-                      const SizedBox(height: 14),
-                      Container(
-                        width: double.infinity,
-                        padding: const EdgeInsets.fromLTRB(24, 28, 24, 39),
-                        decoration: BoxDecoration(
-                          color: const Color(
-                            0xFFFFFBF5,
-                          ).withValues(alpha: 0.88),
-                          borderRadius: BorderRadius.circular(32),
-                          border: Border.all(
-                            color: Colors.white.withValues(alpha: 0.72),
+                    ),
+                    const SizedBox(height: 17),
+                    Expanded(
+                      child: Center(
+                        child: ConstrainedBox(
+                          constraints: BoxConstraints(
+                            maxWidth: 560,
+                            maxHeight: cardHeight,
                           ),
-                          boxShadow: const [
-                            BoxShadow(
-                              color: Color(0x0E6E5447),
-                              blurRadius: 24,
-                              offset: Offset(0, 12),
+                          child: Container(
+                            width: double.infinity,
+                            padding: const EdgeInsets.fromLTRB(24, 28, 24, 28),
+                            decoration: BoxDecoration(
+                              color: const Color(
+                                0xFFFFFBF5,
+                              ).withValues(alpha: 0.88),
+                              borderRadius: BorderRadius.circular(32),
+                              border: Border.all(
+                                color: Colors.white.withValues(alpha: 0.72),
+                              ),
+                              boxShadow: const [
+                                BoxShadow(
+                                  color: Color(0x0E6E5447),
+                                  blurRadius: 24,
+                                  offset: Offset(0, 12),
+                                ),
+                              ],
                             ),
-                          ],
-                        ),
-                        child: Stack(
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.only(top: 48),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    message.title,
-                                    style: cuteTextStyle(
-                                      strings.language,
-                                      fontSize: 38,
-                                      fontWeight: FontWeight.w500,
-                                      color: const Color(0xFF64534C),
-                                      height: 1.15,
+                            child: Stack(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 48),
+                                  child: ScrollConfiguration(
+                                    behavior: ScrollConfiguration.of(
+                                      context,
+                                    ).copyWith(scrollbars: false),
+                                    child: SingleChildScrollView(
+                                      child: Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            message.title,
+                                            style: cuteTextStyle(
+                                              strings.language,
+                                              fontSize: 38,
+                                              fontWeight: FontWeight.w500,
+                                              color: const Color(0xFF64534C),
+                                              height: 1.15,
+                                            ),
+                                          ),
+                                          const SizedBox(height: 22),
+                                          Text(
+                                            message.flowReading,
+                                            style: cuteTextStyle(
+                                              strings.language,
+                                              fontSize: 26,
+                                              fontWeight: FontWeight.w400,
+                                              color: const Color(0xFF75645D),
+                                              height: 1.55,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
                                     ),
                                   ),
-                                  const SizedBox(height: 22),
-                                  Text(
-                                    message.flowReading,
-                                    style: cuteTextStyle(
-                                      strings.language,
-                                      fontSize: 26,
-                                      fontWeight: FontWeight.w400,
-                                      color: const Color(0xFF75645D),
-                                      height: 1.55,
-                                    ),
-                                  ),
-                                ],
-                              ),
+                                ),
+                                Align(
+                                  alignment: Alignment.topRight,
+                                  child: _MoodTag(strings: strings, mood: mood),
+                                ),
+                              ],
                             ),
-                            Align(
-                              alignment: Alignment.topRight,
-                              child: _MoodTag(strings: strings, mood: mood),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(top: 18),
-                        child: Center(
-                          child: FilledButton(
-                            onPressed: onChooseAgain,
-                            style: FilledButton.styleFrom(
-                              backgroundColor: Colors.white.withValues(
-                                alpha: 0.76,
-                              ),
-                              foregroundColor: const Color(0xFF32423A),
-                              padding: const EdgeInsets.symmetric(
-                                horizontal: 28,
-                                vertical: 14,
-                              ),
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(18),
-                              ),
-                            ),
-                            child: Text(strings.chooseAgainButton),
                           ),
                         ),
                       ),
-                    ],
-                  ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(
+                        top: 13,
+                        bottom: max(12, bottomInset),
+                      ),
+                      child: Center(
+                        child: FilledButton(
+                          onPressed: onChooseAgain,
+                          style: FilledButton.styleFrom(
+                            backgroundColor: Colors.white.withValues(
+                              alpha: 0.76,
+                            ),
+                            foregroundColor: const Color(0xFF32423A),
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 28,
+                              vertical: 14,
+                            ),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(18),
+                            ),
+                          ),
+                          child: Text(strings.chooseAgainButton),
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               );
             },
