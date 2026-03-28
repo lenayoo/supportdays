@@ -1,85 +1,214 @@
 part of '../../main.dart';
 
+bool _isTabletLayout(BuildContext context) {
+  return MediaQuery.sizeOf(context).shortestSide >= 700;
+}
+
 class _ResultBackdrop extends StatelessWidget {
-  const _ResultBackdrop({
-    required this.mood,
-  });
+  const _ResultBackdrop({required this.mood});
 
   final MoodOption mood;
 
   @override
   Widget build(BuildContext context) {
+    final isTablet = _isTabletLayout(context);
+
     return DecoratedBox(
       decoration: const BoxDecoration(
         gradient: LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
-          colors: [
-            Color(0xFFFFF8EA),
-            Color(0xFFFFF1DE),
-            Color(0xFFFCEAD8),
-          ],
+          colors: [Color(0xFFFFF8EA), Color(0xFFFFF1DE), Color(0xFFFCEAD8)],
         ),
       ),
-      child: Stack(
-        children: [
-          Positioned(
-            left: -60,
-            top: -30,
-            child: _BackdropShape(
-              width: 240,
-              height: 200,
-              color: const Color(0xFFFFD38C),
-            ),
-          ),
-          Positioned(
-            right: -70,
-            top: 40,
-            child: _BackdropShape(
-              width: 250,
-              height: 210,
-              color: const Color(0xFFF3AEC8),
-            ),
-          ),
-          Positioned(
-            left: 36,
-            top: 220,
-            child: _BackdropShape(
-              width: 128,
-              height: 106,
-              color: const Color(0xFFFFB39D),
-            ),
-          ),
-          Positioned(
-            left: 80,
-            right: 70,
-            top: 150,
-            child: _BackdropShape(
-              width: 0,
-              height: 0,
-              expand: true,
-              color: mood.shapeColor.withValues(alpha: 0.92),
-            ),
-          ),
-          Positioned(
-            left: -24,
-            bottom: -12,
-            child: _BackdropShape(
-              width: 220,
-              height: 160,
-              color: const Color(0xFFFF9F58),
-            ),
-          ),
-          Positioned(
-            right: -26,
-            bottom: -26,
-            child: _BackdropShape(
-              width: 210,
-              height: 200,
-              color: const Color(0xFF8F6CCD),
-            ),
-          ),
-        ],
+      child: LayoutBuilder(
+        builder: (context, constraints) {
+          final size = Size(constraints.maxWidth, constraints.maxHeight);
+          final tabletScale =
+              isTablet ? (size.width / 820).clamp(1.0, 1.18) : 1.0;
+          final panelWidth =
+              isTablet
+                  ? min(size.width * 0.50, 500.0 * tabletScale)
+                  : size.width - 150;
+          final panelHeight =
+              isTablet
+                  ? min(size.height * 0.42, 390.0 * tabletScale)
+                  : panelWidth / 0.78;
+          final panelTop = isTablet ? max(148.0, size.height * 0.19) : 150.0;
+
+          return Stack(
+            children: [
+              Positioned(
+                left: isTablet ? -44 : -60,
+                top: isTablet ? -18 : -30,
+                child: _BackdropShape(
+                  width: isTablet ? 320 * tabletScale : 240,
+                  height: isTablet ? 252 * tabletScale : 200,
+                  color: const Color(0xFFFFD38C),
+                ),
+              ),
+              Positioned(
+                right: isTablet ? -42 : -70,
+                top: isTablet ? 28 : 40,
+                child: _BackdropShape(
+                  width: isTablet ? 330 * tabletScale : 250,
+                  height: isTablet ? 264 * tabletScale : 210,
+                  color: const Color(0xFFF3AEC8),
+                ),
+              ),
+              Positioned(
+                left: isTablet ? 18 : 36,
+                top: isTablet ? 210 : 220,
+                child: _BackdropShape(
+                  width: isTablet ? 188 * tabletScale : 128,
+                  height: isTablet ? 150 * tabletScale : 106,
+                  color: const Color(0xFFFFB39D),
+                ),
+              ),
+              Positioned(
+                left: (size.width - panelWidth) / 2,
+                top: panelTop,
+                child:
+                    isTablet
+                        ? _BackdropBlob(
+                          width: panelWidth,
+                          height: panelHeight,
+                          color: mood.shapeColor.withValues(alpha: 0.28),
+                          shapeStyle: mood.shapeStyle,
+                          cornerA: mood.cornerA,
+                          cornerB: mood.cornerB,
+                          cornerC: mood.cornerC,
+                          cornerD: mood.cornerD,
+                        )
+                        : _BackdropShape(
+                          width: panelWidth,
+                          height: panelHeight,
+                          color: mood.shapeColor.withValues(
+                            alpha: isTablet ? 0.82 : 0.92,
+                          ),
+                        ),
+              ),
+              if (isTablet)
+                Positioned(
+                  left: size.width * 0.14,
+                  top: size.height * 0.14,
+                  child: _BackdropBlob(
+                    width: 168 * tabletScale,
+                    height: 132 * tabletScale,
+                    color: const Color(0xFFFFE1A8).withValues(alpha: 0.62),
+                    shapeStyle: BlobShapeStyle.bean,
+                    cornerA: 0.48,
+                    cornerB: 0.56,
+                    cornerC: 0.44,
+                    cornerD: 0.60,
+                  ),
+                ),
+              if (isTablet)
+                Positioned(
+                  right: size.width * 0.10,
+                  top: size.height * 0.50,
+                  child: _BackdropBlob(
+                    width: 144 * tabletScale,
+                    height: 118 * tabletScale,
+                    color: const Color(0xFFD9D4F4).withValues(alpha: 0.56),
+                    shapeStyle: BlobShapeStyle.softPebble,
+                    cornerA: 0.54,
+                    cornerB: 0.38,
+                    cornerC: 0.62,
+                    cornerD: 0.46,
+                  ),
+                ),
+              if (isTablet)
+                Positioned(
+                  left: size.width * 0.10,
+                  bottom: size.height * 0.13,
+                  child: _BackdropBlob(
+                    width: 188 * tabletScale,
+                    height: 144 * tabletScale,
+                    color: const Color(0xFFFFD8CF).withValues(alpha: 0.52),
+                    shapeStyle: BlobShapeStyle.wideCloud,
+                    cornerA: 0.46,
+                    cornerB: 0.58,
+                    cornerC: 0.40,
+                    cornerD: 0.52,
+                  ),
+                ),
+              if (isTablet)
+                Positioned(
+                  left: size.width * 0.56,
+                  top: size.height * 0.12,
+                  child: _BackdropBlob(
+                    width: 132 * tabletScale,
+                    height: 104 * tabletScale,
+                    color: const Color(0xFFCFE0F6).withValues(alpha: 0.50),
+                    shapeStyle: BlobShapeStyle.leanPebble,
+                    cornerA: 0.42,
+                    cornerB: 0.60,
+                    cornerC: 0.48,
+                    cornerD: 0.36,
+                  ),
+                ),
+              Positioned(
+                left: isTablet ? -14 : -24,
+                bottom: isTablet ? -6 : -12,
+                child: _BackdropShape(
+                  width: isTablet ? 308 * tabletScale : 220,
+                  height: isTablet ? 212 * tabletScale : 160,
+                  color: const Color(0xFFFF9F58),
+                ),
+              ),
+              Positioned(
+                right: isTablet ? -10 : -26,
+                bottom: isTablet ? -14 : -26,
+                child: _BackdropShape(
+                  width: isTablet ? 294 * tabletScale : 210,
+                  height: isTablet ? 244 * tabletScale : 200,
+                  color: const Color(0xFF8F6CCD),
+                ),
+              ),
+            ],
+          );
+        },
+      ),
+    );
+  }
+}
+
+class _BackdropBlob extends StatelessWidget {
+  const _BackdropBlob({
+    required this.width,
+    required this.height,
+    required this.color,
+    required this.shapeStyle,
+    required this.cornerA,
+    required this.cornerB,
+    required this.cornerC,
+    required this.cornerD,
+  });
+
+  final double width;
+  final double height;
+  final Color color;
+  final BlobShapeStyle shapeStyle;
+  final double cornerA;
+  final double cornerB;
+  final double cornerC;
+  final double cornerD;
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: width,
+      height: height,
+      child: CustomPaint(
+        painter: _BlobPainter(
+          color: color,
+          shapeStyle: shapeStyle,
+          cornerA: cornerA,
+          cornerB: cornerB,
+          cornerC: cornerC,
+          cornerD: cornerD,
+        ),
       ),
     );
   }
@@ -90,34 +219,23 @@ class _BackdropShape extends StatelessWidget {
     required this.width,
     required this.height,
     required this.color,
-    this.expand = false,
   });
 
   final double width;
   final double height;
   final Color color;
-  final bool expand;
 
   @override
   Widget build(BuildContext context) {
-    final child = DecoratedBox(
-      decoration: BoxDecoration(
-        color: color,
-        borderRadius: BorderRadius.circular(120),
-      ),
-    );
-
-    if (expand) {
-      return AspectRatio(
-        aspectRatio: 0.78,
-        child: child,
-      );
-    }
-
     return SizedBox(
       width: width,
       height: height,
-      child: child,
+      child: DecoratedBox(
+        decoration: BoxDecoration(
+          color: color,
+          borderRadius: BorderRadius.circular(120),
+        ),
+      ),
     );
   }
 }
@@ -176,10 +294,7 @@ class _EntryBlob extends StatelessWidget {
 }
 
 class _NameBadge extends StatelessWidget {
-  const _NameBadge({
-    required this.text,
-    required this.onTap,
-  });
+  const _NameBadge({required this.text, required this.onTap});
 
   final String text;
   final VoidCallback onTap;
@@ -228,12 +343,8 @@ class _NameBadge extends StatelessWidget {
   }
 }
 
-
 class _MoodTag extends StatelessWidget {
-  const _MoodTag({
-    required this.strings,
-    required this.mood,
-  });
+  const _MoodTag({required this.strings, required this.mood});
 
   final AppStrings strings;
   final MoodOption mood;
@@ -247,9 +358,7 @@ class _MoodTag extends StatelessWidget {
       decoration: BoxDecoration(
         color: mood.shapeColor.withValues(alpha: 0.26),
         borderRadius: BorderRadius.circular(18),
-        border: Border.all(
-          color: Colors.white.withValues(alpha: 0.45),
-        ),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.45)),
       ),
       child: Text(
         strings.moodLabel(mood.key),

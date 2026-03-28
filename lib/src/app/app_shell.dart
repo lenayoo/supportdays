@@ -259,13 +259,19 @@ class _SupportHomePageState extends State<SupportHomePage> {
       context: context,
       barrierDismissible: canDismiss,
       builder: (dialogContext) {
+        final isTablet = _isTabletLayout(dialogContext);
+
         return PopScope(
           canPop: canDismiss,
           child: AlertDialog(
+            insetPadding: EdgeInsets.symmetric(
+              horizontal: isTablet ? 120 : 40,
+              vertical: isTablet ? 48 : 24,
+            ),
             backgroundColor: const Color(0xFFFFF8F0),
             surfaceTintColor: Colors.transparent,
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(28),
+              borderRadius: BorderRadius.circular(isTablet ? 42 : 28),
             ),
             title: Text(
               _strings.nameDialogTitle,
@@ -273,7 +279,7 @@ class _SupportHomePageState extends State<SupportHomePage> {
                 _language,
                 color: const Color(0xFF3E4C44),
                 fontWeight: FontWeight.w700,
-                fontSize: 28,
+                fontSize: isTablet ? 56 : 28,
               ),
             ),
             content: Column(
@@ -282,31 +288,42 @@ class _SupportHomePageState extends State<SupportHomePage> {
               children: [
                 Text(
                   _strings.nameDialogBody,
-                  style: const TextStyle(color: Color(0xFF647069), height: 1.5),
+                  style: TextStyle(
+                    color: const Color(0xFF647069),
+                    height: 1.5,
+                    fontSize: isTablet ? 28 : null,
+                  ),
                 ),
-                const SizedBox(height: 16),
+                SizedBox(height: isTablet ? 24 : 16),
                 TextField(
                   controller: _nameController,
                   autofocus: true,
                   textInputAction: TextInputAction.done,
                   onSubmitted: (_) => _submitNameFromDialog(dialogContext),
+                  style: TextStyle(fontSize: isTablet ? 28 : null),
                   decoration: InputDecoration(
                     hintText: _strings.nameHint,
+                    hintStyle: TextStyle(fontSize: isTablet ? 28 : null),
                     filled: true,
                     fillColor: Colors.white,
-                    contentPadding: const EdgeInsets.symmetric(
-                      horizontal: 18,
-                      vertical: 16,
+                    contentPadding: EdgeInsets.symmetric(
+                      horizontal: isTablet ? 28 : 18,
+                      vertical: isTablet ? 24 : 16,
                     ),
                     border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(18),
+                      borderRadius: BorderRadius.circular(isTablet ? 26 : 18),
                       borderSide: BorderSide.none,
                     ),
                   ),
                 ),
               ],
             ),
-            actionsPadding: const EdgeInsets.fromLTRB(24, 0, 24, 20),
+            actionsPadding: EdgeInsets.fromLTRB(
+              isTablet ? 36 : 24,
+              0,
+              isTablet ? 36 : 24,
+              isTablet ? 28 : 20,
+            ),
             actions: [
               SizedBox(
                 width: double.infinity,
@@ -315,12 +332,15 @@ class _SupportHomePageState extends State<SupportHomePage> {
                   style: FilledButton.styleFrom(
                     backgroundColor: const Color(0xFFFFB07C),
                     foregroundColor: const Color(0xFF3C322F),
-                    padding: const EdgeInsets.symmetric(vertical: 16),
+                    padding: EdgeInsets.symmetric(vertical: isTablet ? 26 : 16),
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(18),
+                      borderRadius: BorderRadius.circular(isTablet ? 26 : 18),
                     ),
                   ),
-                  child: Text(_strings.startButton),
+                  child: Text(
+                    _strings.startButton,
+                    style: TextStyle(fontSize: isTablet ? 28 : null),
+                  ),
                 ),
               ),
             ],

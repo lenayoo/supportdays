@@ -234,6 +234,8 @@ class _MoodStep extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isTablet = _isTabletLayout(context);
+
     return Column(
       children: [
         Padding(
@@ -251,7 +253,7 @@ class _MoodStep extends StatelessWidget {
                           : strings.moodPromptWithName(name),
                       style: cuteTextStyle(
                         strings.language,
-                        fontSize: 30,
+                        fontSize: isTablet ? 38 : 30,
                         fontWeight: FontWeight.w700,
                         color: const Color(0xFF28211F),
                       ),
@@ -259,10 +261,10 @@ class _MoodStep extends StatelessWidget {
                     const SizedBox(height: 6),
                     Text(
                       strings.moodDescription,
-                      style: const TextStyle(
-                        color: Color(0xFF685F5A),
+                      style: TextStyle(
+                        color: const Color(0xFF685F5A),
                         height: 1.45,
-                        fontSize: 15,
+                        fontSize: isTablet ? 19 : 15,
                       ),
                     ),
                   ],
@@ -612,83 +614,97 @@ class _LoadingStepState extends State<_LoadingStep>
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final isTablet = _isTabletLayout(context);
+    final contentMaxWidth = isTablet ? 620.0 : 420.0;
+    final artWidth = isTablet ? 380.0 : 280.0;
+    final artHeight = isTablet ? 320.0 : 260.0;
+    final titleSize = isTablet ? 44.0 : 32.0;
 
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 32),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          SizedBox(
-            height: 260,
-            child: AnimatedBuilder(
-              animation: _controller,
-              builder: (context, child) {
-                final t = _controller.value * pi * 2;
-                return Stack(
-                  alignment: Alignment.center,
-                  children: [
-                    _MovingCloud(
-                      left: 36 + sin(t) * 44,
-                      top: 24 + cos(t * 0.9) * 18,
-                      width: 140,
-                      color: const Color(0xFFFFD8A2),
-                    ),
-                    _MovingCloud(
-                      left: 162 + sin(t + 1.8) * 48,
-                      top: 118 + cos(t * 1.1 + 0.8) * 20,
-                      width: 112,
-                      color: const Color(0xFFF3B6D1),
-                    ),
-                    _MovingCloud(
-                      left: 94 + sin(t + 3.1) * 54,
-                      top: 72 + cos(t + 0.2) * 26,
-                      width: 156,
-                      color: const Color(0xFFAEC3EA),
-                    ),
-                    Container(
-                      width: 114,
-                      height: 114,
-                      decoration: BoxDecoration(
-                        color: widget.mood.shapeColor.withValues(alpha: 0.78),
-                        shape: BoxShape.circle,
-                      ),
-                      child: CustomPaint(
-                        painter: _FacePainter(
-                          style: widget.mood.face,
-                          color: const Color(0xFF3C312E),
+    return Center(
+      child: ConstrainedBox(
+        constraints: BoxConstraints(maxWidth: contentMaxWidth),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 32),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SizedBox(
+                width: artWidth,
+                height: artHeight,
+                child: AnimatedBuilder(
+                  animation: _controller,
+                  builder: (context, child) {
+                    final t = _controller.value * pi * 2;
+                    return Stack(
+                      alignment: Alignment.center,
+                      children: [
+                        _MovingCloud(
+                          left: artWidth * 0.09 + sin(t) * 44,
+                          top: artHeight * 0.10 + cos(t * 0.9) * 18,
+                          width: isTablet ? 164 : 140,
+                          color: const Color(0xFFFFD8A2),
                         ),
-                      ),
-                    ),
-                  ],
-                );
-              },
-            ),
+                        _MovingCloud(
+                          left: artWidth * 0.56 + sin(t + 1.8) * 48,
+                          top: artHeight * 0.45 + cos(t * 1.1 + 0.8) * 20,
+                          width: isTablet ? 132 : 112,
+                          color: const Color(0xFFF3B6D1),
+                        ),
+                        _MovingCloud(
+                          left: artWidth * 0.30 + sin(t + 3.1) * 54,
+                          top: artHeight * 0.28 + cos(t + 0.2) * 26,
+                          width: isTablet ? 184 : 156,
+                          color: const Color(0xFFAEC3EA),
+                        ),
+                        Container(
+                          width: isTablet ? 132 : 114,
+                          height: isTablet ? 132 : 114,
+                          decoration: BoxDecoration(
+                            color: widget.mood.shapeColor.withValues(
+                              alpha: 0.78,
+                            ),
+                            shape: BoxShape.circle,
+                          ),
+                          child: CustomPaint(
+                            painter: _FacePainter(
+                              style: widget.mood.face,
+                              color: const Color(0xFF3C312E),
+                            ),
+                          ),
+                        ),
+                      ],
+                    );
+                  },
+                ),
+              ),
+              SizedBox(height: isTablet ? 36 : 28),
+              Text(
+                widget.name.isEmpty
+                    ? widget.strings.loadingTitle
+                    : widget.strings.loadingTitleWithName(widget.name),
+                textAlign: TextAlign.center,
+                style: cuteTextStyle(
+                  widget.strings.language,
+                  fontSize: titleSize,
+                  fontWeight: FontWeight.w700,
+                  color: const Color(0xFF302825),
+                ),
+              ),
+              const SizedBox(height: 12),
+              Text(
+                widget.strings.loadingBody(
+                  widget.strings.moodLabel(widget.mood.key),
+                ),
+                textAlign: TextAlign.center,
+                style: theme.textTheme.titleMedium?.copyWith(
+                  color: const Color(0xFF645651),
+                  height: 1.5,
+                  fontSize: isTablet ? 22 : null,
+                ),
+              ),
+            ],
           ),
-          const SizedBox(height: 28),
-          Text(
-            widget.name.isEmpty
-                ? widget.strings.loadingTitle
-                : widget.strings.loadingTitleWithName(widget.name),
-            textAlign: TextAlign.center,
-            style: cuteTextStyle(
-              widget.strings.language,
-              fontSize: 32,
-              fontWeight: FontWeight.w700,
-              color: const Color(0xFF302825),
-            ),
-          ),
-          const SizedBox(height: 12),
-          Text(
-            widget.strings.loadingBody(
-              widget.strings.moodLabel(widget.mood.key),
-            ),
-            textAlign: TextAlign.center,
-            style: theme.textTheme.titleMedium?.copyWith(
-              color: const Color(0xFF645651),
-              height: 1.5,
-            ),
-          ),
-        ],
+        ),
       ),
     );
   }
@@ -713,6 +729,7 @@ class _ResultStep extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final bottomInset = MediaQuery.paddingOf(context).bottom;
+    final isTablet = _isTabletLayout(context);
 
     return Stack(
       children: [
@@ -721,7 +738,11 @@ class _ResultStep extends StatelessWidget {
         SafeArea(
           child: LayoutBuilder(
             builder: (context, constraints) {
-              final cardHeight = max(305.0, constraints.maxHeight - 235);
+              final cardHeight =
+                  isTablet
+                      ? min(980.0, max(560.0, constraints.maxHeight - 260))
+                      : max(305.0, constraints.maxHeight - 235);
+              final cardWidth = isTablet ? 640.0 : 560.0;
 
               return Padding(
                 padding: const EdgeInsets.fromLTRB(24, 12, 24, 18),
@@ -735,7 +756,7 @@ class _ResultStep extends StatelessWidget {
                           : strings.resultTitleWithName(name),
                       style: cuteTextStyle(
                         strings.language,
-                        fontSize: 34,
+                        fontSize: isTablet ? 42 : 34,
                         fontWeight: FontWeight.w400,
                         color: const Color(0xFF2F2A27),
                       ),
@@ -745,12 +766,15 @@ class _ResultStep extends StatelessWidget {
                       child: Center(
                         child: ConstrainedBox(
                           constraints: BoxConstraints(
-                            maxWidth: 560,
+                            maxWidth: cardWidth,
                             maxHeight: cardHeight,
                           ),
                           child: Container(
                             width: double.infinity,
-                            padding: const EdgeInsets.fromLTRB(24, 28, 24, 28),
+                            padding:
+                                isTablet
+                                    ? const EdgeInsets.fromLTRB(32, 34, 32, 34)
+                                    : const EdgeInsets.fromLTRB(24, 28, 24, 28),
                             decoration: BoxDecoration(
                               color: const Color(
                                 0xFFFFFBF5,
@@ -784,7 +808,7 @@ class _ResultStep extends StatelessWidget {
                                             message.title,
                                             style: cuteTextStyle(
                                               strings.language,
-                                              fontSize: 38,
+                                              fontSize: isTablet ? 44 : 38,
                                               fontWeight: FontWeight.w500,
                                               color: const Color(0xFF64534C),
                                               height: 1.15,
@@ -795,7 +819,7 @@ class _ResultStep extends StatelessWidget {
                                             message.flowReading,
                                             style: cuteTextStyle(
                                               strings.language,
-                                              fontSize: 26,
+                                              fontSize: isTablet ? 29 : 26,
                                               fontWeight: FontWeight.w400,
                                               color: const Color(0xFF75645D),
                                               height: 1.55,
@@ -829,15 +853,18 @@ class _ResultStep extends StatelessWidget {
                               alpha: 0.76,
                             ),
                             foregroundColor: const Color(0xFF32423A),
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 28,
-                              vertical: 14,
+                            padding: EdgeInsets.symmetric(
+                              horizontal: isTablet ? 36 : 28,
+                              vertical: isTablet ? 18 : 14,
                             ),
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(18),
                             ),
                           ),
-                          child: Text(strings.chooseAgainButton),
+                          child: Text(
+                            strings.chooseAgainButton,
+                            style: TextStyle(fontSize: isTablet ? 18 : null),
+                          ),
                         ),
                       ),
                     ),
@@ -866,17 +893,27 @@ class _ParticleBackgroundState extends State<_ParticleBackground>
     duration: const Duration(seconds: 18),
   )..repeat();
 
-  late final List<_Particle> _particles = List.generate(
-    16,
-    (index) => _Particle(
-      x: (index * 0.13 + 0.07) % 1,
-      y: (index * 0.19 + 0.11) % 1,
-      radius: 1.6 + (index % 4) * 0.75,
-      drift: 12 + (index % 5) * 5,
-      speed: 0.15 + (index % 6) * 0.05,
-      opacity: 0.12 + (index % 4) * 0.035,
-    ),
-  );
+  late List<_Particle> _particles;
+
+  @override
+  void initState() {
+    super.initState();
+    _particles = _buildParticles(count: 16, scale: 1.0);
+  }
+
+  List<_Particle> _buildParticles({required int count, required double scale}) {
+    return List.generate(
+      count,
+      (index) => _Particle(
+        x: (index * 0.13 + 0.07) % 1,
+        y: (index * 0.19 + 0.11) % 1,
+        radius: (1.6 + (index % 4) * 0.75) * scale,
+        drift: (12 + (index % 5) * 5) * scale,
+        speed: 0.15 + (index % 6) * 0.05,
+        opacity: 0.12 + (index % 4) * 0.035,
+      ),
+    );
+  }
 
   @override
   void dispose() {
@@ -886,6 +923,14 @@ class _ParticleBackgroundState extends State<_ParticleBackground>
 
   @override
   Widget build(BuildContext context) {
+    final isTablet = _isTabletLayout(context);
+    final desiredCount = isTablet ? 34 : 16;
+    final desiredScale = isTablet ? 1.22 : 1.0;
+
+    if (_particles.length != desiredCount) {
+      _particles = _buildParticles(count: desiredCount, scale: desiredScale);
+    }
+
     return AnimatedBuilder(
       animation: _controller,
       builder: (context, child) {
