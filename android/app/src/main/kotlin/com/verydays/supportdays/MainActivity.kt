@@ -1,4 +1,4 @@
-package com.example.supportdays
+package com.verydays.supportdays
 
 import io.flutter.embedding.android.FlutterActivity
 
