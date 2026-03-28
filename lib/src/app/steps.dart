@@ -461,16 +461,7 @@ class _FloatingMoodFieldState extends State<_FloatingMoodField>
           children: [
             Positioned.fill(
               child: DecoratedBox(
-                decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
-                    colors: [
-                      const Color(0xFFFFF7E4).withValues(alpha: 0.8),
-                      const Color(0xFFFFF1D8).withValues(alpha: 0.92),
-                    ],
-                  ),
-                ),
+                decoration: const BoxDecoration(color: Color(0xFFFFF5E6)),
               ),
             ),
             for (final blob in _blobs)
@@ -551,6 +542,7 @@ class _FloatingBlobWidget extends StatelessWidget {
                         AppLanguage.fromLocale(
                           WidgetsBinding.instance.platformDispatcher.locale,
                         ),
+                        text: label,
                         fontSize: min(width, height) * 0.15 * fontScale,
                         fontWeight: FontWeight.w700,
                         color: blob.mood.labelColor,

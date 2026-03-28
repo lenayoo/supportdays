@@ -12,13 +12,16 @@ TextTheme cuteTextThemeForLanguage(AppLanguage language) {
 
 TextStyle cuteTextStyle(
   AppLanguage language, {
+  String? text,
   double? fontSize,
   FontWeight? fontWeight,
   Color? color,
   double? height,
   double? letterSpacing,
 }) {
-  switch (language) {
+  final resolvedLanguage = _fontLanguageForText(language, text);
+
+  switch (resolvedLanguage) {
     case AppLanguage.japanese:
       return GoogleFonts.zenMaruGothic(
         fontSize: fontSize,
@@ -39,6 +42,31 @@ TextStyle cuteTextStyle(
   }
 }
 
+AppLanguage _fontLanguageForText(AppLanguage language, String? text) {
+  if (text == null || text.isEmpty) {
+    return language;
+  }
+
+  final hasJapanese = RegExp(r'[\u3040-\u30FF\u4E00-\u9FFF]').hasMatch(text);
+  if (hasJapanese) {
+    return AppLanguage.japanese;
+  }
+
+  final hasHangul = RegExp(
+    r'[\u1100-\u11FF\u3130-\u318F\uAC00-\uD7AF]',
+  ).hasMatch(text);
+  if (hasHangul) {
+    return AppLanguage.korean;
+  }
+
+  switch (language) {
+    case AppLanguage.japanese:
+    case AppLanguage.korean:
+    case AppLanguage.english:
+      return AppLanguage.english;
+  }
+}
+
 class AppStrings {
   const AppStrings(this.language);
 
@@ -47,11 +75,11 @@ class AppStrings {
   String get nameDialogTitle {
     switch (language) {
       case AppLanguage.korean:
-        return '이름이 뭐야?';
+        return '이름을 알려줘';
       case AppLanguage.japanese:
-        return '名前を教えてください？';
+        return '名前を教えて';
       case AppLanguage.english:
-        return 'What is your name?';
+        return 'Tell me your name';
     }
   }
 
@@ -91,22 +119,22 @@ class AppStrings {
   String get entryHeadline {
     switch (language) {
       case AppLanguage.korean:
-        return '너의 오늘을 응원해';
+        return '너의 오늘을 응원해!';
       case AppLanguage.japanese:
-        return '今日のあなたを応援します';
+        return '今日のあなたを応援します!';
       case AppLanguage.english:
-        return 'Cheering for your today';
+        return 'Cheering for your today!';
     }
   }
 
   String get entryButton {
     switch (language) {
       case AppLanguage.korean:
-        return '너의 오늘을 응원해';
+        return '너의 오늘을 응원해!';
       case AppLanguage.japanese:
-        return '今日のあなたに、エールを';
+        return '今日のあなたに、エールを!';
       case AppLanguage.english:
-        return 'Cheer My Day';
+        return 'Cheer My Day!';
     }
   }
 
@@ -126,11 +154,11 @@ class AppStrings {
 
     switch (language) {
       case AppLanguage.korean:
-        return trimmedName.isEmpty ? '🤍' : '$trimmedName';
+        return trimmedName.isEmpty ? '🤍' : '$trimmedName♥️';
       case AppLanguage.japanese:
-        return trimmedName.isEmpty ? '🤍' : '$trimmedName';
+        return trimmedName.isEmpty ? '🤍' : '$trimmedName♥️';
       case AppLanguage.english:
-        return trimmedName.isEmpty ? '🤍' : '$trimmedName';
+        return trimmedName.isEmpty ? '🤍' : '$trimmedName♥️';
     }
   }
 

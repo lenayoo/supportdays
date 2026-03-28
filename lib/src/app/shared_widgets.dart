@@ -363,6 +363,11 @@ class _MoodTag extends StatelessWidget {
       child: Text(
         strings.moodLabel(mood.key),
         style: theme.textTheme.labelLarge?.copyWith(
+          fontFamily:
+              cuteTextStyle(
+                strings.language,
+                text: strings.moodLabel(mood.key),
+              ).fontFamily,
           color: const Color(0xFF4C6057),
           fontWeight: FontWeight.w700,
         ),
