@@ -49,7 +49,7 @@ class AppStrings {
       case AppLanguage.korean:
         return '이름이 뭐야?';
       case AppLanguage.japanese:
-        return '名前は？';
+        return '名前を教えてください？';
       case AppLanguage.english:
         return 'What is your name?';
     }
