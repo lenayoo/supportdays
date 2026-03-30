@@ -501,6 +501,7 @@ class _SupportHomePageState extends State<SupportHomePage> {
       reason: reason,
       moodKey: _selectedMood!.key,
       messageTitle: _selectedMessage!.title,
+      moodColorValue: _selectedMood!.shapeColor.toARGB32(),
     );
 
     setState(() {

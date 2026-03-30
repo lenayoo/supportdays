@@ -1176,37 +1176,41 @@ class _MonthlyRecordsStepState extends State<_MonthlyRecordsStep> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Expanded(
-                        child: Text(
-                          widget.strings.monthlyTitle,
-                            style: cuteTextStyle(
-                              widget.strings.language,
-                              fontSize: isTablet ? 42 : 34,
-                              fontWeight: FontWeight.w700,
-                              color: const Color(0xFF234057),
+                    SizedBox(
+                      height: isTablet ? 88 : 78,
+                      child: Stack(
+                        children: [
+                          Align(
+                            alignment: Alignment.topRight,
+                            child: TextButton(
+                              onPressed: widget.onBackHome,
+                              child: Text(widget.strings.returnHomeButton),
                             ),
                           ),
+                          Align(
+                            alignment: Alignment.bottomLeft,
+                            child: Text(
+                              widget.strings.monthlyTitle,
+                              style: cuteTextStyle(
+                                widget.strings.language,
+                                fontSize: isTablet ? 44 : 38,
+                                fontWeight: FontWeight.w700,
+                                color: const Color(0xFF234057),
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
-                      Padding(
-                        padding: const EdgeInsets.only(top: 2),
-                        child: TextButton(
-                          onPressed: widget.onBackHome,
-                          child: Text(widget.strings.returnHomeButton),
-                        ),
-                      ),
-                    ],
-                  ),
+                    ),
                     const SizedBox(height: 10),
                     Text(
                       widget.records.isEmpty
                           ? widget.strings.noRecordMessage
                           : widget.strings.recordGuideMessage,
-                      style: const TextStyle(
+                      style: TextStyle(
                         color: Color(0xFF58758A),
                         height: 1.5,
+                        fontSize: isTablet ? 18 : 16,
                       ),
                     ),
                     const SizedBox(height: 20),
@@ -1555,7 +1559,7 @@ class _MonthHeader extends StatelessWidget {
             textAlign: TextAlign.center,
             style: cuteTextStyle(
               strings.language,
-              fontSize: 28,
+              fontSize: _isTabletLayout(context) ? 30 : 32,
               fontWeight: FontWeight.w600,
               color: const Color(0xFF35516A),
             ),
@@ -1607,7 +1611,12 @@ class _MonthlyCalendarGrid extends StatelessWidget {
     return '$year-$month-$day';
   }
 
-  Color _dotColorForMood(String moodKey) {
+  Color _dotColorForRecord(EmotionRecord record) {
+    if (record.moodColorValue != null) {
+      return Color(record.moodColorValue!);
+    }
+
+    final moodKey = record.moodKey;
     switch (moodKey) {
       case 'tired':
         return const Color(0xFFFFD38C);
@@ -1658,9 +1667,10 @@ class _MonthlyCalendarGrid extends StatelessWidget {
             return Center(
               child: Text(
                 labels[index],
-                style: const TextStyle(
+                style: TextStyle(
                   color: Color(0xFF7B98AE),
                   fontWeight: FontWeight.w700,
+                  fontSize: _isTabletLayout(context) ? 15 : 14,
                 ),
               ),
             );
@@ -1717,7 +1727,7 @@ class _MonthlyCalendarGrid extends StatelessWidget {
                       Text(
                         '$dayNumber',
                         style: TextStyle(
-                          fontSize: 12,
+                          fontSize: _isTabletLayout(context) ? 15 : 14,
                           color:
                               record != null
                                   ? const Color(0xFF2E4E66)
@@ -1726,14 +1736,26 @@ class _MonthlyCalendarGrid extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        width: 8,
-                        height: 8,
+                        width: 10,
+                        height: 10,
                         decoration: BoxDecoration(
                           color:
                               record != null
-                                  ? _dotColorForMood(record.moodKey)
+                                  ? _dotColorForRecord(record)
                                   : Colors.transparent,
                           shape: BoxShape.circle,
+                          boxShadow:
+                              record != null
+                                  ? [
+                                    BoxShadow(
+                                      color: _dotColorForRecord(
+                                        record,
+                                      ).withValues(alpha: 0.24),
+                                      blurRadius: 6,
+                                      spreadRadius: 0.4,
+                                    ),
+                                  ]
+                                  : null,
                         ),
                       ),
                     ],

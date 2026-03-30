@@ -300,11 +300,11 @@ class AppStrings {
   String get emotionRecordTitle {
     switch (language) {
       case AppLanguage.korean:
-        return '감정 기록';
+        return '오늘을 기록하기';
       case AppLanguage.japanese:
-        return '感情記録';
+        return '今日の記録';
       case AppLanguage.english:
-        return 'Emotion Record';
+        return 'Record your day';
     }
   }
 
@@ -366,11 +366,11 @@ class AppStrings {
   String get recordSavedTitle {
     switch (language) {
       case AppLanguage.korean:
-        return '기록 상세';
+        return 'My day';
       case AppLanguage.japanese:
-        return '記録詳細';
+        return 'My day';
       case AppLanguage.english:
-        return 'Record Detail';
+        return 'My day';
     }
   }
 

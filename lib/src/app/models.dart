@@ -61,6 +61,7 @@ class EmotionRecord {
     required this.reason,
     required this.moodKey,
     required this.messageTitle,
+    this.moodColorValue,
   });
 
   factory EmotionRecord.fromJson(Map<String, dynamic> json) {
@@ -69,6 +70,7 @@ class EmotionRecord {
       reason: json['reason'] as String? ?? '',
       moodKey: json['moodKey'] as String,
       messageTitle: json['messageTitle'] as String,
+      moodColorValue: json['moodColorValue'] as int?,
     );
   }
 
@@ -76,6 +78,7 @@ class EmotionRecord {
   final String reason;
   final String moodKey;
   final String messageTitle;
+  final int? moodColorValue;
 
   Map<String, dynamic> toJson() {
     return {
@@ -83,6 +86,7 @@ class EmotionRecord {
       'reason': reason,
       'moodKey': moodKey,
       'messageTitle': messageTitle,
+      'moodColorValue': moodColorValue,
     };
   }
 }
