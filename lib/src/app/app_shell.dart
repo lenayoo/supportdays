@@ -31,7 +31,7 @@ class SupportDaysApp extends StatelessWidget {
   }
 }
 
-enum AppStep { entry, mood, loading, result }
+enum AppStep { entry, mood, loading, result, recordForm, monthly, recordDetail }
 
 enum AppLanguage {
   korean,
@@ -59,8 +59,10 @@ class SupportHomePage extends StatefulWidget {
 
 class _SupportHomePageState extends State<SupportHomePage> {
   static const _userNameKey = 'user_name';
+  static const _emotionRecordsKey = 'emotion_records';
 
   final _nameController = TextEditingController();
+  final _reasonController = TextEditingController();
   final _random = Random();
 
   final List<MoodOption> _moods = const [
@@ -191,6 +193,8 @@ class _SupportHomePageState extends State<SupportHomePage> {
   List<SupportMessage> _messages = const [];
   SupportMessage? _selectedMessage;
   MoodOption? _selectedMood;
+  Map<String, EmotionRecord> _emotionRecords = const {};
+  EmotionRecord? _selectedRecord;
   String _userName = '';
   bool _isInitializing = true;
   bool _namePromptHandled = false;
@@ -209,6 +213,7 @@ class _SupportHomePageState extends State<SupportHomePage> {
     );
     final prefs = await SharedPreferences.getInstance();
     final savedName = prefs.getString(_userNameKey)?.trim() ?? '';
+    final savedRecordString = prefs.getString(_emotionRecordsKey);
     final jsonString = await rootBundle.loadString(
       _assetPathForLanguage(language),
     );
@@ -216,6 +221,7 @@ class _SupportHomePageState extends State<SupportHomePage> {
     final messages = decoded
         .map((item) => SupportMessage.fromJson(item as Map<String, dynamic>))
         .toList(growable: false);
+    final emotionRecords = _decodeEmotionRecords(savedRecordString);
 
     if (!mounted) {
       return;
@@ -226,6 +232,7 @@ class _SupportHomePageState extends State<SupportHomePage> {
       _language = language;
       _messages = messages;
       _userName = savedName;
+      _emotionRecords = emotionRecords;
       _isInitializing = false;
     });
 
@@ -252,6 +259,60 @@ class _SupportHomePageState extends State<SupportHomePage> {
 
     _namePromptHandled = true;
     await _showNameDialog(canDismiss: false);
+  }
+
+  Map<String, EmotionRecord> _decodeEmotionRecords(String? raw) {
+    if (raw == null || raw.isEmpty) {
+      return {};
+    }
+
+    final decoded = json.decode(raw);
+    if (decoded is! List<dynamic>) {
+      return {};
+    }
+
+    final records = <String, EmotionRecord>{};
+    for (final item in decoded) {
+      if (item is! Map<String, dynamic>) {
+        continue;
+      }
+      final record = EmotionRecord.fromJson(item);
+      records[record.dateKey] = record;
+    }
+    return records;
+  }
+
+  Future<void> _persistEmotionRecords() async {
+    final prefs = await SharedPreferences.getInstance();
+    final records =
+        _emotionRecords.values.map((record) => record.toJson()).toList();
+    await prefs.setString(_emotionRecordsKey, json.encode(records));
+  }
+
+  String _dateKey(DateTime date) {
+    final local = DateTime(date.year, date.month, date.day);
+    final year = local.year.toString().padLeft(4, '0');
+    final month = local.month.toString().padLeft(2, '0');
+    final day = local.day.toString().padLeft(2, '0');
+    return '$year-$month-$day';
+  }
+
+  String _formatDate(DateTime date) {
+    final local = DateTime(date.year, date.month, date.day);
+    switch (_language) {
+      case AppLanguage.korean:
+        return '${local.year}년 ${local.month}월 ${local.day}일';
+      case AppLanguage.japanese:
+        return '${local.year}年${local.month}月${local.day}日';
+      case AppLanguage.english:
+        return '${local.month}/${local.day}/${local.year}';
+    }
+  }
+
+  void _openMonthly() {
+    setState(() {
+      _step = AppStep.monthly;
+    });
   }
 
   Future<void> _showNameDialog({required bool canDismiss}) async {
@@ -413,6 +474,69 @@ class _SupportHomePageState extends State<SupportHomePage> {
     setState(() {
       _selectedMessage = null;
       _selectedMood = null;
+      _reasonController.clear();
+      _step = AppStep.mood;
+    });
+  }
+
+  void _openRecordForm() {
+    _reasonController.clear();
+    setState(() {
+      _step = AppStep.recordForm;
+    });
+  }
+
+  Future<void> _saveEmotionRecord() async {
+    final reason = _reasonController.text.trim();
+    if (reason.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(_strings.saveRecordValidation)),
+      );
+      return;
+    }
+
+    final today = DateTime.now();
+    final record = EmotionRecord(
+      dateKey: _dateKey(today),
+      reason: reason,
+      moodKey: _selectedMood!.key,
+      messageTitle: _selectedMessage!.title,
+    );
+
+    setState(() {
+      _emotionRecords = {..._emotionRecords, record.dateKey: record};
+      _selectedRecord = record;
+      _step = AppStep.monthly;
+    });
+
+    await _persistEmotionRecords();
+  }
+
+  void _openRecordDetail(EmotionRecord record) {
+    setState(() {
+      _selectedRecord = record;
+      _step = AppStep.recordDetail;
+    });
+  }
+
+  void _returnToResult() {
+    setState(() {
+      _step = AppStep.result;
+    });
+  }
+
+  void _returnToRecords() {
+    setState(() {
+      _step = AppStep.monthly;
+    });
+  }
+
+  void _returnHome() {
+    setState(() {
+      _selectedMessage = null;
+      _selectedMood = null;
+      _selectedRecord = null;
+      _reasonController.clear();
       _step = AppStep.mood;
     });
   }
@@ -420,41 +544,66 @@ class _SupportHomePageState extends State<SupportHomePage> {
   @override
   void dispose() {
     _nameController.dispose();
+    _reasonController.dispose();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     final backgroundDecoration =
-        _step == AppStep.mood
-            ? const BoxDecoration(color: Color(0xFFFFF5E6))
-            : const BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                colors: [
-                  Color(0xFFFFF8E8),
-                  Color(0xFFFFF1DC),
-                  Color(0xFFF8E9D7),
-                ],
-              ),
-            );
+        switch (_step) {
+          AppStep.mood => const BoxDecoration(color: Color(0xFFFFF5E6)),
+          AppStep.recordForm ||
+          AppStep.monthly ||
+          AppStep.recordDetail => const BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [Color(0xFFF4FBFF), Color(0xFFE7F6FF), Color(0xFFDCEFFF)],
+            ),
+          ),
+          _ => const BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [
+                Color(0xFFFFF8E8),
+                Color(0xFFFFF1DC),
+                Color(0xFFF8E9D7),
+              ],
+            ),
+          ),
+        };
 
     return Scaffold(
-      backgroundColor: _step == AppStep.mood ? const Color(0xFFFFF5E6) : null,
-      body: DecoratedBox(
-        decoration: backgroundDecoration,
-        child: SafeArea(
-          child:
-              _isInitializing
-                  ? const Center(child: CircularProgressIndicator())
-                  : AnimatedSwitcher(
-                    duration: const Duration(milliseconds: 650),
-                    switchInCurve: Curves.easeOutCubic,
-                    switchOutCurve: Curves.easeInCubic,
-                    child: _buildStepContent(),
-                  ),
-        ),
+      backgroundColor:
+          switch (_step) {
+            AppStep.mood => const Color(0xFFFFF5E6),
+            AppStep.recordForm ||
+            AppStep.monthly ||
+            AppStep.recordDetail => const Color(0xFFE7F6FF),
+            _ => null,
+          },
+      body: Stack(
+        children: [
+          Positioned.fill(
+            child: DecoratedBox(decoration: backgroundDecoration),
+          ),
+          const Positioned.fill(
+            child: IgnorePointer(child: _ParticleBackground()),
+          ),
+          SafeArea(
+            child:
+                _isInitializing
+                    ? const Center(child: CircularProgressIndicator())
+                    : AnimatedSwitcher(
+                      duration: const Duration(milliseconds: 650),
+                      switchInCurve: Curves.easeOutCubic,
+                      switchOutCurve: Curves.easeInCubic,
+                      child: _buildStepContent(),
+                    ),
+          ),
+        ],
       ),
     );
   }
@@ -476,6 +625,7 @@ class _SupportHomePageState extends State<SupportHomePage> {
           name: _userName,
           moods: _moods,
           onSelect: _pickMood,
+          onViewRecords: _openMonthly,
         );
       case AppStep.loading:
         return _LoadingStep(
@@ -492,6 +642,38 @@ class _SupportHomePageState extends State<SupportHomePage> {
           mood: _selectedMood!,
           message: _selectedMessage!,
           onChooseAgain: _chooseAgain,
+          onRecord: _openRecordForm,
+        );
+      case AppStep.recordForm:
+        return _RecordFormStep(
+          key: const ValueKey('record-form-step'),
+          strings: _strings,
+          dateLabel: _formatDate(DateTime.now()),
+          mood: _selectedMood!,
+          message: _selectedMessage!,
+          reasonController: _reasonController,
+          onSave: _saveEmotionRecord,
+          onBack: _returnToResult,
+        );
+      case AppStep.monthly:
+        return _MonthlyRecordsStep(
+          key: const ValueKey('monthly-step'),
+          strings: _strings,
+          records: _emotionRecords,
+          initiallySelectedDateKey: _selectedRecord?.dateKey,
+          onOpenRecord: _openRecordDetail,
+          onBackHome: _returnHome,
+        );
+      case AppStep.recordDetail:
+        return _RecordDetailStep(
+          key: const ValueKey('record-detail-step'),
+          strings: _strings,
+          dateLabel: _formatDate(
+            DateTime.parse('${_selectedRecord!.dateKey}T00:00:00'),
+          ),
+          record: _selectedRecord!,
+          onBackHome: _returnHome,
+          onBackToRecords: _returnToRecords,
         );
     }
   }

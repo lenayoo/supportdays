@@ -275,6 +275,182 @@ class AppStrings {
     }
   }
 
+  String get viewMyRecordsButton {
+    switch (language) {
+      case AppLanguage.korean:
+        return '나의 기록보기';
+      case AppLanguage.japanese:
+        return '記録を見る';
+      case AppLanguage.english:
+        return 'View My Records';
+    }
+  }
+
+  String get recordButton {
+    switch (language) {
+      case AppLanguage.korean:
+        return '기록하기';
+      case AppLanguage.japanese:
+        return '記録する';
+      case AppLanguage.english:
+        return 'Save Record';
+    }
+  }
+
+  String get emotionRecordTitle {
+    switch (language) {
+      case AppLanguage.korean:
+        return '감정 기록';
+      case AppLanguage.japanese:
+        return '感情記録';
+      case AppLanguage.english:
+        return 'Emotion Record';
+    }
+  }
+
+  String get todayDateLabel {
+    switch (language) {
+      case AppLanguage.korean:
+        return '날짜';
+      case AppLanguage.japanese:
+        return '日付';
+      case AppLanguage.english:
+        return 'Date';
+    }
+  }
+
+  String get reasonPrompt {
+    switch (language) {
+      case AppLanguage.korean:
+        return '오늘의 감정을 고른 이유는?';
+      case AppLanguage.japanese:
+        return '今日の気持ちを選んだ理由は？';
+      case AppLanguage.english:
+        return 'Why did you choose this feeling today?';
+    }
+  }
+
+  String get recordReasonLabel {
+    switch (language) {
+      case AppLanguage.korean:
+        return '오늘의 기분';
+      case AppLanguage.japanese:
+        return '今日の気分';
+      case AppLanguage.english:
+        return 'Today\'s Note';
+    }
+  }
+
+  String get reasonHint {
+    switch (language) {
+      case AppLanguage.korean:
+        return '50자 이내로 적어줘';
+      case AppLanguage.japanese:
+        return '50文字以内で書いてね';
+      case AppLanguage.english:
+        return 'Write within 50 characters';
+    }
+  }
+
+  String get adviceLabel {
+    switch (language) {
+      case AppLanguage.korean:
+        return '조언';
+      case AppLanguage.japanese:
+        return 'メッセージ';
+      case AppLanguage.english:
+        return 'Advice';
+    }
+  }
+
+  String get recordSavedTitle {
+    switch (language) {
+      case AppLanguage.korean:
+        return '기록 상세';
+      case AppLanguage.japanese:
+        return '記録詳細';
+      case AppLanguage.english:
+        return 'Record Detail';
+    }
+  }
+
+  String get selectedEmotionLabel {
+    switch (language) {
+      case AppLanguage.korean:
+        return '오늘의 감정';
+      case AppLanguage.japanese:
+        return '今日の気持ち';
+      case AppLanguage.english:
+        return 'Today\'s Emotion';
+    }
+  }
+
+  String get returnHomeButton {
+    switch (language) {
+      case AppLanguage.korean:
+        return '홈으로 돌아가기';
+      case AppLanguage.japanese:
+        return 'ホームへ戻る';
+      case AppLanguage.english:
+        return 'Back To Home';
+    }
+  }
+
+  String get returnToRecordsButton {
+    switch (language) {
+      case AppLanguage.korean:
+        return '기록으로 돌아가기';
+      case AppLanguage.japanese:
+        return '記録へ戻る';
+      case AppLanguage.english:
+        return 'Back To Records';
+    }
+  }
+
+  String get monthlyTitle {
+    switch (language) {
+      case AppLanguage.korean:
+        return '월간 기록';
+      case AppLanguage.japanese:
+        return '月間記録';
+      case AppLanguage.english:
+        return 'Monthly Records';
+    }
+  }
+
+  String get noRecordMessage {
+    switch (language) {
+      case AppLanguage.korean:
+        return '아직 저장된 기록이 없어.';
+      case AppLanguage.japanese:
+        return 'まだ保存した記録がないよ。';
+      case AppLanguage.english:
+        return 'There are no saved records yet.';
+    }
+  }
+
+  String get recordGuideMessage {
+    switch (language) {
+      case AppLanguage.korean:
+        return '점이 있는 날짜를 누르면 기록을 볼 수 있어.';
+      case AppLanguage.japanese:
+        return '点のある日を押すと記録が見られるよ。';
+      case AppLanguage.english:
+        return 'Tap a date with a dot to open the record.';
+    }
+  }
+
+  String get saveRecordValidation {
+    switch (language) {
+      case AppLanguage.korean:
+        return '이유를 적어줘.';
+      case AppLanguage.japanese:
+        return '理由を書いてね。';
+      case AppLanguage.english:
+        return 'Please write the reason.';
+    }
+  }
+
   String moodLabel(String key) {
     switch (key) {
       case 'tired':

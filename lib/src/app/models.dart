@@ -55,6 +55,38 @@ class SupportMessage {
   final List<String> moods;
 }
 
+class EmotionRecord {
+  const EmotionRecord({
+    required this.dateKey,
+    required this.reason,
+    required this.moodKey,
+    required this.messageTitle,
+  });
+
+  factory EmotionRecord.fromJson(Map<String, dynamic> json) {
+    return EmotionRecord(
+      dateKey: json['dateKey'] as String,
+      reason: json['reason'] as String? ?? '',
+      moodKey: json['moodKey'] as String,
+      messageTitle: json['messageTitle'] as String,
+    );
+  }
+
+  final String dateKey;
+  final String reason;
+  final String moodKey;
+  final String messageTitle;
+
+  Map<String, dynamic> toJson() {
+    return {
+      'dateKey': dateKey,
+      'reason': reason,
+      'moodKey': moodKey,
+      'messageTitle': messageTitle,
+    };
+  }
+}
+
 enum BlobFaceStyle { smile, smallSmile, gentle, sleepy, excited, crying }
 
 enum BlobShapeStyle {
