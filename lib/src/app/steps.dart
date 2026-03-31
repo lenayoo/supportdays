@@ -262,21 +262,44 @@ class _MoodStep extends StatelessWidget {
                 child: FilledButton(
                   onPressed: onViewRecords,
                   style: FilledButton.styleFrom(
-                    backgroundColor: const Color(0xFFE5F3FF),
-                    foregroundColor: const Color(0xFF31516C),
+                    backgroundColor: const Color(0xFFFFF7EF),
+                    foregroundColor: const Color(0xFF7B5C56),
                     padding: EdgeInsets.symmetric(
-                      horizontal: isTablet ? 22 : 16,
-                      vertical: isTablet ? 18 : 14,
+                      horizontal: isTablet ? 24 : 18,
+                      vertical: isTablet ? 18 : 13,
                     ),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(18),
                     ),
+                    side: const BorderSide(
+                      color: Color(0xFFF3B6D1),
+                      width: 1.4,
+                    ),
+                    elevation: 0,
+                    shadowColor: Colors.transparent,
                   ),
-                  child: Text(
-                    strings.viewMyRecordsButton,
-                    maxLines: 1,
-                    softWrap: false,
-                    style: TextStyle(fontSize: isTablet ? 18 : 15),
+                  child: DecoratedBox(
+                    decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                          color: const Color(
+                            0xFFF3B6D1,
+                          ).withValues(alpha: 0.18),
+                          blurRadius: 14,
+                          offset: const Offset(0, 6),
+                        ),
+                      ],
+                    ),
+                    child: Text(
+                      strings.viewMyRecordsButton,
+                      maxLines: 1,
+                      softWrap: false,
+                      style: TextStyle(
+                        fontSize: isTablet ? 18 : 15,
+                        fontWeight: FontWeight.w600,
+                        letterSpacing: 0.2,
+                      ),
+                    ),
                   ),
                 ),
               ),
